@@ -32,6 +32,7 @@ def matchCoordinates(fastalist,vcflist):
                 vcf_row['POS']=ma_counter # adjust coordinates according to the multiple alignment
             else:
                 print("Bases in VCF and consensus do not match for sequence",vcf_index,"in position",vcf_row['POS'])
+    return(vcf_list)
 
 def prediction_arrays(fasta_list,vcf_list):
     positions=list(range(len(list(fasta_list[0].values())[0])))
@@ -56,9 +57,10 @@ vcf_files=sys.argv[2:]
 vcf_list=[]
 for vcf_file in vcf_files:
     vcf_list.append(VCF.dataframe(vcf_file, large=False))
+print(vcf_list)
 
 # match coordinates
-matchCoordinates(fasta_list,vcf_list)
+vcf_list=matchCoordinates(fasta_list,vcf_list)
 
 # create prediction lists
 predlist=prediction_arrays(fasta_list,vcf_list)
@@ -73,10 +75,10 @@ df = pd.DataFrame(columns=['Accuracy','Precision','Sensitivity','Specificity','F
 for pred_id,pred in enumerate(predlist[1:]):
     df.loc[seqs[pred_id]] = pd.Series({
         'Accuracy':metrics.accuracy_score(y_true=predlist[0],y_pred=pred),
-        'Precision':metrics.precision_score(y_true=predlist[0],y_pred=pred),
-        'Sensitivity':metrics.recall_score(y_true=predlist[0],y_pred=pred),
-        'Specificity':metrics.recall_score(y_true=predlist[0],y_pred=pred,pos_label=0),
-        'F1-score':metrics.f1_score(y_true=predlist[0],y_pred=pred)
+        'Precision':metrics.precision_score(y_true=predlist[0],y_pred=pred,zero_division=0.0),
+        'Sensitivity':metrics.recall_score(y_true=predlist[0],y_pred=pred,zero_division=0.0),
+        'Specificity':metrics.recall_score(y_true=predlist[0],y_pred=pred,pos_label=0,zero_division=0.0),
+        'F1-score':metrics.f1_score(y_true=predlist[0],y_pred=pred,zero_division=0.0)
         })
 
 # save results

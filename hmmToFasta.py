@@ -38,6 +38,6 @@ def fastaWriter(filename,header,seq):
 print("Writing hmm profile consensus to fasta sequence...")
 hmmLines=readHMM(sys.argv[1])
 fastaseq=hmmToFasta(hmmLines)
-fastaWriter("vpipe_consensus.fasta",">currsample-currdate",fastaseq)
+fastaWriter("vpipe_consensus_prefixed.fasta",">currsample-currdate",fastaseq)
 print("...and the writing was successful! Have a nice day!")
        

@@ -110,7 +110,11 @@ def dataframe(filename, large=True):
         for key in result.keys():
             result[key].append(line.get(key, None))
 
-    return pd.DataFrame(result)
+    if pd.DataFrame(result).empty:
+        result_out = pd.DataFrame(columns = VCF_HEADER)
+    else:
+        result_out=pd.DataFrame(result)
+    return result_out
 
 
 def lines(filename):
