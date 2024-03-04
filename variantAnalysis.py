@@ -40,8 +40,19 @@ def prediction_arrays(fasta_list,vcf_list):
     for vcf in vcf_list:
         predlist_vcf=[]
         for position in positions:
-            if position in list(vcf['POS']):
-                predlist_vcf.append(True)
+            if position+1 in list(vcf['POS']):
+                print("possible variant position")
+                is_minvar=False
+                vcf_positions=np.where( vcf['POS'] == (position+1))[0]
+                for vcf_position in vcf_positions:
+                    print("Allele frequency:",float(vcf.iloc[vcf_position]['AF']))
+                    if float(vcf.iloc[vcf_position]['AF'])!=1.0:
+                        is_minvar=True
+                if is_minvar:
+                    predlist_vcf.append(True)
+                    print("variant found")
+                else:
+                    predlist_vcf.append(False)    
             else:
                 predlist_vcf.append(False)
         predlist.append(predlist_vcf)

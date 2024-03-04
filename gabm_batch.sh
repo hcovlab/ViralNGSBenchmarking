@@ -16,6 +16,8 @@ for d in */ ; do
             mode="sim_SGSref"
         elif [[ "${f%.*}" == *_simref ]]; then
             mode="sim_simref"
+        elif [[ "${f%.*}" == *_NGSref ]]; then
+            mode="emp_pureNGS"
         fi
     done
     echo "Mode: $mode"
@@ -28,12 +30,16 @@ for d in */ ; do
         mkdir 0000_DATA
         mv ./*\.* 0000_DATA/ ; cd 0000_DATA
 
+        if [[ $AssemblyRef != "NCBI_HIV1_HXB2.fasta" ]];then
+            cp ../../NCBI_HIV1_HXB2.fasta .
+        fi
+
         # make config file with static names, copy files
-        configvars=("AssemblyRef" "ShiverConfig" "RefAlignment" "Adapters" "Primers" "Prefix" "vngs_prefix" "VPipeConfig" "VPipeAmpliconProtocol", "RegionBoundaries")
+        configvars=("AssemblyRef" "ShiverConfig" "RefAlignment" "Adapters" "Primers" "Prefix" "vngs_prefix" "VPipeConfig" "SangerCorrection" "start_coord" "end_coord")
         echo "# User supplied variables" >> pipeline.conf
         for c in "${configvars[@]}"; do
             grep $c ../../gabm_batch.conf >> pipeline.conf
-            if [[ $c != "Prefix" && $c != "vngs_prefix" ]]; then
+            if [[ $c != "Prefix" && $c != "vngs_prefix" && $c != "SangerCorrection" && $c != "start_coord" && $c != "end_coord" ]]; then
                 fn=($(grep $c ../../gabm_batch.conf | grep -o -P '(?<=").*(?=")'))
                 cp ../../$fn .
             fi
@@ -99,6 +105,10 @@ for d in */ ; do
             ref=("$(find . -name *_QSref.fasta)")
             ref=${ref:2}
             echo SeqSet=\"$ref\" >> pipeline.conf
+        elif [[ $mode == "emp_pureNGS" ]]; then
+            ref=("$(find . -name *_NGSref.fasta)")
+            ref=${ref:2}
+            echo GoldRef=\"$ref\" >> pipeline.conf
         fi
 
         # automatized read file name setup in pipeline.conf
