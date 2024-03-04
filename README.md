@@ -9,10 +9,12 @@ The scripts in this repository have been developed to benchmark four bioinformat
 ## Utilities
 * **vngs.sh**: Script supplied to the viralngs docker container including all steps of genome assembly with additional runtime and memory benchmarking.
 * **align_MAFFT.py**: Multiple alignment of .fasta files using MAFFT.
+* **changeAmbiguousToA.py**: change IUPAC ambiguity codes in Sanger sequences due to software incompatibility before base calling using NGS data.
+* **correctSangerByVariants.py**: Corrects Sanger sequences in position where NGS data strongly indicates a different base call to provide consistency between datasets.
 * **multifastaDiversity.py**: Calculation of average pairwise Hamming distances in a multifasta alignment.
 * **deleteGapsAlignment.py**: Deletes gap characters from multifasta alignments.
 * **calculateCoordinatesByMotifs.py**: Calculates the coordinates of a genetic interval in a .fasta sequence based on a start and end motif.
-* **cropGenomeByMotifs.py**: Calculates the coordinates of a genetic interval in a .fasta sequence based on a start and end motif and cuts out the identified interval.
+* **cropGenomeByCoordinates.py**: Crops HIV-1 genomes (.fasta) based on a start and end coordinate on the HXB2 reference genome.
 * **changeNBases.py**: Changes unidentified bases ('N') to a random nucleotide in a .fasta file.
 * **changesToNBases.py**: Changes special IUPAC nucleotide ambiguity codes to 'N'.
 * **compBamLiftover.py**: Compares .bam aligments mapped to highly similar reference sequences.
