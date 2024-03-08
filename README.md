@@ -1,4 +1,4 @@
-# HIVConsensusBenchmarking
+# ViralNGSBenchmarking
 The scripts in this repository have been developed to benchmark four bioinformatic pipelines (shiver, SmaltAlign, viralngs, V-Pipe) for full-length viral genome assembly.
 
 ## Main scripts
