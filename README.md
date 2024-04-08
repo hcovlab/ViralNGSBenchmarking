@@ -1,6 +1,14 @@
 # ViralNGSBenchmarking
 The scripts in this repository have been developed to benchmark four bioinformatic pipelines (shiver, SmaltAlign, viralngs, V-Pipe) for full-length viral genome assembly.
 
+## Raw result files
+* **Shankarappa.xlsx**: Diversity statistics of the Shankarappa et al. dataset
+* **Vibholm.xlsx**: Diversity statistics of the Vibholm et al. dataset
+* **GABM_NGS_results.csv**: Runtime and memory benchmarking results on the NGS (Ode et al.) dataset
+* **GABM_SIM_results_revision.csv**: Benchmarking results using simulated HIV-1 quasispecies data
+* **GABM_SGS_results.csv**: Benchmarking results using the Vibhol et al. SGS dataset
+* **GABM_SSNGS_HUN_results.csv**: Benchmarking results using Hungarian Sanger and next generation sequencing results from the same samples
+
 ## Main scripts
 * **gabm.sh**: Main pipeline script organizing different steps of the analysis for one sample.
 * **gabm_batch.sh**: A wrapper script for gabm.sh. Initializes sample directory for gabm.sh using files in the batch directory.
