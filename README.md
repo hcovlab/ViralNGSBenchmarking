@@ -6,6 +6,7 @@ The scripts in this repository have been developed to benchmark four bioinformat
 * **Vibholm.xlsx**: Diversity statistics of the Vibholm et al. dataset
 * **GABM_NGS_results.csv**: Runtime and memory benchmarking results on the NGS (Ode et al.) dataset
 * **GABM_SIM_results_revision.csv**: Benchmarking results using simulated HIV-1 quasispecies data
+* **GABM_SIM_150.csv**: Benchmarking results using simulated HIV-1 quasispecies data with 2x150bp paired-end Illumina data
 * **GABM_SGS_results.csv**: Benchmarking results using the Vibhol et al. SGS dataset
 * **GABM_SSNGS_HUN_results.csv**: Benchmarking results using Hungarian Sanger and next generation sequencing results from the same samples
 
