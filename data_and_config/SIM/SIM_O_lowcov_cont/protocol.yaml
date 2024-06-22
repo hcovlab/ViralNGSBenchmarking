@@ -1,0 +1,6 @@
+v1:
+  name: HIV custom amplicon protocol v1
+  inserts_bedfile: "/home/hazaihiv/Analyses/RESULTS/test/vpipe/config/4amp.insert.bed"
+  primers_bedfile: "/home/hazaihiv/Analyses/RESULTS/test/vpipe/config/4amp.primer.bed"
+  primers_file: "/home/hazaihiv/Analyses/RESULTS/test/vpipe/config/4amp.primer.tsv"
+  primers_fasta: "/home/hazaihiv/Analyses/RESULTS/test/vpipe/config/4amp.primer.fasta"
