@@ -1,0 +1,67 @@
+Assembly	shiver_genome	smaltalign_genome	viralngs_genome	vpipe_genome
+# contigs (>= 0 bp)	1	1	1	1
+# contigs (>= 1000 bp)	1	1	1	1
+# contigs (>= 5000 bp)	1	1	1	1
+# contigs (>= 10000 bp)	0	0	0	0
+# contigs (>= 25000 bp)	0	0	0	0
+# contigs (>= 50000 bp)	0	0	0	0
+Total length (>= 0 bp)	8684	8635	5280	8624
+Total length (>= 1000 bp)	8684	8635	5280	8624
+Total length (>= 5000 bp)	8684	8635	5280	8624
+Total length (>= 10000 bp)	0	0	0	0
+Total length (>= 25000 bp)	0	0	0	0
+Total length (>= 50000 bp)	0	0	0	0
+# contigs	1	1	1	1
+Largest contig	8684	8635	5280	8624
+Total length	8684	8635	5280	8624
+Reference length	8713	8713	8713	8713
+GC (%)	40.48	41.15	40.18	41.19
+Reference GC (%)	40.40	40.40	40.40	40.40
+N50	8684	8635	5280	8624
+NG50	8684	8635	5280	8624
+N90	8684	8635	5280	8624
+NG90	8684	8635	-	8624
+auN	8684.0	8635.0	5280.0	8624.0
+auNG	8655.1	8557.7	3199.6	8535.9
+L50	1	1	1	1
+LG50	1	1	1	1
+L90	1	1	1	1
+LG90	1	1	-	1
+# total reads	16855	17234	17274	18175
+# left	9500	9500	9500	9500
+# right	9500	9500	9500	9500
+Mapped (%)	106.35	55.69	47.2	16.98
+Reference mapped (%)	106.3	106.3	106.3	106.3
+Properly paired (%)	101.9	41.74	30.35	6.15
+Reference properly paired (%)	101.86	101.86	101.86	101.86
+Avg. coverage depth	513	272	377	84
+Reference avg. coverage depth	513	513	513	513
+Coverage >= 1x (%)	100.0	57.66	77.82	53.51
+Reference coverage >= 1x (%)	100.0	100.0	100.0	100.0
+# misassemblies	0	0	0	0
+# misassembled contigs	0	0	0	0
+Misassembled contigs length	0	0	0	0
+# local misassemblies	0	4	0	0
+# scaffold gap ext. mis.	0	0	0	0
+# scaffold gap loc. mis.	0	0	3	0
+# structural variations	0	0	0	0
+# unaligned mis. contigs	0	0	0	1
+# unaligned contigs	0 + 0 part	0 + 1 part	0 + 0 part	0 + 1 part
+Unaligned length	0	3503	0	8005
+Genome fraction (%)	100.000	59.084	48.584	7.126
+Duplication ratio	1.000	1.000	0.999	1.000
+# N's per 100 kbp	0.00	0.00	21382.58	0.00
+# mismatches per 100 kbp	126.67	19.49	213.57	323.10
+# indels per 100 kbp	149.70	77.94	118.65	0.00
+Largest alignment	8684	5132	4214	413
+Total aligned length	8684	5132	4214	619
+NA50	8684	5132	4214	-
+NGA50	8684	5132	-	-
+NA90	8684	-	-	-
+NGA90	8684	-	-	-
+auNA	8684.0	3050.1	3363.2	24.7
+auNGA	8655.1	3022.8	2038.1	24.4
+LA50	1	1	1	-
+LGA50	1	1	-	-
+LA90	1	-	-	-
+LGA90	1	-	-	-

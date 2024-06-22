@@ -1,0 +1,7 @@
+@HD	VN:1.6	SO:coordinate
+@SQ	SN:currsample-currdate	LN:8639
+@PG	ID:smalt	PN:smalt	CL:smalt map -x -y 0.7 -j 0 -i 2000 -o ./0400_vpipe/results/vpipe_final_mapping.sam ./0400_vpipe/results/vpipe_consensus ./0020_procreads/HIV1_CON_A1_simref_QSsim_R1_paired.fastq.gz ./0020_procreads/HIV1_CON_A1_simref_QSsim_R2_paired.fastq.gz	VN:0.7.6
+@PG	ID:samtools	PN:samtools	CL:samtools sort -o ./0400_vpipe/results/vpipe_final_mapping.bam ./0400_vpipe/results/vpipe_final_mapping.sam	PP:smalt	VN:1.13
+@PG	ID:samtools/1	PN:samtools	CL:samtools view -h vpipe_reads.bam	PP:samtools	VN:1.13
+@PG	ID:samtools.1	PN:samtools	CL:samtools view -bS	PP:samtools/1	VN:1.13
+@CO	samgrep. compilation:20230725090429 githash:5563e3b47 htsjdk:3.0.4 date:20231002214304. cmd:-f names.txt vpipe_reads_m.bam

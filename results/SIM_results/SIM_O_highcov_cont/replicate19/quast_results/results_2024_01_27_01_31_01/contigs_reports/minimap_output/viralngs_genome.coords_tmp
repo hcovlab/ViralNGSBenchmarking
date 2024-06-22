@@ -1,0 +1,5 @@
+None	5293	2914	4317	+	EMBOSS_001	8707	2916	4319	1401	1403	60	NM:i:2	ms:i:1391	AS:i:1391	nn:i:0	tp:A:P	cm:i:136	s1:i:1342	s2:i:0	de:f:0.0014	zd:i:3	rl:i:0	cg:Z:1403M	cs:Z::48*ca:1171*ga:182
+None	5293	1556	2756	+	EMBOSS_001	8707	1553	2759	1198	1200	60	NM:i:8	ms:i:1178	AS:i:1172	nn:i:6	tp:A:P	cm:i:112	s1:i:1106	s2:i:0	de:f:0.0025	zd:i:3	rl:i:0	cg:Z:74M6D1126M	cs:Z::74-nnnnnn:242*tc:564*ag:318
+None	5293	615	1325	+	EMBOSS_001	8707	621	1331	705	710	60	NM:i:5	ms:i:680	AS:i:680	nn:i:0	tp:A:P	cm:i:60	s1:i:592	s2:i:0	de:f:0.0070	zd:i:3	rl:i:0	cg:Z:710M	cs:Z::149*ca:223*ga:9*ga:138*ga:123*ag:63
+None	5293	4668	5293	+	EMBOSS_001	8707	4670	5295	624	625	60	NM:i:1	ms:i:619	AS:i:619	nn:i:0	tp:A:P	cm:i:63	s1:i:622	s2:i:0	de:f:0.0016	zd:i:2	rl:i:0	cg:Z:625M	cs:Z::606*ct:18
+None	5293	0	144	+	EMBOSS_001	8707	0	144	143	144	60	NM:i:1	ms:i:138	AS:i:138	nn:i:0	tp:A:P	cm:i:10	s1:i:99	s2:i:0	de:f:0.0069	zd:i:1	rl:i:0	cg:Z:144M	cs:Z::135*ta:8

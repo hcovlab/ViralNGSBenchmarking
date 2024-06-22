@@ -1,0 +1,45 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [EMBOSS_001]
+	Total Regions: 1
+	Total Region Length: 8624
+Analyzing contigs...
+CONTIG: unknown_unknown_unknown_unknown_K03455.1_0_0_0_0 (8603bp)
+Best alignment score: 8597.0 (LEN: 8603, IDY: 99.93), Total number of alignments: 1
+		One align captures most of this contig: 1 8624 | 1 8603 | 8624 8603 | 99.93 | EMBOSS_001 unknown_unknown_unknown_unknown_K03455.1_0_0_0_0
+
+Analyzing coverage...
+Writing SNPs into /data/quast_results/results_2023_10_05_21_13_31/contigs_reports/minimap_output/smaltalign_genome.used_snps.gz
+
+Analysis is finished!
+Founded SNPs were written into /data/quast_results/results_2023_10_05_21_13_31/contigs_reports/minimap_output/smaltalign_genome.used_snps.gz
+
+Results:
+	Local Misassemblies: 0
+	Misassemblies: 0
+		Relocations: 0
+		Translocations: 0
+		Inversions: 0
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 0
+	Misassembled Contigs: 0
+	Misassembled Contig Bases: 0
+	Misassemblies Inter-Contig Overlap: 0
+Unaligned Contigs: 0 + 0 part
+Half Unaligned Contigs with Misassemblies: 0
+Unaligned Contig Bases: 0
+
+Ambiguously Mapped Contigs: 0
+Total Bases in Ambiguously Mapped Contigs: 0
+Extra Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used.
+
+	Covered Bases: 8601
+
+	SNPs: 6
+	Insertions: 0
+	Deletions: 21
+

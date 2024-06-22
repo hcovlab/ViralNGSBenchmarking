@@ -1,0 +1,10 @@
+[M::mm_idx_gen::0.024*0.22] collected minimizers
+[M::mm_idx_gen::0.024*0.23] sorted minimizers
+[M::main::0.024*0.23] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.025*0.24] mid_occ = 200
+[M::mm_idx_stat] kmer size: 19; skip: 19; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.025*0.24] distinct minimizers: 848 (100.00% are singletons); average occurrences: 1.000; average spacing: 10.177
+[M::worker_pipeline::0.027*0.30] mapped 1 sequences
+[M::main] Version: 2.11-r797
+[M::main] CMD: /usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/minimap2/minimap2 -c -x asm5 -B5 -O4,16 --no-long-join -r 85 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 --cs -t 1 /data/quast_results/results_2023_10_05_08_40_09/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta /data/quast_results/results_2023_10_05_08_40_09/quast_corrected_input/shiver_genome.fasta
+[M::main] Real time: 0.029 sec; CPU: 0.009 sec

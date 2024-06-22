@@ -1,0 +1,8 @@
+All statistics are based on contigs of size >= 100 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                       shiver_genome  smaltalign_genome  viralngs_genome  vpipe_genome
+# fully unaligned contigs      0              0                  0                0           
+Fully unaligned length         0              0                  0                0           
+# partially unaligned contigs  0              0                  0                0           
+Partially unaligned length     0              0                  0                0           
+# N's                          0              0                  2330             0           

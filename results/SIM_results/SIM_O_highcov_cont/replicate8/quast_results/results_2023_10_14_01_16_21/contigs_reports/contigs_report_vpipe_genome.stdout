@@ -1,0 +1,53 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [EMBOSS_001]
+	Total Regions: 1
+	Total Region Length: 8742
+Analyzing contigs...
+CONTIG: currsample_currdate (8625bp)
+Best alignment score: 703.0 (LEN: 733, IDY: 95.91), Total number of alignments: 3
+			Looking for the best set of alignments (out of 3 total alignments)
+			The best set is below. Score: 1116.0, number of alignments: 3, unaligned bases: 7469
+		This contig is misassembled.
+		This contig is partially unaligned. (Aligned 1156 out of 8625 non-N bases (13.40%))
+			Warning! This contig is more unaligned than misassembled. Contig length is 8625 (number of Ns: 0) and total length of all aligns is 1156
+		Alignment: 868 1076 | 859 1067 | 209 209 | 100.0 | EMBOSS_001 currsample_currdate
+		Alignment: 2141 2354 | 2126 2339 | 214 214 | 95.33 | EMBOSS_001 currsample_currdate
+		Alignment: 3578 4310 | 3563 4295 | 733 733 | 95.91 | EMBOSS_001 currsample_currdate
+		Unaligned bases: 7469
+
+Analyzing coverage...
+Writing SNPs into /data/quast_results/results_2023_10_14_01_16_21/contigs_reports/minimap_output/vpipe_genome.used_snps.gz
+
+Analysis is finished!
+Founded SNPs were written into /data/quast_results/results_2023_10_14_01_16_21/contigs_reports/minimap_output/vpipe_genome.used_snps.gz
+
+Results:
+	Local Misassemblies: 0
+	Misassemblies: 0
+		Relocations: 0
+		Translocations: 0
+		Inversions: 0
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 0
+	Misassembled Contigs: 0
+	Misassembled Contig Bases: 0
+	Misassemblies Inter-Contig Overlap: 0
+Unaligned Contigs: 0 + 1 part
+Half Unaligned Contigs with Misassemblies: 1
+Unaligned Contig Bases: 7469
+
+Ambiguously Mapped Contigs: 0
+Total Bases in Ambiguously Mapped Contigs: 0
+Extra Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used.
+
+	Covered Bases: 1156
+
+	SNPs: 38
+	Insertions: 1
+	Deletions: 1
+

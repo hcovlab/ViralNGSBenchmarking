@@ -1,0 +1,328 @@
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/EGG-INFO/scripts/quast.py shiver_genome.fasta smaltalign_genome.fasta viralngs_genome.fasta vpipe_genome.fasta --reference HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.fasta --pe1 HIV1_CON_A1_simref_QSsim_R1_paired_m.fastq --pe2 HIV1_CON_A1_simref_QSsim_R2_paired_m.fastq --bam shiver_reads_m.bam,smaltalign_reads_m.bam,viralngs_reads_m.bam,vpipe_reads_m.bam --ref-bam HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.bam
+
+Version: 5.0.2
+
+System information:
+  OS: Linux-5.15.49-linuxkit-x86_64-with-Ubuntu-16.04-xenial (linux_64)
+  Python version: 2.7.12
+  CPUs number: 4
+
+Started: 2023-10-03 05:24:48
+
+Logging to /data/quast_results/results_2023_10_03_05_24_48/quast.log
+NOTICE: Maximum number of threads is set to 1 (use --threads option to set it manually)
+
+CWD: /data
+Main parameters: 
+  MODE: default, threads: 1, minimum contig length: 500, minimum alignment length: 65, \
+  ambiguity: one, threshold for extensive misassembly size: 1000
+
+Reference:
+  /data/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.fasta ==> HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed
+
+Contigs:
+  Pre-processing...
+  1  shiver_genome.fasta ==> shiver_genome
+  2  smaltalign_genome.fasta ==> smaltalign_genome
+  3  viralngs_genome.fasta ==> viralngs_genome
+  4  vpipe_genome.fasta ==> vpipe_genome
+
+2023-10-03 05:24:49
+Running Reads analyzer...
+Downloading gridss (file: gridss-1.4.1.jar)...
+gridss successfully downloaded!
+  Logging to files /data/quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.log and /data/quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err...
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/sambamba/sambamba_linux \
+view -H -S shiver_reads_m.sam > quast_results/results_2023_10_03_05_24_48/reads_stats/shiver_reads_m.sam.header \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/sambamba/sambamba_linux \
+flagstat -t 1 shiver_reads_m.bam > quast_results/results_2023_10_03_05_24_48/reads_stats/shiver_genome.stat \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/bedtools/bin/bamToBed \
+-i shiver_reads_m.bam > quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/shiver_genome.bed \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+sort -k1,1 -k2,2n quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/shiver_genome.bed \
+> quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/shiver_genome.sorted.bed \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/bedtools/bin/bedtools \
+genomecov -i quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/shiver_genome.sorted.bed \
+-g quast_results/results_2023_10_03_05_24_48/quast_corrected_input/shiver_genome.fasta.fai \
+> quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/shiver_genome.genomecov \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/sambamba/sambamba_linux \
+view -H -S smaltalign_reads_m.sam > quast_results/results_2023_10_03_05_24_48/reads_stats/smaltalign_reads_m.sam.header \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/sambamba/sambamba_linux \
+flagstat -t 1 smaltalign_reads_m.bam > quast_results/results_2023_10_03_05_24_48/reads_stats/smaltalign_genome.stat \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/bedtools/bin/bamToBed \
+-i smaltalign_reads_m.bam > quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/smaltalign_genome.bed \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+sort -k1,1 -k2,2n quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/smaltalign_genome.bed \
+> quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/smaltalign_genome.sorted.bed \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/bedtools/bin/bedtools \
+genomecov -i quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/smaltalign_genome.sorted.bed \
+-g quast_results/results_2023_10_03_05_24_48/quast_corrected_input/smaltalign_genome.fasta.fai \
+> quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/smaltalign_genome.genomecov \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/sambamba/sambamba_linux \
+view -H -S viralngs_reads_m.sam > quast_results/results_2023_10_03_05_24_48/reads_stats/viralngs_reads_m.sam.header \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/sambamba/sambamba_linux \
+flagstat -t 1 viralngs_reads_m.bam > quast_results/results_2023_10_03_05_24_48/reads_stats/viralngs_genome.stat \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/bedtools/bin/bamToBed \
+-i viralngs_reads_m.bam > quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/viralngs_genome.bed \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+sort -k1,1 -k2,2n quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/viralngs_genome.bed \
+> quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/viralngs_genome.sorted.bed \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/bedtools/bin/bedtools \
+genomecov -i quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/viralngs_genome.sorted.bed \
+-g quast_results/results_2023_10_03_05_24_48/quast_corrected_input/viralngs_genome.fasta.fai \
+> quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/viralngs_genome.genomecov \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/sambamba/sambamba_linux \
+view -H -S vpipe_reads_m.sam > quast_results/results_2023_10_03_05_24_48/reads_stats/vpipe_reads_m.sam.header \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/sambamba/sambamba_linux \
+flagstat -t 1 vpipe_reads_m.bam > quast_results/results_2023_10_03_05_24_48/reads_stats/vpipe_genome.stat \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/bedtools/bin/bamToBed \
+-i vpipe_reads_m.bam > quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/vpipe_genome.bed \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+sort -k1,1 -k2,2n quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/vpipe_genome.bed \
+> quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/vpipe_genome.sorted.bed \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/bedtools/bin/bedtools \
+genomecov -i quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/vpipe_genome.sorted.bed \
+-g quast_results/results_2023_10_03_05_24_48/quast_corrected_input/vpipe_genome.fasta.fai \
+> quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/vpipe_genome.genomecov \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/sambamba/sambamba_linux \
+view -H -S HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.sam \
+> quast_results/results_2023_10_03_05_24_48/reads_stats/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.sam.header \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+  Pre-processing reads...
+  Using existing SAM-file: /data/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.sam
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/sambamba/sambamba_linux \
+view -H -S HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.sam \
+> quast_results/results_2023_10_03_05_24_48/reads_stats/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.sam.header \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+  Sorting SAM-file for reference...
+  Using existing BAM-file: /data/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.bam
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/sambamba/sambamba_linux \
+flagstat -t 1 HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.bam \
+> quast_results/results_2023_10_03_05_24_48/reads_stats/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.stat \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/bedtools/bin/bamToBed \
+-i HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.bam \
+> quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.bed \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+sort -k1,1 -k2,2n quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.bed \
+> quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.sorted.bed \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/bedtools/bin/bedtools \
+genomecov -i quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.sorted.bed \
+-g quast_results/results_2023_10_03_05_24_48/quast_corrected_input/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.fasta.fai \
+> quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.genomecov \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+  Analysis for reference is finished.
+  Creating total report...
+    saved to /data/quast_results/results_2023_10_03_05_24_48/reads_stats/reads_report.txt, reads_report.tsv, and reads_report.tex
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/sambamba/sambamba_linux \
+view -t 1 -h -f bam -F not unmapped HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.bam \
+> quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.bam \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/sambamba/sambamba_linux \
+sort -t 1 --tmpdir quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output \
+-m 2GB -o quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam \
+quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.bam \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/sambamba/sambamba_linux \
+view -t 1 -h quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam \
+> quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.sorted.sam \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+  Calculating reads coverage...
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/bedtools/bin/bedtools \
+genomecov -ibam quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam \
+-g quast_results/results_2023_10_03_05_24_48/quast_corrected_input/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.fasta.fai \
+-bga > quast_results/results_2023_10_03_05_24_48/reads_stats/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.cov_raw \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+  Calculating physical coverage...
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/sambamba/sambamba_linux \
+view -t 1 -h -f bam -F proper_pair and not supplementary and not duplicate and template_length > -1000 and template_length < 1000 \
+HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.bam \
+> quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.physical.bam \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/sambamba/sambamba_linux \
+sort -t 1 --tmpdir quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output \
+-m 2GB -o quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.physical.sorted.bam \
+quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.physical.bam \
+-n 2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/bedtools/bin/bamToBed \
+-i quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.physical.sorted.bam \
+-bedpe > quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.physical.bedpe \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+sort -k1,1 -k2,2n quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.physical.bed \
+> quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.physical.sorted.bed \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+/usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/bedtools/bin/bedtools \
+genomecov -i quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.physical.sorted.bed \
+-g quast_results/results_2023_10_03_05_24_48/quast_corrected_input/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.fasta.fai \
+-bga > quast_results/results_2023_10_03_05_24_48/reads_stats/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.physical.raw.cov \
+2>> quast_results/results_2023_10_03_05_24_48/reads_stats/reads_stats.err
+  Looking for trivial deletions (long zero-covered fragments)...
+  Trivial deletions: 0 found
+    Saving to: /data/quast_results/results_2023_10_03_05_24_48/reads_stats/temp_output/trivial_deletions.bed
+  Searching structural variations with GRIDSS...
+WARNING: Java 1.8 (Java version 8) or later is required to run GRIDSS. Please install it and rerun QUAST.
+  No structural variations were found.
+  Coverage distribution along the reference genome is in /data/quast_results/results_2023_10_03_05_24_48/reads_stats/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.cov
+Done.
+
+2023-10-03 05:24:56
+Running Basic statistics processor...
+  Reference genome:
+    HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.fasta, length = 8658, num fragments = 1, GC % = 40.63
+  Contig files: 
+    1  shiver_genome
+    2  smaltalign_genome
+    3  viralngs_genome
+    4  vpipe_genome
+  Calculating N50 and L50...
+    1  shiver_genome, N50 = 8631, L50 = 1, Total length = 8631, GC % = 40.61, # N's per 100 kbp =  0.00
+    2  smaltalign_genome, N50 = 8635, L50 = 1, Total length = 8635, GC % = 40.59, # N's per 100 kbp =  0.00
+    3  viralngs_genome, N50 = 8366, L50 = 1, Total length = 8366, GC % = 39.87, # N's per 100 kbp =  20666.99
+    4  vpipe_genome, N50 = 8615, L50 = 1, Total length = 8615, GC % = 40.87, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /data/quast_results/results_2023_10_03_05_24_48/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /data/quast_results/results_2023_10_03_05_24_48/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /data/quast_results/results_2023_10_03_05_24_48/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /data/quast_results/results_2023_10_03_05_24_48/basic_stats/GC_content_plot.pdf
+  Drawing shiver_genome GC content plot...
+    saved to /data/quast_results/results_2023_10_03_05_24_48/basic_stats/shiver_genome_GC_content_plot.pdf
+  Drawing smaltalign_genome GC content plot...
+    saved to /data/quast_results/results_2023_10_03_05_24_48/basic_stats/smaltalign_genome_GC_content_plot.pdf
+  Drawing viralngs_genome GC content plot...
+    saved to /data/quast_results/results_2023_10_03_05_24_48/basic_stats/viralngs_genome_GC_content_plot.pdf
+  Drawing vpipe_genome GC content plot...
+    saved to /data/quast_results/results_2023_10_03_05_24_48/basic_stats/vpipe_genome_GC_content_plot.pdf
+Done.
+
+2023-10-03 05:24:57
+Running Contig analyzer...
+  1  shiver_genome
+  1  Logging to files /data/quast_results/results_2023_10_03_05_24_48/contigs_reports/contigs_report_shiver_genome.stdout and contigs_report_shiver_genome.stderr...
+  1  Aligning contigs to the reference
+  1  /usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/minimap2/minimap2 \
+     -c -x asm5 -B5 -O4,16 --no-long-join -r 85 -N 50 -s 65 -z 200 --mask-level 0.9 \
+     --min-occ 200 -g 2500 --score-N 2 --cs -t 1 quast_results/results_2023_10_03_05_24_48/quast_corrected_input/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.fasta \
+     quast_results/results_2023_10_03_05_24_48/quast_corrected_input/shiver_genome.fasta \
+     > quast_results/results_2023_10_03_05_24_48/contigs_reports/minimap_output/shiver_genome.coords_tmp \
+     2>> quast_results/results_2023_10_03_05_24_48/contigs_reports/contigs_report_shiver_genome.stderr
+  1  Analysis is finished.
+
+  2  smaltalign_genome
+  2  Logging to files /data/quast_results/results_2023_10_03_05_24_48/contigs_reports/contigs_report_smaltalign_genome.stdout and contigs_report_smaltalign_genome.stderr...
+  2  Aligning contigs to the reference
+  2  /usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/minimap2/minimap2 \
+     -c -x asm5 -B5 -O4,16 --no-long-join -r 85 -N 50 -s 65 -z 200 --mask-level 0.9 \
+     --min-occ 200 -g 2500 --score-N 2 --cs -t 1 quast_results/results_2023_10_03_05_24_48/quast_corrected_input/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.fasta \
+     quast_results/results_2023_10_03_05_24_48/quast_corrected_input/smaltalign_genome.fasta \
+     > quast_results/results_2023_10_03_05_24_48/contigs_reports/minimap_output/smaltalign_genome.coords_tmp \
+     2>> quast_results/results_2023_10_03_05_24_48/contigs_reports/contigs_report_smaltalign_genome.stderr
+  2  Analysis is finished.
+
+  3  viralngs_genome
+  3  Logging to files /data/quast_results/results_2023_10_03_05_24_48/contigs_reports/contigs_report_viralngs_genome.stdout and contigs_report_viralngs_genome.stderr...
+  3  Aligning contigs to the reference
+  3  /usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/minimap2/minimap2 \
+     -c -x asm5 -B5 -O4,16 --no-long-join -r 85 -N 50 -s 65 -z 200 --mask-level 0.9 \
+     --min-occ 200 -g 2500 --score-N 2 --cs -t 1 quast_results/results_2023_10_03_05_24_48/quast_corrected_input/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.fasta \
+     quast_results/results_2023_10_03_05_24_48/quast_corrected_input/viralngs_genome.fasta \
+     > quast_results/results_2023_10_03_05_24_48/contigs_reports/minimap_output/viralngs_genome.coords_tmp \
+     2>> quast_results/results_2023_10_03_05_24_48/contigs_reports/contigs_report_viralngs_genome.stderr
+  3  Analysis is finished.
+
+  4  vpipe_genome
+  4  Logging to files /data/quast_results/results_2023_10_03_05_24_48/contigs_reports/contigs_report_vpipe_genome.stdout and contigs_report_vpipe_genome.stderr...
+  4  Aligning contigs to the reference
+  4  /usr/local/lib/python2.7/dist-packages/quast-5.0.2-py2.7.egg/quast_libs/minimap2/minimap2 \
+     -c -x asm5 -B5 -O4,16 --no-long-join -r 85 -N 50 -s 65 -z 200 --mask-level 0.9 \
+     --min-occ 200 -g 2500 --score-N 2 --cs -t 1 quast_results/results_2023_10_03_05_24_48/quast_corrected_input/HIV1_CON_A1_simref_QSsim_aligned_consensus_fixed.fasta \
+     quast_results/results_2023_10_03_05_24_48/quast_corrected_input/vpipe_genome.fasta \
+     > quast_results/results_2023_10_03_05_24_48/contigs_reports/minimap_output/vpipe_genome.coords_tmp \
+     2>> quast_results/results_2023_10_03_05_24_48/contigs_reports/contigs_report_vpipe_genome.stderr
+  4  Analysis is finished.
+
+  Creating total report...
+    saved to /data/quast_results/results_2023_10_03_05_24_48/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /data/quast_results/results_2023_10_03_05_24_48/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /data/quast_results/results_2023_10_03_05_24_48/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /data/quast_results/results_2023_10_03_05_24_48/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /data/quast_results/results_2023_10_03_05_24_48/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2023-10-03 05:24:58
+Running NA-NGA calculation...
+  1  shiver_genome, Largest alignment = 8631, NA50 = 8631, NGA50 = 8631, LA50 = 1, LGA50 = 1
+  2  smaltalign_genome, Largest alignment = 8614, NA50 = 8614, NGA50 = 8614, LA50 = 1, LGA50 = 1
+  3  viralngs_genome, Largest alignment = 6757, NA50 = 6757, NGA50 = 6757, LA50 = 1, LGA50 = 1
+  4  vpipe_genome, Largest alignment = 7518, NA50 = 7518, NGA50 = 7518, LA50 = 1, LGA50 = 1
+  Drawing cumulative plot...
+    saved to /data/quast_results/results_2023_10_03_05_24_48/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /data/quast_results/results_2023_10_03_05_24_48/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /data/quast_results/results_2023_10_03_05_24_48/aligned_stats/NGAx_plot.pdf
+Done.
+
+2023-10-03 05:24:58
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  1  shiver_genome
+  1  Analysis is finished.
+  2  smaltalign_genome
+  2  Analysis is finished.
+  3  viralngs_genome
+  3  Analysis is finished.
+  4  vpipe_genome
+  4  Analysis is finished.
+  Drawing Genome fraction, % histogram...
+    saved to /data/quast_results/results_2023_10_03_05_24_48/genome_stats/genome_fraction_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2023-10-03 05:24:58
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2023-10-03 05:25:00
+RESULTS:
+  Text versions of total report are saved to /data/quast_results/results_2023_10_03_05_24_48/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /data/quast_results/results_2023_10_03_05_24_48/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /data/quast_results/results_2023_10_03_05_24_48/report.html
+  PDF version (tables and plots) is saved to /data/quast_results/results_2023_10_03_05_24_48/report.pdf
+  Icarus (contig browser) is saved to /data/quast_results/results_2023_10_03_05_24_48/icarus.html
+  Log is saved to /data/quast_results/results_2023_10_03_05_24_48/quast.log
+
+Finished: 2023-10-03 05:25:00
+Elapsed time: 0:00:12.138136
+NOTICEs: 4; WARNINGs: 1; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

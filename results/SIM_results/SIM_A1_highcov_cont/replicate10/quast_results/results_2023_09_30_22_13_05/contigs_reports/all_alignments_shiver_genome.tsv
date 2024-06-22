@@ -1,0 +1,3 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+1	8668	1	8638	EMBOSS_001	shiver_result_ConsensusRound1_GapsFilled	99.95		True
+CONTIG	shiver_result_ConsensusRound1_GapsFilled	8638	correct

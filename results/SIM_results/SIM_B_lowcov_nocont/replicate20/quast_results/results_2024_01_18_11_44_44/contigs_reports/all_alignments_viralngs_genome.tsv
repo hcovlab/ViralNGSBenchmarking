@@ -1,0 +1,8 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+5064	5763	4811	5507	EMBOSS_001	None	99.85		True
+unknown
+5899	6346	5643	6090	EMBOSS_001	None	97.53		True
+unknown
+6688	8635	6432	8361	EMBOSS_001	None	96.6		True
+unknown
+CONTIG	None	8361	mis_unaligned

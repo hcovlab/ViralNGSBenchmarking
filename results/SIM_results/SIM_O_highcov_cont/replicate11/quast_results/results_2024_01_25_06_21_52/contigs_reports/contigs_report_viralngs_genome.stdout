@@ -1,0 +1,59 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [EMBOSS_001]
+	Total Regions: 1
+	Total Region Length: 8692
+Analyzing contigs...
+CONTIG: None (7163bp)
+Best alignment score: 3670.1 (LEN: 3683, IDY: 99.65), Total number of alignments: 5
+			Looking for the best set of alignments (out of 5 total alignments)
+			The best set is below. Score: 5453.1, number of alignments: 5, unaligned bases: 1675
+		This contig is misassembled.
+			Real Alignment 1: 1 144 | 1 144 | 144 144 | 100.0 | EMBOSS_001 None
+			  Scaffold gap between these two alignments, gap lengths difference (reference vs assembly) = -6 (local)
+			Real Alignment 2: 382 1394 | 388 1397 | 1013 1010 | 99.9 | EMBOSS_001 None
+			  Scaffold gap between these two alignments, gap lengths difference (reference vs assembly) = -12 (local)
+			Real Alignment 3: 1543 5231 | 1558 5240 | 3689 3683 | 99.65 | EMBOSS_001 None
+			  Scaffold gap between these two alignments, gap lengths difference (reference vs assembly) = -3 (local)
+			Real Alignment 4: 5556 5804 | 5568 5816 | 249 249 | 100.0 | EMBOSS_001 None
+			  Scaffold gap between these two alignments, gap lengths difference (reference vs assembly) = 0 (local)
+			Real Alignment 5: 6750 7151 | 6762 7163 | 402 402 | 99.75 | EMBOSS_001 None
+
+Analyzing coverage...
+Writing SNPs into /data/quast_results/results_2024_01_25_06_21_52/contigs_reports/minimap_output/viralngs_genome.used_snps
+
+Analysis is finished!
+Founded SNPs were written into /data/quast_results/results_2024_01_25_06_21_52/contigs_reports/minimap_output/viralngs_genome.used_snps
+
+Results:
+	Local Misassemblies: 0
+	Misassemblies: 0
+		Relocations: 0
+		Translocations: 0
+		Inversions: 0
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 4
+	Fake misassemblies matched with structural variations: 0
+	Misassembled Contigs: 0
+	Misassembled Contig Bases: 0
+	Misassemblies Inter-Contig Overlap ("Extra" Aligned Bases): 0
+Unaligned Contigs: 0 + 0 part
+Half Unaligned Contigs with Misassemblies: 0
+Unaligned Bases in Fully and Partially Unaligned Contigs: 0
+
+Ambiguously Mapped Contigs: 0
+Total Bases in Ambiguously Mapped Contigs: 0
+"Extra" Aligned Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used (there is no "extra" aligned bases).
+
+	Covered Bases in Reference: 5494
+	Raw Aligned Bases in Assembly: 5488
+	Total Aligned Bases in Assembly (with "Extras"): 5488
+
+	SNPs: 9
+	Insertions: 0
+	Deletions: 9
+

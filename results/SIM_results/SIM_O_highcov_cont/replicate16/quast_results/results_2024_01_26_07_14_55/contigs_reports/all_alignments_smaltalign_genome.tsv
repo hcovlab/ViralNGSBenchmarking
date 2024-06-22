@@ -1,0 +1,13 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+7	164	4	161	EMBOSS_001	unknown_unknown_unknown_unknown_K03455.1_0_0_0_0	100.0		True
+local misassembly
+382	1098	385	1095	EMBOSS_001	unknown_unknown_unknown_unknown_K03455.1_0_0_0_0	99.86		True
+local misassembly
+1456	5242	1444	5212	EMBOSS_001	unknown_unknown_unknown_unknown_K03455.1_0_0_0_0	99.76		True
+local misassembly
+5579	5829	5555	5805	EMBOSS_001	unknown_unknown_unknown_unknown_K03455.1_0_0_0_0	99.6		True
+local misassembly
+7442	7713	7400	7671	EMBOSS_001	unknown_unknown_unknown_unknown_K03455.1_0_0_0_0	99.63		True
+local misassembly
+8281	8542	8206	8461	EMBOSS_001	unknown_unknown_unknown_unknown_K03455.1_0_0_0_0	100.0		True
+CONTIG	unknown_unknown_unknown_unknown_K03455.1_0_0_0_0	8635	correct

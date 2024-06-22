@@ -1,0 +1,69 @@
+All statistics are based on contigs of size >= 100 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                       shiver_genome  smaltalign_genome  viralngs_genome  vpipe_genome
+# contigs (>= 0 bp)            1              1                  1                1           
+# contigs (>= 1000 bp)         1              1                  1                1           
+# contigs (>= 5000 bp)         1              1                  1                1           
+# contigs (>= 10000 bp)        0              0                  0                0           
+# contigs (>= 25000 bp)        0              0                  0                0           
+# contigs (>= 50000 bp)        0              0                  0                0           
+Total length (>= 0 bp)         8595           8574               8595             8640        
+Total length (>= 1000 bp)      8595           8574               8595             8640        
+Total length (>= 5000 bp)      8595           8574               8595             8640        
+Total length (>= 10000 bp)     0              0                  0                0           
+Total length (>= 25000 bp)     0              0                  0                0           
+Total length (>= 50000 bp)     0              0                  0                0           
+# contigs                      1              1                  1                1           
+Largest contig                 8595           8574               8595             8640        
+Total length                   8595           8574               8595             8640        
+Reference length               8604           8604               8604             8604        
+GC (%)                         40.43          40.40              40.43            40.76       
+Reference GC (%)               40.43          40.43              40.43            40.43       
+N50                            8595           8574               8595             8640        
+NG50                           8595           8574               8595             8640        
+N90                            8595           8574               8595             8640        
+NG90                           8595           8574               8595             8640        
+auN                            8595.0         8574.0             8595.0           8640.0      
+auNG                           8586.0         8544.1             8586.0           8676.2      
+L50                            1              1                  1                1           
+LG50                           1              1                  1                1           
+L90                            1              1                  1                1           
+LG90                           1              1                  1                1           
+# total reads                  84665          85551              84665            91068       
+# left                         175000         175000             175000           175000      
+# right                        175000         175000             175000           175000      
+Mapped (%)                     408.11         402.22             408.11           367.39      
+Reference mapped (%)           407.63         407.63             407.63           407.63      
+Properly paired (%)            402.83         395.33             402.83           351.89      
+Reference properly paired (%)  402.35         402.35             402.35           402.35      
+Avg. coverage depth            10032          9978               10032            9605        
+Reference avg. coverage depth  10030          10030              10030            10030       
+Coverage >= 1x (%)             100.0          100.0              100.0            100.0       
+Reference coverage >= 1x (%)   100.0          100.0              100.0            100.0       
+# misassemblies                0              0                  0                0           
+# misassembled contigs         0              0                  0                0           
+Misassembled contigs length    0              0                  0                0           
+# local misassemblies          0              0                  0                0           
+# scaffold gap ext. mis.       0              0                  0                0           
+# scaffold gap loc. mis.       0              0                  0                0           
+# structural variations        0              0                  0                0           
+# unaligned mis. contigs       0              0                  0                0           
+# unaligned contigs            0 + 0 part     0 + 0 part         0 + 0 part       0 + 0 part  
+Unaligned length               0              0                  0                0           
+Genome fraction (%)            100.000        99.453             100.000          98.394      
+Duplication ratio              1.000          0.998              1.000            1.005       
+# N's per 100 kbp              0.00           0.00               0.00             0.00        
+# mismatches per 100 kbp       0.00           35.18              0.00             599.86      
+# indels per 100 kbp           34.90          46.91              34.90            270.52      
+Largest alignment              8595           8527               8595             8502        
+Total aligned length           8595           8527               8595             8502        
+NA50                           8595           8527               8595             8502        
+NGA50                          8595           8527               8595             8502        
+NA90                           8595           8527               8595             8502        
+NGA90                          8595           8527               8595             8502        
+auNA                           8595.0         8480.3             8595.0           8366.2      
+auNGA                          8586.0         8450.7             8586.0           8401.2      
+LA50                           1              1                  1                1           
+LGA50                          1              1                  1                1           
+LA90                           1              1                  1                1           
+LGA90                          1              1                  1                1           

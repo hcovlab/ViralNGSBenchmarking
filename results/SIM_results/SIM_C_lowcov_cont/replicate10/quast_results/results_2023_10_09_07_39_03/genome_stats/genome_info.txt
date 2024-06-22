@@ -1,0 +1,17 @@
+reference chromosomes:
+	EMBOSS_001 (total length: 8649 bp, total length without N's: 8595 bp, maximal covered length: 8595 bp)
+
+total genome size: 8649
+
+gap min size: 50
+partial gene/operon min size: 100
+
+
+
+assembly                 | genome    | duplication | gaps      | genes     | partial   | operons   | partial   |
+                         | fraction  | ratio       | number    |           | genes     |           | operons   |
+========================================================================================================================
+shiver_genome            | 100.000   | 1.002       | 0         | -         | -         | -         | -         |
+smaltalign_genome        | 99.314    | 1.004       | 1         | -         | -         | -         | -         |
+viralngs_genome          | 91.844    | 1.090       | 4         | -         | -         | -         | -         |
+vpipe_genome             | 99.314    | 1.006       | 1         | -         | -         | -         | -         |

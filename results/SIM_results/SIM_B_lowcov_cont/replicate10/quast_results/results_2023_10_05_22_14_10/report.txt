@@ -1,0 +1,64 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                       shiver_genome  smaltalign_genome  viralngs_genome  vpipe_genome
+# contigs (>= 0 bp)            1              1                  1                1           
+# contigs (>= 1000 bp)         1              1                  1                1           
+# contigs (>= 5000 bp)         1              1                  1                1           
+# contigs (>= 10000 bp)        0              0                  0                0           
+# contigs (>= 25000 bp)        0              0                  0                0           
+# contigs (>= 50000 bp)        0              0                  0                0           
+Total length (>= 0 bp)         8500           8606               8606             8603        
+Total length (>= 1000 bp)      8500           8606               8606             8603        
+Total length (>= 5000 bp)      8500           8606               8606             8603        
+Total length (>= 10000 bp)     0              0                  0                0           
+Total length (>= 25000 bp)     0              0                  0                0           
+Total length (>= 50000 bp)     0              0                  0                0           
+# contigs                      1              1                  1                1           
+Largest contig                 8500           8606               8606             8603        
+Total length                   8500           8606               8606             8603        
+Reference length               8633           8633               8633             8633        
+GC (%)                         -              40.53              39.82            40.46       
+Reference GC (%)               40.56          40.56              40.56            40.56       
+N50                            8500           8606               8606             8603        
+NG50                           8500           8606               8606             8603        
+N75                            8500           8606               8606             8603        
+NG75                           8500           8606               8606             8603        
+L50                            1              1                  1                1           
+LG50                           1              1                  1                1           
+L75                            1              1                  1                1           
+LG75                           1              1                  1                1           
+# total reads                  17600          17600              17600            17600       
+# left                         8800           8800               8800             8800        
+# right                        8800           8800               8800             8800        
+Mapped (%)                     0.0            99.53              54.84            99.55       
+Reference mapped (%)           99.56          99.56              99.56            99.56       
+Properly paired (%)            0.0            99.07              36.28            99.1        
+Reference properly paired (%)  99.11          99.11              99.11            99.11       
+Avg. coverage depth            0              507                271              507         
+Reference avg. coverage depth  507            507                507              507         
+Coverage >= 1x (%)             0.0            100.0              63.72            100.0       
+Reference coverage >= 1x (%)   100.0          100.0              100.0            100.0       
+# misassemblies                -              0                  0                0           
+# misassembled contigs         -              0                  0                0           
+Misassembled contigs length    -              0                  0                0           
+# local misassemblies          -              0                  0                0           
+# scaffold gap ext. mis.       -              0                  0                0           
+# scaffold gap loc. mis.       -              0                  7                0           
+# unaligned mis. contigs       -              0                  0                0           
+# unaligned contigs            1 + 0 part     0 + 0 part         0 + 0 part       0 + 0 part  
+Unaligned length               8500           0                  0                0           
+Genome fraction (%)            -              100.000            65.105           99.919      
+Duplication ratio              -              1.000              1.537            1.001       
+# N's per 100 kbp              100000.00      0.00               36300.26         0.00        
+# mismatches per 100 kbp       -              127.86             446.35           267.57      
+# indels per 100 kbp           -              104.61             89.27            127.97      
+Largest alignment              -              8606               5602             8593        
+Total aligned length           -              8606               5602             8593        
+NA50                           -              8606               5602             8593        
+NGA50                          -              8606               5602             8593        
+NA75                           -              8606               -                8593        
+NGA75                          -              8606               -                8593        
+LA50                           -              1                  1                1           
+LGA50                          -              1                  1                1           
+LA75                           -              1                  -                1           
+LGA75                          -              1                  -                1           

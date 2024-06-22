@@ -1,0 +1,5 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+1	5833	1	5817	EMBOSS_001	currsample_currdate	99.37		True
+local misassembly [linear representation of circular genome]
+6020	8623	6007	8619	EMBOSS_001	currsample_currdate	97.02		True
+CONTIG	currsample_currdate	8638	correct

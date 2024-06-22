@@ -1,0 +1,62 @@
+Assembly	shiver_genome	smaltalign_genome	viralngs_genome	vpipe_genome
+# contigs (>= 0 bp)	1	1	1	1
+# contigs (>= 1000 bp)	1	1	1	1
+# contigs (>= 5000 bp)	1	1	1	1
+# contigs (>= 10000 bp)	0	0	0	0
+# contigs (>= 25000 bp)	0	0	0	0
+# contigs (>= 50000 bp)	0	0	0	0
+Total length (>= 0 bp)	8609	8603	8615	8624
+Total length (>= 1000 bp)	8609	8603	8615	8624
+Total length (>= 5000 bp)	8609	8603	8615	8624
+Total length (>= 10000 bp)	0	0	0	0
+Total length (>= 25000 bp)	0	0	0	0
+Total length (>= 50000 bp)	0	0	0	0
+# contigs	1	1	1	1
+Largest contig	8609	8603	8615	8624
+Total length	8609	8603	8615	8624
+Reference length	8630	8630	8630	8630
+GC (%)	40.09	40.09	40.20	40.13
+Reference GC (%)	40.08	40.08	40.08	40.08
+N50	8609	8603	8615	8624
+NG50	8609	8603	8615	8624
+N75	8609	8603	8615	8624
+NG75	8609	8603	8615	8624
+L50	1	1	1	1
+LG50	1	1	1	1
+L75	1	1	1	1
+LG75	1	1	1	1
+# total reads	350000	350000	350000	350000
+# left	175000	175000	175000	175000
+# right	175000	175000	175000	175000
+Mapped (%)	99.53	99.53	93.32	99.53
+Reference mapped (%)	99.53	99.53	99.53	99.53
+Properly paired (%)	99.05	99.05	89.77	99.05
+Reference properly paired (%)	99.05	99.05	99.05	99.05
+Avg. coverage depth	10086	10089	9386	10087
+Reference avg. coverage depth	10086	10086	10086	10086
+Coverage >= 1x (%)	100.0	100.0	96.96	100.0
+Reference coverage >= 1x (%)	100.0	100.0	100.0	100.0
+# misassemblies	0	0	0	0
+# misassembled contigs	0	0	0	0
+Misassembled contigs length	0	0	0	0
+# local misassemblies	0	0	0	0
+# scaffold gap ext. mis.	0	0	0	0
+# scaffold gap loc. mis.	0	0	2	0
+# unaligned mis. contigs	0	0	0	0
+# unaligned contigs	0 + 0 part	0 + 0 part	0 + 0 part	0 + 0 part
+Unaligned length	0	0	0	0
+Genome fraction (%)	100.000	100.000	96.954	100.000
+Duplication ratio	1.001	1.000	1.033	1.003
+# N's per 100 kbp	0.00	0.00	3981.43	0.00
+# mismatches per 100 kbp	11.63	46.50	1966.43	11.63
+# indels per 100 kbp	116.25	104.63	59.95	23.25
+Largest alignment	8609	8603	8353	8624
+Total aligned length	8609	8603	8353	8624
+NA50	8609	8603	8353	8624
+NGA50	8609	8603	8353	8624
+NA75	8609	8603	8353	8624
+NGA75	8609	8603	8353	8624
+LA50	1	1	1	1
+LGA50	1	1	1	1
+LA75	1	1	1	1
+LGA75	1	1	1	1

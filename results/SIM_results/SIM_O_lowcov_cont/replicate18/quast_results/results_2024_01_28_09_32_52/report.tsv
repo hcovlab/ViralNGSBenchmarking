@@ -1,0 +1,67 @@
+Assembly	shiver_genome	smaltalign_genome	viralngs_genome	vpipe_genome
+# contigs (>= 0 bp)	1	1	1	1
+# contigs (>= 1000 bp)	1	1	1	1
+# contigs (>= 5000 bp)	1	1	1	1
+# contigs (>= 10000 bp)	0	0	0	0
+# contigs (>= 25000 bp)	0	0	0	0
+# contigs (>= 50000 bp)	0	0	0	0
+Total length (>= 0 bp)	8677	8638	8624	8624
+Total length (>= 1000 bp)	8677	8638	8624	8624
+Total length (>= 5000 bp)	8677	8638	8624	8624
+Total length (>= 10000 bp)	0	0	0	0
+Total length (>= 25000 bp)	0	0	0	0
+Total length (>= 50000 bp)	0	0	0	0
+# contigs	1	1	1	1
+Largest contig	8677	8638	8624	8624
+Total length	8677	8638	8624	8624
+Reference length	8719	8719	8719	8719
+GC (%)	40.53	41.31	-	41.27
+Reference GC (%)	40.36	40.36	40.36	40.36
+N50	8677	8638	8624	8624
+NG50	8677	8638	8624	8624
+N90	8677	8638	8624	8624
+NG90	8677	8638	8624	8624
+auN	8677.0	8638.0	8624.0	8624.0
+auNG	8635.2	8557.8	8530.0	8530.0
+L50	1	1	1	1
+LG50	1	1	1	1
+L90	1	1	1	1
+LG90	1	1	1	1
+# total reads	16854	17103	19000	18297
+# left	9500	9500	9500	9500
+# right	9500	9500	9500	9500
+Mapped (%)	105.5	58.26	0.0	15.77
+Reference mapped (%)	106.02	106.02	106.02	106.02
+Properly paired (%)	100.36	42.4	0.0	6.39
+Reference properly paired (%)	101.51	101.51	101.51	101.51
+Avg. coverage depth	508	281	0	79
+Reference avg. coverage depth	512	512	512	512
+Coverage >= 1x (%)	99.95	63.07	0.0	55.96
+Reference coverage >= 1x (%)	100.0	100.0	100.0	100.0
+# misassemblies	0	0	-	-
+# misassembled contigs	0	0	-	-
+Misassembled contigs length	0	0	-	-
+# local misassemblies	0	7	-	-
+# scaffold gap ext. mis.	0	0	-	-
+# scaffold gap loc. mis.	0	0	-	-
+# structural variations	0	0	-	-
+# unaligned mis. contigs	0	0	-	-
+# unaligned contigs	0 + 0 part	0 + 1 part	1 + 0 part	1 + 0 part
+Unaligned length	0	2861	8624	8624
+Genome fraction (%)	99.896	66.502	-	-
+Duplication ratio	0.999	1.000	-	-
+# N's per 100 kbp	0.00	0.00	100000.00	0.00
+# mismatches per 100 kbp	323.06	346.20	-	-
+# indels per 100 kbp	184.61	51.93	-	-
+Largest alignment	8667	5777	-	-
+Total aligned length	8667	5777	-	-
+NA50	8667	5777	-	-
+NGA50	8667	5777	-	-
+NA90	8667	-	-	-
+NGA90	8667	-	-	-
+auNA	8657.0	3863.6	-	-
+auNGA	8615.3	3827.7	-	-
+LA50	1	1	-	-
+LGA50	1	1	-	-
+LA90	1	-	-	-
+LGA90	1	-	-	-

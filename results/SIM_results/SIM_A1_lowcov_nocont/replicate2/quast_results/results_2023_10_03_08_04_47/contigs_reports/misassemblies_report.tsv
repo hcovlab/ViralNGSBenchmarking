@@ -1,0 +1,21 @@
+Assembly	shiver_genome	smaltalign_genome	viralngs_genome	vpipe_genome
+# misassemblies	0	0	0	0
+  # contig misassemblies	0	0	0	0
+    # c. relocations	0	0	0	0
+    # c. translocations	0	0	0	0
+    # c. inversions	0	0	0	0
+  # scaffold misassemblies	0	0	0	0
+    # s. relocations	0	0	0	0
+    # s. translocations	0	0	0	0
+    # s. inversions	0	0	0	0
+# misassembled contigs	0	0	0	0
+Misassembled contigs length	0	0	0	0
+# local misassemblies	0	0	0	1
+# scaffold gap ext. mis.	0	0	0	0
+# scaffold gap loc. mis.	0	0	0	0
+# unaligned mis. contigs	0	0	0	0
+# mismatches	8	6	9	134
+# indels	6	4	4	29
+    # indels (<= 5 bp)	4	4	4	24
+    # indels (> 5 bp)	2	0	0	5
+Indels length	47	12	12	89

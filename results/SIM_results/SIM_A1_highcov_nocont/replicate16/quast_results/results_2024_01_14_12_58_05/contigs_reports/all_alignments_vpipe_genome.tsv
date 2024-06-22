@@ -1,0 +1,5 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+1	5845	1	5823	EMBOSS_001	currsample-currdate	99.42		True
+indel: indel (> 5bp) [linear representation of circular genome]
+6035	8644	6013	8625	EMBOSS_001	currsample-currdate	96.0		True
+CONTIG	currsample-currdate	8638	correct

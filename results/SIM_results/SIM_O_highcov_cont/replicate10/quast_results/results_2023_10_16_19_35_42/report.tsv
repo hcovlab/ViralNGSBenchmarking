@@ -1,0 +1,62 @@
+Assembly	shiver_genome	smaltalign_genome	viralngs_genome	vpipe_genome
+# contigs (>= 0 bp)	1	1	1	1
+# contigs (>= 1000 bp)	1	1	1	1
+# contigs (>= 5000 bp)	1	1	0	1
+# contigs (>= 10000 bp)	0	0	0	0
+# contigs (>= 25000 bp)	0	0	0	0
+# contigs (>= 50000 bp)	0	0	0	0
+Total length (>= 0 bp)	8721	8645	4805	8625
+Total length (>= 1000 bp)	8721	8645	4805	8625
+Total length (>= 5000 bp)	8721	8645	0	8625
+Total length (>= 10000 bp)	0	0	0	0
+Total length (>= 25000 bp)	0	0	0	0
+Total length (>= 50000 bp)	0	0	0	0
+# contigs	1	1	1	1
+Largest contig	8721	8645	4805	8625
+Total length	8721	8645	4805	8625
+Reference length	8752	8752	8752	8752
+GC (%)	40.59	41.18	39.96	41.25
+Reference GC (%)	40.58	40.58	40.58	40.58
+N50	8721	8645	4805	8625
+NG50	8721	8645	4805	8625
+N75	8721	8645	4805	8625
+NG75	8721	8645	-	8625
+L50	1	1	1	1
+LG50	1	1	1	1
+L75	1	1	1	1
+LG75	1	1	-	1
+# total reads	380000	380000	380000	380000
+# left	190000	190000	190000	190000
+# right	190000	190000	190000	190000
+Mapped (%)	94.47	54.03	30.46	16.74
+Reference mapped (%)	94.5	94.5	94.5	94.5
+Properly paired (%)	90.56	39.39	18.74	7.16
+Reference properly paired (%)	90.63	90.63	90.63	90.63
+Avg. coverage depth	10259	5755	5835	1740
+Reference avg. coverage depth	10243	10243	10243	10243
+Coverage >= 1x (%)	100.0	65.67	66.24	57.44
+Reference coverage >= 1x (%)	100.0	100.0	100.0	100.0
+# misassemblies	0	0	0	0
+# misassembled contigs	0	0	0	0
+Misassembled contigs length	0	0	0	0
+# local misassemblies	0	7	0	0
+# scaffold gap ext. mis.	0	0	0	0
+# scaffold gap loc. mis.	0	0	3	0
+# unaligned mis. contigs	0	0	0	1
+# unaligned contigs	0 + 0 part	0 + 1 part	0 + 0 part	0 + 1 part
+Unaligned length	0	2829	0	7683
+Genome fraction (%)	99.920	66.628	36.397	10.795
+Duplication ratio	1.000	1.000	1.513	1.000
+# N's per 100 kbp	0.00	0.00	33798.13	0.00
+# mismatches per 100 kbp	0.00	34.40	976.07	2441.61
+# indels per 100 kbp	57.35	68.80	31.49	424.63
+Largest alignment	8721	5816	3176	733
+Total aligned length	8721	5816	3176	942
+NA50	8721	5816	3176	-
+NGA50	8721	5816	-	-
+NA75	8721	-	-	-
+NGA75	8721	-	-	-
+LA50	1	1	1	-
+LGA50	1	1	-	-
+LA75	1	-	-	-
+LGA75	1	-	-	-

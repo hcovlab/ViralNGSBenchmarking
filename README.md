@@ -2,17 +2,24 @@
 
 This repository contains supplementary data and code for a study titled "Comparative Evaluation of Bioinformatic Pipelines for Full-Length Viral Genome Assembly," published on BioRxiv (https://doi.org/10.1101/2024.03.13.584779).
 
-## Project initialization folders
-To enable easier reproducibility of the analysis, we provide the data and configuration files used for generating the three major datasets in our study (SGS-FULL, SS+NGS, and SIM). For the SS+NGS dataset, we also preliminarily publish the Sanger and next-generation sequencing results of the 49 Hungarian HIV samples used in the study. These datasets will be available in INSDC data repositories (GenBank and SRA) within one year from the point of publication in a scientific journal. Until then, the sequencing results uploaded to this repository can only be used for the replication and validation of our benchmarking analysis.
+## Data + Configuration/Parametrization
+To enable easier reproducibility of the analysis, we provide the data and configuration files for all three datasets (SIM, SS+NGS, SGS-FULL) used in our study. Here we preliminarily publish the Sanger and next-generation sequencing results of the 49 Hungarian HIV samples of the SS+NGS dataset. These results will be publicly available in INSDC data repositories (GenBank and SRA) within 1 year from the point of publication in a scientific journal. Until then, the sequencing results uploaded to this repository can only be used for the replication of our benchmarking analysis. Any other use requires the authors' permission. 
 
 ## Raw result files
-* **Shankarappa.xlsx**: Diversity statistics of the Shankarappa et al. dataset
-* **Vibholm.xlsx**: Diversity statistics of the Vibholm et al. dataset
+
+### Combined raw results of all analyses
 * **GABM_NGS_results.csv**: Runtime and memory benchmarking results on the NGS (Ode et al.) dataset
 * **GABM_SIM_results_revision.csv**: Benchmarking results using simulated HIV-1 quasispecies data
 * **GABM_SIM_150.csv**: Benchmarking results using simulated HIV-1 quasispecies data with 2x150bp paired-end Illumina data
 * **GABM_SGS_results.csv**: Benchmarking results using the Vibhol et al. SGS dataset
 * **GABM_SSNGS_HUN_results.csv**: Benchmarking results using Hungarian Sanger and next generation sequencing results from the same samples
+
+### SGS diversity calculation results
+* **Shankarappa.xlsx**: Diversity statistics of the Shankarappa et al. dataset
+* **Vibholm.xlsx**: Diversity statistics of the Vibholm et al. dataset
+
+### QUAST reports and genome assemblies of the SIM dataset
+We uploaded all benchmark sequences, genome assemblies and QUAST reports for our in silico analyses. 
 
 ## Scripts
 The scripts in this repository have been developed to benchmark four bioinformatic pipelines (shiver, SmaltAlign, viralngs, V-Pipe) for full-length viral genome assembly.

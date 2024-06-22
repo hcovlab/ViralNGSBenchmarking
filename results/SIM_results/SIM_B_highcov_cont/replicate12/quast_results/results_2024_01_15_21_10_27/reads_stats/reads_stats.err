@@ -1,0 +1,181 @@
+
+*****
+*****WARNING: Genome (-g) files are ignored when BAM input is provided. 
+*****
+[bwa_index] Pack FASTA... 0.00 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.01 seconds elapse.
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.00 sec
+[bwa_index] Construct SA from BWT and Occ... 0.00 sec
+[main] Version: 0.7.15-r1140
+[main] CMD: /quast-5.2.0/quast_libs/bwa/bwa index -p /data/quast_results/results_2024_01_15_21_10_27/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta /data/quast_results/results_2024_01_15_21_10_27/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta
+[main] Real time: 0.520 sec; CPU: 0.014 sec
+[Mon Jan 15 21:11:06 EST 2024] gridss.CallVariants OUTPUT=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.vcf ASSEMBLY=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam INPUT=[/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam] WORKER_THREADS=2 WORKING_DIR=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss REFERENCE_SEQUENCE=/data/quast_results/results_2024_01_15_21_10_27/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta    READ_PAIR_CONCORDANT_PERCENT=0.995 IGNORE_DUPLICATES=true VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=true CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json
+[Mon Jan 15 21:11:06 EST 2024] Executing as root@62a8ca94e964 on Linux 5.19.0-46-generic amd64; OpenJDK 64-Bit Server VM 1.8.0_382-8u382-ga-1~20.04.1-b05; Picard version: 1.4.1
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+INFO	2024-01-15 21:11:06	GridssConfiguration	maxCoverage=10000
+INFO	2024-01-15 21:11:06	GridssConfiguration	minMapq=10
+INFO	2024-01-15 21:11:06	GridssConfiguration	fallbackMapq=20
+INFO	2024-01-15 21:11:06	GridssConfiguration	multimapping=false
+INFO	2024-01-15 21:11:06	GridssConfiguration	minAnchorShannonEntropy=0.5
+INFO	2024-01-15 21:11:06	GridssConfiguration	dovetailMargin=4
+INFO	2024-01-15 21:11:06	GridssConfiguration	softclip.minAverageQual=5.0
+INFO	2024-01-15 21:11:06	GridssConfiguration	softclip.minLength=4
+INFO	2024-01-15 21:11:06	GridssConfiguration	softclip.minAnchorIdentity=0.95
+INFO	2024-01-15 21:11:06	GridssConfiguration	multimappingUniqueAssemblyAllocation=true
+INFO	2024-01-15 21:11:06	GridssConfiguration	multimappingUniqueVariantAllocation=true
+INFO	2024-01-15 21:11:06	GridssConfiguration	useReadGroupSampleNameCategoryLabel=true
+INFO	2024-01-15 21:11:06	GridssConfiguration	chunkSize=10000000
+INFO	2024-01-15 21:11:06	GridssConfiguration	chunkSequenceChangePenalty=250000
+INFO	2024-01-15 21:11:06	GridssConfiguration	hashEvidenceID=true
+INFO	2024-01-15 21:11:06	GridssConfiguration	adapter=AGATCGGAAGAG
+INFO	2024-01-15 21:11:06	GridssConfiguration	adapter=ATGGAATTCTCG
+INFO	2024-01-15 21:11:06	GridssConfiguration	adapter=CTGTCTCTTATA
+INFO	2024-01-15 21:11:06	GridssConfiguration	scoring.model=FastEmpiricalReferenceLikelihood
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.k=25
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.minReads=3
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.includePairAnchors=true
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.pairAnchorMismatchIgnoreEndBases=5
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.excludeNonSupportingEvidence=false
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.writeFiltered=true
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.anchorLength=100
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.removeMisassembledPartialContigsDuringAssembly=true
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.maxExpectedBreakendLengthMultiple=1.5
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.errorCorrection.collapseBubblesOnly=true
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.errorCorrection.maxBaseMismatchForCollapse=2
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.errorCorrection.maxPathCollapseLengthMultiple=2.0
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.downsample.acceptDensityPortion=0.5
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.downsample.targetEvidenceDensity=5.0
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.downsample.minimumDensityWindowSize=1000
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.positional.maxPathLengthMultiple=1.1
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.positional.retainWidthMultiple=5.0
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.positional.flushWidthMultiple=10.0
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.positional.maximumNodeDensity=5.0
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.positional.trimSelfIntersectingReads=true
+INFO	2024-01-15 21:11:06	GridssConfiguration	assembly.positional.forceFullMemoizationRecalculationAt=0.8
+INFO	2024-01-15 21:11:06	GridssConfiguration	variantcalling.minReads=2
+INFO	2024-01-15 21:11:06	GridssConfiguration	variantcalling.minScore=50.0
+INFO	2024-01-15 21:11:06	GridssConfiguration	variantcalling.minSize=32
+INFO	2024-01-15 21:11:06	GridssConfiguration	variantcalling.lowQuality=500.0
+INFO	2024-01-15 21:11:06	GridssConfiguration	variantcalling.callOnlyAssemblies=false
+INFO	2024-01-15 21:11:06	GridssConfiguration	variantcalling.breakendMargin=10
+INFO	2024-01-15 21:11:06	GridssConfiguration	variantcalling.writeFiltered=false
+INFO	2024-01-15 21:11:06	GridssConfiguration	variantcalling.simplecalls=false
+INFO	2024-01-15 21:11:06	GridssConfiguration	variantcalling.maxBreakendHomologyLength=300
+INFO	2024-01-15 21:11:06	GridssConfiguration	variantcalling.breakendHomologyAlignmentMargin=10
+INFO	2024-01-15 21:11:06	GridssConfiguration	terminateOnFirstError=true
+INFO	2024-01-15 21:11:06	GridssConfiguration	visualisation.directory=visualisation
+INFO	2024-01-15 21:11:06	GridssConfiguration	visualisation.buffers=false
+INFO	2024-01-15 21:11:06	GridssConfiguration	visualisation.bufferTrackingItervalInSeconds=60
+INFO	2024-01-15 21:11:06	GridssConfiguration	visualisation.timeouts=false
+INFO	2024-01-15 21:11:06	GridssConfiguration	visualisation.evidenceAllocation=false
+INFO	2024-01-15 21:11:06	GridssConfiguration	visualisation.assemblyProgress=false
+INFO	2024-01-15 21:11:06	GridssConfiguration	visualisation.assemblyGraph=false
+INFO	2024-01-15 21:11:06	GridssConfiguration	visualisation.assemblyGraphFullSize=false
+INFO	2024-01-15 21:11:06	GridssConfiguration	visualisation.assemblyContigMemoization=false
+INFO	2024-01-15 21:11:06	GridssConfiguration	visualisation.assemblyTelemetry=false
+INFO	2024-01-15 21:11:06	GenomicProcessingContext	Attempting to create sequence dictionary for /data/quast_results/results_2024_01_15_21_10_27/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta
+[Mon Jan 15 21:11:06 EST 2024] picard.sam.CreateSequenceDictionary    REFERENCE=/data/quast_results/results_2024_01_15_21_10_27/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta OUTPUT=/data/quast_results/results_2024_01_15_21_10_27/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta.dict TRUNCATE_NAMES_AT_WHITESPACE=true NUM_SEQUENCES=2147483647 VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=true CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json
+[Mon Jan 15 21:11:06 EST 2024] Executing as root@62a8ca94e964 on Linux 5.19.0-46-generic amd64; OpenJDK 64-Bit Server VM 1.8.0_382-8u382-ga-1~20.04.1-b05; Picard version: 1.4.1
+[Mon Jan 15 21:11:06 EST 2024] picard.sam.CreateSequenceDictionary done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=251658240
+INFO	2024-01-15 21:11:06	MultipleSamFileCommandLineProgram	Loading aligner
+INFO	2024-01-15 21:11:06	AlignerFactory	sswjni library loading successful.
+INFO	2024-01-15 21:11:06	MultipleSamFileCommandLineProgram	Using 2 worker threads
+INFO	2024-01-15 21:11:06	CallVariants	Extracting evidence.
+INFO	2024-01-15 21:11:06	SAMEvidenceSource	Calculating metrics for /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam
+[Mon Jan 15 21:11:06 EST 2024] gridss.analysis.CollectGridssMetrics GRIDSS_PROGRAM=[CollectCigarMetrics, CollectMapqMetrics, CollectTagMetrics, CollectIdsvMetrics, ReportThresholdCoverage] THRESHOLD_COVERAGE=10000 INPUT=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam OUTPUT=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam FILE_EXTENSION=null PROGRAM=[CollectAlignmentSummaryMetrics, QualityScoreDistribution, CollectInsertSizeMetrics] TMP_DIR=[/tmp/root] VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=true CREATE_MD5_FILE=false REFERENCE_SEQUENCE=/data/quast_results/results_2024_01_15_21_10_27/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta GA4GH_CLIENT_SECRETS=client_secrets.json    ASSUME_SORTED=true STOP_AFTER=0 METRIC_ACCUMULATION_LEVEL=[ALL_READS] INCLUDE_UNPAIRED=false
+[Mon Jan 15 21:11:06 EST 2024] Executing as root@62a8ca94e964 on Linux 5.19.0-46-generic amd64; OpenJDK 64-Bit Server VM 1.8.0_382-8u382-ga-1~20.04.1-b05; Picard version: 1.4.1
+INFO	2024-01-15 21:11:09	RExecutor	Executing R script via command: Rscript /tmp/root/script5649562039454968327.R /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.quality_distribution_metrics /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.quality_distribution.pdf HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam 
+INFO	2024-01-15 21:11:10	ProcessExecutor	null device 
+INFO	2024-01-15 21:11:10	ProcessExecutor	          1 
+INFO	2024-01-15 21:11:11	RExecutor	Executing R script via command: Rscript /tmp/root/script7343952481275468218.R /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.insert_size_metrics /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.insert_size_histogram.pdf HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam
+INFO	2024-01-15 21:11:11	ProcessExecutor	null device 
+INFO	2024-01-15 21:11:11	ProcessExecutor	          1 
+[Mon Jan 15 21:11:11 EST 2024] gridss.analysis.CollectGridssMetrics done. Elapsed time: 0.09 minutes.
+Runtime.totalMemory()=284164096
+INFO	2024-01-15 21:11:11	SAMEvidenceSource	Extracting SV reads from /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam
+[Mon Jan 15 21:11:11 EST 2024] gridss.ExtractSVReads METRICS_OUTPUT=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.sv_metrics MIN_CLIP_LENGTH=4 READ_PAIR_CONCORDANCE_METHOD=PERCENTAGE FIXED_READ_PAIR_CONCORDANCE_MIN_FRAGMENT_SIZE=0 FIXED_READ_PAIR_CONCORDANCE_MAX_FRAGMENT_SIZE=0 READ_PAIR_CONCORDANT_PERCENT=0.995 INSERT_SIZE_METRICS=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.insert_size_metrics UNMAPPED_READS=false INPUT=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam OUTPUT=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/gridss.tmp.extracted.HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.sv.bam TMP_DIR=[/tmp/root] VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=true CREATE_MD5_FILE=false REFERENCE_SEQUENCE=/data/quast_results/results_2024_01_15_21_10_27/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta GA4GH_CLIENT_SECRETS=client_secrets.json    MIN_INDEL_SIZE=1 CLIPPED=true INDELS=true SPLIT=true SINGLE_MAPPED_PAIRED=true DISCORDANT_READ_PAIRS=true ASSUME_SORTED=true STOP_AFTER=0 IGNORE_DUPLICATES=true
+[Mon Jan 15 21:11:11 EST 2024] Executing as root@62a8ca94e964 on Linux 5.19.0-46-generic amd64; OpenJDK 64-Bit Server VM 1.8.0_382-8u382-ga-1~20.04.1-b05; Picard version: 1.4.1
+WARNING	2024-01-15 21:11:11	ByReadNameSinglePassSamProgram	File reports sort order 'coordinate', assuming it's queryname sorted anyway.
+INFO	2024-01-15 21:11:11	ExtractSVReads	Not considering multiple read alignments as the input file is not queryname sorted.
+INFO	2024-01-15 21:11:13	ExtractSVReads	Extracted 73825 reads from /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam
+[Mon Jan 15 21:11:13 EST 2024] gridss.ExtractSVReads done. Elapsed time: 0.02 minutes.
+Runtime.totalMemory()=382730240
+INFO	2024-01-15 21:11:13	SAMFileUtil	Sorting /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/gridss.tmp.extracted.HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.sv.bam
+INFO	2024-01-15 21:11:14	SAMEvidenceSource	Computing SAM tags for /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.sv.bam
+[Mon Jan 15 21:11:14 EST 2024] gridss.ComputeSamTags INPUT=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/gridss.tmp.querysorted.HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.sv.bam OUTPUT=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/gridss.tmp.tagged.HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.sv.bam TMP_DIR=[/tmp/root] VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=true CREATE_MD5_FILE=false REFERENCE_SEQUENCE=/data/quast_results/results_2024_01_15_21_10_27/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta GA4GH_CLIENT_SECRETS=client_secrets.json    ASSUME_SORTED=false SOFTEN_HARD_CLIPS=true FIX_MATE_INFORMATION=true RECALCULATE_SA_SUPPLEMENTARY=true TAGS=[R2, mm, Q2, MQ, MC, SA, NM] IGNORE_DUPLICATES=true
+[Mon Jan 15 21:11:14 EST 2024] Executing as root@62a8ca94e964 on Linux 5.19.0-46-generic amd64; OpenJDK 64-Bit Server VM 1.8.0_382-8u382-ga-1~20.04.1-b05; Picard version: 1.4.1
+[Mon Jan 15 21:11:16 EST 2024] gridss.ComputeSamTags done. Elapsed time: 0.03 minutes.
+Runtime.totalMemory()=481296384
+INFO	2024-01-15 21:11:16	SAMEvidenceSource	Identifying split reads for /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam
+[Mon Jan 15 21:11:16 EST 2024] gridss.SoftClipsToSplitReads INPUT=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/gridss.tmp.tagged.HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.sv.bam OUTPUT=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/gridss.tmp.splitreads.HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.sv.bam WORKER_THREADS=2 TMP_DIR=[/tmp/root] VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=true CREATE_MD5_FILE=false REFERENCE_SEQUENCE=/data/quast_results/results_2024_01_15_21_10_27/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta GA4GH_CLIENT_SECRETS=client_secrets.json    MIN_CLIP_LENGTH=15 MIN_CLIP_QUAL=5.0 PROCESS_SECONDARY_ALIGNMENTS=false ALIGNER_COMMAND_LINE=[bwa, mem, -t, %3$d, %2$s, %1$s] IGNORE_DUPLICATES=true
+[Mon Jan 15 21:11:16 EST 2024] Executing as root@62a8ca94e964 on Linux 5.19.0-46-generic amd64; OpenJDK 64-Bit Server VM 1.8.0_382-8u382-ga-1~20.04.1-b05; Picard version: 1.4.1
+INFO	2024-01-15 21:11:16	ExternalProcessFastqAligner	Invoking external aligner
+INFO	2024-01-15 21:11:16	ExternalProcessFastqAligner	bwa mem -t 2 /data/quast_results/results_2024_01_15_21_10_27/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.realign.0.fq
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 2925 sequences (117508 bp)...
+[M::mem_process_seqs] Processed 2925 reads in 0.027 CPU sec, 0.013 real sec
+[main] Version: 0.7.15-r1140
+[main] CMD: bwa mem -t 2 /data/quast_results/results_2024_01_15_21_10_27/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.realign.0.fq
+[main] Real time: 0.061 sec; CPU: 0.030 sec
+INFO	2024-01-15 21:11:16	SplitReadRealigner	Merging split read alignments for /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/gridss.tmp.splitreads.HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.sv.bam
+INFO	2024-01-15 21:11:17	SAMFileUtil	/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/gridss.tmp.SplitReadAligner.sa.gridss.tmp.splitreads.HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.sv.bam already sorted by queryname
+[Mon Jan 15 21:11:18 EST 2024] gridss.SoftClipsToSplitReads done. Elapsed time: 0.05 minutes.
+Runtime.totalMemory()=564658176
+INFO	2024-01-15 21:11:18	SAMFileUtil	Sorting /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.gridss.working/gridss.tmp.splitreads.HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam.sv.bam
+INFO	2024-01-15 21:11:20	CallVariants	Evidence extraction complete.
+INFO	2024-01-15 21:11:20	AssemblyEvidenceSource	Starting assembly on chunk 0 (EMBOSS_001:1-EMBOSS_001:8629)
+INFO	2024-01-15 21:11:21	AssemblyEvidenceSource	Completed assembly on chunk 0 (EMBOSS_001:1-EMBOSS_001:8629) in 1s (1.094 s)
+INFO	2024-01-15 21:11:21	SAMFileUtil	Sorting /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.gridss.working/gridss.tmp.HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.assembly.chunk0.bam
+INFO	2024-01-15 21:11:21	AssemblyEvidenceSource	Breakend assembly complete.
+INFO	2024-01-15 21:11:21	AssemblyEvidenceSource	Breakend assembly complete.
+INFO	2024-01-15 21:11:21	AssemblyEvidenceSource	Merging assembly files
+[Mon Jan 15 21:11:21 EST 2024] picard.sam.GatherBamFiles INPUT=[/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.assembly.chunk0.bam] OUTPUT=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/gridss.tmp.HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam TMP_DIR=[/tmp/root] VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=true CREATE_MD5_FILE=false REFERENCE_SEQUENCE=/data/quast_results/results_2024_01_15_21_10_27/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta GA4GH_CLIENT_SECRETS=client_secrets.json   
+[Mon Jan 15 21:11:21 EST 2024] Executing as root@62a8ca94e964 on Linux 5.19.0-46-generic amd64; OpenJDK 64-Bit Server VM 1.8.0_382-8u382-ga-1~20.04.1-b05; Picard version: 1.4.1
+INFO	2024-01-15 21:11:21	BamFileIoUtils	Block copying /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.assembly.chunk0.bam ...
+[Mon Jan 15 21:11:21 EST 2024] picard.sam.GatherBamFiles done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=662700032
+INFO	2024-01-15 21:11:21	SAMEvidenceSource	Calculating metrics for /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam
+[Mon Jan 15 21:11:21 EST 2024] gridss.analysis.CollectGridssMetrics GRIDSS_PROGRAM=[CollectCigarMetrics, CollectMapqMetrics, CollectTagMetrics, CollectIdsvMetrics, ReportThresholdCoverage] THRESHOLD_COVERAGE=10000 INPUT=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam OUTPUT=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam FILE_EXTENSION=null PROGRAM=[CollectAlignmentSummaryMetrics, QualityScoreDistribution] TMP_DIR=[/tmp/root] VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=true CREATE_MD5_FILE=false REFERENCE_SEQUENCE=/data/quast_results/results_2024_01_15_21_10_27/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta GA4GH_CLIENT_SECRETS=client_secrets.json    ASSUME_SORTED=true STOP_AFTER=0 METRIC_ACCUMULATION_LEVEL=[ALL_READS] INCLUDE_UNPAIRED=false
+[Mon Jan 15 21:11:21 EST 2024] Executing as root@62a8ca94e964 on Linux 5.19.0-46-generic amd64; OpenJDK 64-Bit Server VM 1.8.0_382-8u382-ga-1~20.04.1-b05; Picard version: 1.4.1
+INFO	2024-01-15 21:11:21	RExecutor	Executing R script via command: Rscript /tmp/root/script5567354862284628241.R /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.quality_distribution_metrics /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.quality_distribution.pdf HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam 
+INFO	2024-01-15 21:11:22	ProcessExecutor	null device 
+INFO	2024-01-15 21:11:22	ProcessExecutor	          1 
+[Mon Jan 15 21:11:22 EST 2024] gridss.analysis.CollectGridssMetrics done. Elapsed time: 0.02 minutes.
+Runtime.totalMemory()=662700032
+INFO	2024-01-15 21:11:22	AssemblyEvidenceSource	Identifying split reads for /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam
+[Mon Jan 15 21:11:22 EST 2024] gridss.SoftClipsToSplitReads INPUT=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam OUTPUT=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.sv.bam WORKER_THREADS=2 TMP_DIR=[/tmp/root] VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=true CREATE_MD5_FILE=false REFERENCE_SEQUENCE=/data/quast_results/results_2024_01_15_21_10_27/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta GA4GH_CLIENT_SECRETS=client_secrets.json    MIN_CLIP_LENGTH=15 MIN_CLIP_QUAL=5.0 PROCESS_SECONDARY_ALIGNMENTS=false ALIGNER_COMMAND_LINE=[bwa, mem, -t, %3$d, %2$s, %1$s] IGNORE_DUPLICATES=true
+[Mon Jan 15 21:11:22 EST 2024] Executing as root@62a8ca94e964 on Linux 5.19.0-46-generic amd64; OpenJDK 64-Bit Server VM 1.8.0_382-8u382-ga-1~20.04.1-b05; Picard version: 1.4.1
+INFO	2024-01-15 21:11:22	ExternalProcessFastqAligner	Invoking external aligner
+INFO	2024-01-15 21:11:22	ExternalProcessFastqAligner	bwa mem -t 2 /data/quast_results/results_2024_01_15_21_10_27/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.realign.0.fq
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 4 sequences (190 bp)...
+[M::mem_process_seqs] Processed 4 reads in 0.001 CPU sec, 0.000 real sec
+[main] Version: 0.7.15-r1140
+[main] CMD: bwa mem -t 2 /data/quast_results/results_2024_01_15_21_10_27/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.realign.0.fq
+[main] Real time: 0.001 sec; CPU: 0.002 sec
+INFO	2024-01-15 21:11:22	SplitReadRealigner	Merging split read alignments for /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.sv.bam
+INFO	2024-01-15 21:11:22	SAMFileUtil	/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.gridss.working/gridss.tmp.SplitReadAligner.sa.HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.sv.bam already sorted by coordinate
+[Mon Jan 15 21:11:22 EST 2024] gridss.SoftClipsToSplitReads done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=662700032
+INFO	2024-01-15 21:11:22	SAMFileUtil	Not sorting as output already exists: /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.gridss.bam.sv.bam
+INFO	2024-01-15 21:11:22	VariantCaller	Identifying Breakpoints
+INFO	2024-01-15 21:11:23	VariantCaller	Start calling maximal cliques in chunk 0 (EMBOSS_001:1-EMBOSS_001:8629)
+INFO	2024-01-15 21:11:23	VariantCaller	Complete calling maximal cliques in chunk 0 (EMBOSS_001:1-EMBOSS_001:8629)
+INFO	2024-01-15 21:11:23	VariantCaller	Merging identified breakpoints
+INFO	2024-01-15 21:11:23	VariantCaller	Sorting identified breakpoints
+INFO	2024-01-15 21:11:23	VcfFileUtil	Sorting to /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.vcf.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.vcf.breakpoint.vcf
+INFO	2024-01-15 21:11:23	IdentifyVariants	Raw variant calls written to /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.vcf.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.vcf.breakpoint.vcf
+INFO	2024-01-15 21:11:23	VcfTransformCommandLineProgram	Annotating variants in /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.vcf.gridss.working/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.vcf.breakpoint.vcf
+INFO	2024-01-15 21:11:23	AllocateEvidence	Allocating evidence
+INFO	2024-01-15 21:11:24	VcfTransformCommandLineProgram	Annotated variants written to /data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.vcf
+[Mon Jan 15 21:11:24 EST 2024] gridss.CallVariants done. Elapsed time: 0.30 minutes.
+Runtime.totalMemory()=769654784
+[Mon Jan 15 21:11:24 EST 2024] au.edu.wehi.idsv.VcfBreakendToBedpe INPUT=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.vcf OUTPUT=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_structural_variations.raw.bed OUTPUT_FILTERED=/data/quast_results/results_2024_01_15_21_10_27/reads_stats/temp_output/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed_structural_variations.filtered.bed REFERENCE=/data/quast_results/results_2024_01_15_21_10_27/quast_corrected_input/HIV1_CON_B_simref_QSsim_aligned_consensus_fixed.fasta INCLUDE_HEADER=true    INCLUDE_LOW_BREAKEND=true INCLUDE_HIGH_BREAKEND=false VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json
+[Mon Jan 15 21:11:24 EST 2024] Executing as root@62a8ca94e964 on Linux 5.19.0-46-generic amd64; OpenJDK 64-Bit Server VM 1.8.0_382-8u382-ga-1~20.04.1-b05; Picard version: 1.4.1
+[Mon Jan 15 21:11:24 EST 2024] au.edu.wehi.idsv.VcfBreakendToBedpe done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=251658240

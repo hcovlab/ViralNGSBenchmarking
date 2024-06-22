@@ -1,0 +1,67 @@
+Assembly	shiver_genome	smaltalign_genome	viralngs_genome	vpipe_genome
+# contigs (>= 0 bp)	1	1	1	1
+# contigs (>= 1000 bp)	1	1	1	1
+# contigs (>= 5000 bp)	1	1	0	1
+# contigs (>= 10000 bp)	0	0	0	0
+# contigs (>= 25000 bp)	0	0	0	0
+# contigs (>= 50000 bp)	0	0	0	0
+Total length (>= 0 bp)	8677	8638	4644	8624
+Total length (>= 1000 bp)	8677	8638	4644	8624
+Total length (>= 5000 bp)	8677	8638	0	8624
+Total length (>= 10000 bp)	0	0	0	0
+Total length (>= 25000 bp)	0	0	0	0
+Total length (>= 50000 bp)	0	0	0	0
+# contigs	1	1	1	1
+Largest contig	8677	8638	4644	8624
+Total length	8677	8638	4644	8624
+Reference length	8704	8704	8704	8704
+GC (%)	40.69	41.24	39.16	41.28
+Reference GC (%)	40.70	40.70	40.70	40.70
+N50	8677	8638	4644	8624
+NG50	8677	8638	4644	8624
+N90	8677	8638	4644	8624
+NG90	8677	8638	-	8624
+auN	8677.0	8638.0	4644.0	8624.0
+auNG	8650.1	8572.5	2477.8	8544.7
+L50	1	1	1	1
+LG50	1	1	1	1
+L90	1	1	1	1
+LG90	1	1	-	1
+# total reads	113875	217395	274078	334696
+# left	190000	190000	190000	190000
+# right	190000	190000	190000	190000
+Mapped (%)	313.79	92.56	46.73	15.98
+Reference mapped (%)	313.01	313.01	313.01	313.01
+Properly paired (%)	300.13	67.63	28.35	5.46
+Reference properly paired (%)	299.38	299.38	299.38	299.38
+Avg. coverage depth	10262	5673	6664	1462
+Reference avg. coverage depth	10256	10256	10256	10256
+Coverage >= 1x (%)	100.0	65.83	77.2	55.0
+Reference coverage >= 1x (%)	100.0	100.0	100.0	100.0
+# misassemblies	0	0	0	0
+# misassembled contigs	0	0	0	0
+Misassembled contigs length	0	0	0	0
+# local misassemblies	0	7	0	0
+# scaffold gap ext. mis.	0	0	0	0
+# scaffold gap loc. mis.	0	0	4	0
+# structural variations	0	0	0	0
+# unaligned mis. contigs	0	0	0	1
+# unaligned contigs	0 + 0 part	0 + 1 part	0 + 0 part	0 + 1 part
+Unaligned length	0	2859	0	7968
+Genome fraction (%)	100.000	66.598	41.298	7.561
+Duplication ratio	1.000	1.000	1.000	1.000
+# N's per 100 kbp	0.00	0.00	22803.62	0.00
+# mismatches per 100 kbp	0.00	138.43	892.86	0.00
+# indels per 100 kbp	103.72	51.91	83.71	304.88
+Largest alignment	8677	5779	3584	447
+Total aligned length	8677	5779	3584	656
+NA50	8677	5779	3584	-
+NGA50	8677	5779	-	-
+NA90	8677	-	-	-
+NGA90	8677	-	-	-
+auNA	8677.0	3866.3	2765.9	28.2
+auNGA	8650.1	3837.0	1475.8	28.0
+LA50	1	1	1	-
+LGA50	1	1	-	-
+LA90	1	-	-	-
+LGA90	1	-	-	-

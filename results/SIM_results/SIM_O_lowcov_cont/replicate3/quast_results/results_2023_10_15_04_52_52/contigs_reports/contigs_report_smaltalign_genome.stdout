@@ -1,0 +1,60 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [EMBOSS_001]
+	Total Regions: 1
+	Total Region Length: 8768
+Analyzing contigs...
+CONTIG: unknown_unknown_unknown_unknown_K03455.1_0_0_0_0 (8639bp)
+Best alignment score: 3759.9 (LEN: 3764, IDY: 99.89), Total number of alignments: 6
+			Looking for the best set of alignments (out of 6 total alignments)
+			The best set is below. Score: 5305.9, number of alignments: 6, unaligned bases: 3328
+		This contig is misassembled.
+		This contig is partially unaligned. (Aligned 5311 out of 8639 non-N bases (61.48%))
+			Real Alignment 1: 1 167 | 1 164 | 167 164 | 100.0 | EMBOSS_001 unknown_unknown_unknown_unknown_K03455.1_0_0_0_0
+			  Gap between these two alignments (local misassembly). Inconsistency = -3
+			Real Alignment 2: 388 1104 | 388 1104 | 717 717 | 99.86 | EMBOSS_001 unknown_unknown_unknown_unknown_K03455.1_0_0_0_0
+			  Gap between these two alignments (local misassembly). Inconsistency = 9
+			Real Alignment 3: 1456 5228 | 1447 5210 | 3773 3764 | 99.89 | EMBOSS_001 unknown_unknown_unknown_unknown_K03455.1_0_0_0_0
+			  Gap between these two alignments (local misassembly). Inconsistency = 3
+			Real Alignment 4: 5579 5829 | 5558 5808 | 251 251 | 100.0 | EMBOSS_001 unknown_unknown_unknown_unknown_K03455.1_0_0_0_0
+			  Gap between these two alignments (local misassembly). Inconsistency = 24
+			Real Alignment 5: 7016 7185 | 6971 7140 | 170 170 | 100.0 | EMBOSS_001 unknown_unknown_unknown_unknown_K03455.1_0_0_0_0
+			  Gap between these two alignments (local misassembly). Inconsistency = 36
+			Real Alignment 6: 8301 8545 | 8220 8464 | 245 245 | 100.0 | EMBOSS_001 unknown_unknown_unknown_unknown_K03455.1_0_0_0_0
+		Unaligned bases: 3328
+
+Analyzing coverage...
+Writing SNPs into /data/quast_results/results_2023_10_15_04_52_52/contigs_reports/minimap_output/smaltalign_genome.used_snps.gz
+
+Analysis is finished!
+Founded SNPs were written into /data/quast_results/results_2023_10_15_04_52_52/contigs_reports/minimap_output/smaltalign_genome.used_snps.gz
+
+Results:
+	Local Misassemblies: 5
+	Misassemblies: 0
+		Relocations: 0
+		Translocations: 0
+		Inversions: 0
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 0
+	Misassembled Contigs: 0
+	Misassembled Contig Bases: 0
+	Misassemblies Inter-Contig Overlap: 0
+Unaligned Contigs: 0 + 1 part
+Half Unaligned Contigs with Misassemblies: 0
+Unaligned Contig Bases: 3328
+
+Ambiguously Mapped Contigs: 0
+Total Bases in Ambiguously Mapped Contigs: 0
+Extra Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used.
+
+	Covered Bases: 5309
+
+	SNPs: 5
+	Insertions: 0
+	Deletions: 12
+

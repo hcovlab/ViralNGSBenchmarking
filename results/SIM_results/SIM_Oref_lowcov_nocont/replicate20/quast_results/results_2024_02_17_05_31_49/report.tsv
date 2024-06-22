@@ -1,0 +1,67 @@
+Assembly	shiver_genome	smaltalign_genome	viralngs_genome	vpipe_genome
+# contigs (>= 0 bp)	1	1	1	1
+# contigs (>= 1000 bp)	1	1	1	1
+# contigs (>= 5000 bp)	1	1	1	1
+# contigs (>= 10000 bp)	0	0	0	0
+# contigs (>= 25000 bp)	0	0	0	0
+# contigs (>= 50000 bp)	0	0	0	0
+Total length (>= 0 bp)	8624	8686	8675	8683
+Total length (>= 1000 bp)	8624	8686	8675	8683
+Total length (>= 5000 bp)	8624	8686	8675	8683
+Total length (>= 10000 bp)	0	0	0	0
+Total length (>= 25000 bp)	0	0	0	0
+Total length (>= 50000 bp)	0	0	0	0
+# contigs	1	1	1	1
+Largest contig	8624	8686	8675	8683
+Total length	8624	8686	8675	8683
+Reference length	8695	8695	8695	8695
+GC (%)	-	40.72	40.72	40.73
+Reference GC (%)	40.72	40.72	40.72	40.72
+N50	8624	8686	8675	8683
+NG50	8624	8686	8675	8683
+N90	8624	8686	8675	8683
+NG90	8624	8686	8675	8683
+auN	8624.0	8686.0	8675.0	8683.0
+auNG	8553.6	8677.0	8655.0	8671.0
+L50	1	1	1	1
+LG50	1	1	1	1
+L90	1	1	1	1
+LG90	1	1	1	1
+# total reads	19000	16608	16546	16610
+# left	9500	9500	9500	9500
+# right	9500	9500	9500	9500
+Mapped (%)	0.0	107.89	105.41	107.88
+Reference mapped (%)	107.89	107.89	107.89	107.89
+Properly paired (%)	0.0	103.44	98.05	103.43
+Reference properly paired (%)	103.44	103.44	103.44	103.44
+Avg. coverage depth	0	514	498	514
+Reference avg. coverage depth	514	514	514	514
+Coverage >= 1x (%)	0.0	100.0	98.85	100.0
+Reference coverage >= 1x (%)	100.0	100.0	100.0	100.0
+# misassemblies	-	0	0	0
+# misassembled contigs	-	0	0	0
+Misassembled contigs length	-	0	0	0
+# local misassemblies	-	0	0	0
+# scaffold gap ext. mis.	-	0	0	0
+# scaffold gap loc. mis.	-	0	0	0
+# structural variations	-	0	0	0
+# unaligned mis. contigs	-	0	0	0
+# unaligned contigs	1 + 0 part	0 + 0 part	0 + 0 part	0 + 0 part
+Unaligned length	8624	0	0	0
+Genome fraction (%)	-	100.000	99.873	100.000
+Duplication ratio	-	1.000	1.000	1.000
+# N's per 100 kbp	100000.00	0.00	1878.96	0.00
+# mismatches per 100 kbp	-	0.00	115.27	0.00
+# indels per 100 kbp	-	34.54	34.58	46.07
+Largest alignment	-	8686	8675	8683
+Total aligned length	-	8686	8675	8683
+NA50	-	8686	8675	8683
+NGA50	-	8686	8675	8683
+NA90	-	8686	8675	8683
+NGA90	-	8686	8675	8683
+auNA	-	8686.0	8675.0	8683.0
+auNGA	-	8677.0	8655.0	8671.0
+LA50	-	1	1	1
+LGA50	-	1	1	1
+LA90	-	1	1	1
+LGA90	-	1	1	1

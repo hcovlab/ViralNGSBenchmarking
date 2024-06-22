@@ -1,0 +1,53 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [EMBOSS_001]
+	Total Regions: 1
+	Total Region Length: 8710
+Analyzing contigs...
+CONTIG: currsample-currdate (8624bp)
+Best alignment score: 695.1 (LEN: 722, IDY: 96.27), Total number of alignments: 1
+			Looking for the best set of alignments (out of 1 total alignments)
+			The best set is below. Score: 695.1, number of alignments: 1, unaligned bases: 7902
+		This contig is partially unaligned. (Aligned 722 out of 8624 non-N bases (8.37%))
+		Alignment: 3592 4313 | 3574 4295 | 722 722 | 96.27 | EMBOSS_001 currsample-currdate
+		Unaligned bases: 1 to 3573 (3573)
+		Unaligned bases: 4296 to 8624 (4329)
+
+Analyzing coverage...
+Writing SNPs into /data/quast_results/results_2024_02_01_11_03_01/contigs_reports/minimap_output/vpipe_genome.used_snps
+
+Analysis is finished!
+Founded SNPs were written into /data/quast_results/results_2024_02_01_11_03_01/contigs_reports/minimap_output/vpipe_genome.used_snps
+
+Results:
+	Local Misassemblies: 0
+	Misassemblies: 0
+		Relocations: 0
+		Translocations: 0
+		Inversions: 0
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 0
+	Fake misassemblies matched with structural variations: 0
+	Misassembled Contigs: 0
+	Misassembled Contig Bases: 0
+	Misassemblies Inter-Contig Overlap ("Extra" Aligned Bases): 0
+Unaligned Contigs: 0 + 1 part
+Half Unaligned Contigs with Misassemblies: 0
+Unaligned Bases in Fully and Partially Unaligned Contigs: 7902
+
+Ambiguously Mapped Contigs: 0
+Total Bases in Ambiguously Mapped Contigs: 0
+"Extra" Aligned Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used (there is no "extra" aligned bases).
+
+	Covered Bases in Reference: 722
+	Raw Aligned Bases in Assembly: 722
+	Total Aligned Bases in Assembly (with "Extras"): 722
+
+	SNPs: 25
+	Insertions: 1
+	Deletions: 1
+

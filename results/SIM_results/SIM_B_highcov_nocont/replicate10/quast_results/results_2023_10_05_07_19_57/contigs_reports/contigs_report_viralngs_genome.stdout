@@ -1,0 +1,54 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [EMBOSS_001]
+	Total Regions: 1
+	Total Region Length: 8639
+Analyzing contigs...
+CONTIG: None (8612bp)
+Best alignment score: 2253.9 (LEN: 2303, IDY: 97.87), Total number of alignments: 4
+			Looking for the best set of alignments (out of 4 total alignments)
+			The best set is below. Score: 7657.8, number of alignments: 4, unaligned bases: 803
+		This contig is misassembled.
+			Real Alignment 1: 1 2019 | 1 2010 | 2019 2010 | 98.39 | EMBOSS_001 None
+			  Incorrectly estimated size of scaffold gap between these two alignments: gap length difference = 0 (local)
+			Real Alignment 2: 2197 4499 | 2188 4490 | 2303 2303 | 97.87 | EMBOSS_001 None
+			  Incorrectly estimated size of scaffold gap between these two alignments: gap length difference = 0 (local)
+			Real Alignment 3: 4951 6869 | 4942 6848 | 1919 1907 | 98.11 | EMBOSS_001 None
+			  Incorrectly estimated size of scaffold gap between these two alignments: gap length difference = 6 (local)
+			Real Alignment 4: 7051 8639 | 7024 8612 | 1589 1589 | 98.82 | EMBOSS_001 None
+
+Analyzing coverage...
+Writing SNPs into /data/quast_results/results_2023_10_05_07_19_57/contigs_reports/minimap_output/viralngs_genome.used_snps.gz
+
+Analysis is finished!
+Founded SNPs were written into /data/quast_results/results_2023_10_05_07_19_57/contigs_reports/minimap_output/viralngs_genome.used_snps.gz
+
+Results:
+	Local Misassemblies: 0
+	Misassemblies: 0
+		Relocations: 0
+		Translocations: 0
+		Inversions: 0
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 3
+	Misassembled Contigs: 0
+	Misassembled Contig Bases: 0
+	Misassemblies Inter-Contig Overlap: 0
+Unaligned Contigs: 0 + 0 part
+Half Unaligned Contigs with Misassemblies: 0
+Unaligned Contig Bases: 0
+
+Ambiguously Mapped Contigs: 0
+Total Bases in Ambiguously Mapped Contigs: 0
+Extra Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used.
+
+	Covered Bases: 7798
+
+	SNPs: 135
+	Insertions: 0
+	Deletions: 21
+

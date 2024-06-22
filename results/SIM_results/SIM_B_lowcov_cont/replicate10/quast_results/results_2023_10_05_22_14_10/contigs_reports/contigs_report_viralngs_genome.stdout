@@ -1,0 +1,62 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [EMBOSS_001]
+	Total Regions: 1
+	Total Region Length: 8633
+Analyzing contigs...
+CONTIG: None (8606bp)
+Best alignment score: 1723.8 (LEN: 1733, IDY: 99.47), Total number of alignments: 8
+			Looking for the best set of alignments (out of 8 total alignments)
+			The best set is below. Score: 5541.7, number of alignments: 8, unaligned bases: 3004
+		This contig is misassembled.
+			Real Alignment 1: 6 261 | 6 261 | 256 256 | 98.83 | EMBOSS_001 None
+			  Incorrectly estimated size of scaffold gap between these two alignments: gap length difference = 0 (local)
+			Real Alignment 2: 779 1071 | 779 1068 | 293 290 | 100.0 | EMBOSS_001 None
+			  Incorrectly estimated size of scaffold gap between these two alignments: gap length difference = 0 (local)
+			Real Alignment 3: 1202 2019 | 1199 2013 | 818 815 | 99.74 | EMBOSS_001 None
+			  Incorrectly estimated size of scaffold gap between these two alignments: gap length difference = 0 (local)
+			Real Alignment 4: 2218 3950 | 2212 3944 | 1733 1733 | 99.47 | EMBOSS_001 None
+			  Incorrectly estimated size of scaffold gap between these two alignments: gap length difference = 3 (local)
+			Real Alignment 5: 4416 4538 | 4407 4529 | 123 123 | 100.0 | EMBOSS_001 None
+			  Incorrectly estimated size of scaffold gap between these two alignments: gap length difference = 0 (local)
+			Real Alignment 6: 4989 5215 | 4980 5206 | 227 227 | 100.0 | EMBOSS_001 None
+			  Incorrectly estimated size of scaffold gap between these two alignments: gap length difference = 0 (local)
+			Real Alignment 7: 5377 6869 | 5368 6854 | 1493 1487 | 99.33 | EMBOSS_001 None
+			  Incorrectly estimated size of scaffold gap between these two alignments: gap length difference = 9 (local)
+			Real Alignment 8: 7960 8633 | 7936 8606 | 674 671 | 99.84 | EMBOSS_001 None
+
+Analyzing coverage...
+Writing SNPs into /data/quast_results/results_2023_10_05_22_14_10/contigs_reports/minimap_output/viralngs_genome.used_snps.gz
+
+Analysis is finished!
+Founded SNPs were written into /data/quast_results/results_2023_10_05_22_14_10/contigs_reports/minimap_output/viralngs_genome.used_snps.gz
+
+Results:
+	Local Misassemblies: 0
+	Misassemblies: 0
+		Relocations: 0
+		Translocations: 0
+		Inversions: 0
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 7
+	Misassembled Contigs: 0
+	Misassembled Contig Bases: 0
+	Misassemblies Inter-Contig Overlap: 0
+Unaligned Contigs: 0 + 0 part
+Half Unaligned Contigs with Misassemblies: 0
+Unaligned Contig Bases: 0
+
+Ambiguously Mapped Contigs: 0
+Total Bases in Ambiguously Mapped Contigs: 0
+Extra Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used.
+
+	Covered Bases: 5601
+
+	SNPs: 25
+	Insertions: 0
+	Deletions: 15
+

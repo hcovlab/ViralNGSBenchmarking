@@ -1,0 +1,23 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                     shiver_genome  smaltalign_genome  viralngs_genome  vpipe_genome
+# misassemblies              0              0                  0                0           
+  # contig misassemblies     0              0                  0                0           
+    # c. relocations         0              0                  0                0           
+    # c. translocations      0              0                  0                0           
+    # c. inversions          0              0                  0                0           
+  # scaffold misassemblies   0              0                  0                0           
+    # s. relocations         0              0                  0                0           
+    # s. translocations      0              0                  0                0           
+    # s. inversions          0              0                  0                0           
+# misassembled contigs       0              0                  0                0           
+Misassembled contigs length  0              0                  0                0           
+# local misassemblies        0              0                  0                0           
+# scaffold gap ext. mis.     0              0                  0                0           
+# scaffold gap loc. mis.     0              0                  3                0           
+# unaligned mis. contigs     0              0                  0                0           
+# mismatches                 19             72                 158              187         
+# indels                     14             13                 11               31          
+    # indels (<= 5 bp)       12             10                 9                23          
+    # indels (> 5 bp)        2              3                  2                8           
+Indels length                48             63                 51               162         

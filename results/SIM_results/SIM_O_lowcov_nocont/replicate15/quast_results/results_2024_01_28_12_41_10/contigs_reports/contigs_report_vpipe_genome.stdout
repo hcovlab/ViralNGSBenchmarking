@@ -1,0 +1,56 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [EMBOSS_001]
+	Total Regions: 1
+	Total Region Length: 8701
+Analyzing contigs...
+CONTIG: currsample-currdate (8624bp)
+Best alignment score: 709.1 (LEN: 733, IDY: 96.74), Total number of alignments: 3
+			Looking for the best set of alignments (out of 3 total alignments)
+			The best set is below. Score: 1129.1, number of alignments: 3, unaligned bases: 7470
+		This contig is misassembled.
+		This contig is partially unaligned. (Aligned 1154 out of 8624 non-N bases (13.38%))
+			Warning! This contig is more unaligned than misassembled. Contig length is 8624 (number of Ns: 0) and total length of all aligns is 1154
+		Alignment: 856 1064 | 859 1067 | 209 209 | 99.52 | EMBOSS_001 currsample-currdate
+		Alignment: 1785 1996 | 1782 1993 | 212 212 | 100.0 | EMBOSS_001 currsample-currdate
+		Alignment: 3566 4298 | 3563 4295 | 733 733 | 96.74 | EMBOSS_001 currsample-currdate
+		Unaligned bases: 7470
+
+Analyzing coverage...
+Writing SNPs into /data/quast_results/results_2024_01_28_12_41_10/contigs_reports/minimap_output/vpipe_genome.used_snps
+
+Analysis is finished!
+Founded SNPs were written into /data/quast_results/results_2024_01_28_12_41_10/contigs_reports/minimap_output/vpipe_genome.used_snps
+
+Results:
+	Local Misassemblies: 0
+	Misassemblies: 0
+		Relocations: 0
+		Translocations: 0
+		Inversions: 0
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 0
+	Fake misassemblies matched with structural variations: 0
+	Misassembled Contigs: 0
+	Misassembled Contig Bases: 0
+	Misassemblies Inter-Contig Overlap ("Extra" Aligned Bases): 0
+Unaligned Contigs: 0 + 1 part
+Half Unaligned Contigs with Misassemblies: 1
+Unaligned Bases in Fully and Partially Unaligned Contigs: 7470
+
+Ambiguously Mapped Contigs: 0
+Total Bases in Ambiguously Mapped Contigs: 0
+"Extra" Aligned Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used (there is no "extra" aligned bases).
+
+	Covered Bases in Reference: 1154
+	Raw Aligned Bases in Assembly: 1154
+	Total Aligned Bases in Assembly (with "Extras"): 1154
+
+	SNPs: 19
+	Insertions: 3
+	Deletions: 3
+

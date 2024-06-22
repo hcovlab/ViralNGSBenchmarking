@@ -1,0 +1,3 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+1	8723	1	8720	EMBOSS_001	currsample-currdate	99.99		True
+CONTIG	currsample-currdate	8720	correct

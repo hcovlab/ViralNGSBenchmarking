@@ -1,0 +1,314 @@
+/quast-5.2.0/quast.py shiver_genome.fasta smaltalign_genome.fasta viralngs_genome.fasta vpipe_genome.fasta --reference HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.fasta --pe1 HIV1_CON_AE_simref_QSsim_R1_paired_m.fastq --pe2 HIV1_CON_AE_simref_QSsim_R2_paired_m.fastq --bam shiver_reads_m.bam,smaltalign_reads_m.bam,viralngs_reads_m.bam,vpipe_reads_m.bam --ref-bam HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.bam -m 100
+
+Version: 5.2.0
+
+System information:
+  OS: Linux-5.19.0-46-generic-x86_64-with-Ubuntu-20.04-focal (linux_64)
+  Python version: 2.7.18
+  CPUs number: 8
+
+Started: 2024-01-24 04:23:35
+
+Logging to /data/quast_results/results_2024_01_24_04_23_35/quast.log
+NOTICE: Maximum number of threads is set to 2 (use --threads option to set it manually)
+
+CWD: /data
+Main parameters: 
+  MODE: default, threads: 2, min contig length: 100, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Reference:
+  /data/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.fasta ==> HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed
+
+Contigs:
+  Pre-processing...
+  1  shiver_genome.fasta ==> shiver_genome
+  2  smaltalign_genome.fasta ==> smaltalign_genome
+  3  viralngs_genome.fasta ==> viralngs_genome
+  4  vpipe_genome.fasta ==> vpipe_genome
+
+2024-01-24 04:23:38
+Running Reads analyzer...
+  Logging to files /data/quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.log and /data/quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err...
+/quast-5.2.0/quast_libs/sambamba/sambamba_linux view -H shiver_reads_m.bam > quast_results/results_2024_01_24_04_23_35/reads_stats/shiver_reads_m.bam.header \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/sambamba/sambamba_linux view -H smaltalign_reads_m.bam > quast_results/results_2024_01_24_04_23_35/reads_stats/smaltalign_reads_m.bam.header \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/sambamba/sambamba_linux flagstat -t 1 smaltalign_reads_m.bam \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/smaltalign_genome.stat 2>> \
+quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/sambamba/sambamba_linux flagstat -t 1 shiver_reads_m.bam > \
+quast_results/results_2024_01_24_04_23_35/reads_stats/shiver_genome.stat 2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/bedtools/bin/bedtools bamtobed -i smaltalign_reads_m.bam > \
+quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/smaltalign_genome.bed \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/bedtools/bin/bedtools bamtobed -i shiver_reads_m.bam > quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/shiver_genome.bed \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+sort -k1,1 -k2,2n quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/smaltalign_genome.bed \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/smaltalign_genome.sorted.bed \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+sort -k1,1 -k2,2n quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/shiver_genome.bed \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/shiver_genome.sorted.bed \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/bedtools/bin/bedtools genomecov -i quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/shiver_genome.sorted.bed \
+-g quast_results/results_2024_01_24_04_23_35/quast_corrected_input/shiver_genome.fasta.fai \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/shiver_genome.genomecov \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/bedtools/bin/bedtools genomecov -i quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/smaltalign_genome.sorted.bed \
+-g quast_results/results_2024_01_24_04_23_35/quast_corrected_input/smaltalign_genome.fasta.fai \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/smaltalign_genome.genomecov \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/sambamba/sambamba_linux view -H viralngs_reads_m.bam > quast_results/results_2024_01_24_04_23_35/reads_stats/viralngs_reads_m.bam.header \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/sambamba/sambamba_linux flagstat -t 1 viralngs_reads_m.bam \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/viralngs_genome.stat 2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/sambamba/sambamba_linux view -H vpipe_reads_m.bam > quast_results/results_2024_01_24_04_23_35/reads_stats/vpipe_reads_m.bam.header \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/sambamba/sambamba_linux flagstat -t 1 vpipe_reads_m.bam > \
+quast_results/results_2024_01_24_04_23_35/reads_stats/vpipe_genome.stat 2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/bedtools/bin/bedtools bamtobed -i vpipe_reads_m.bam > quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/vpipe_genome.bed \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/bedtools/bin/bedtools bamtobed -i viralngs_reads_m.bam > quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/viralngs_genome.bed \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+sort -k1,1 -k2,2n quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/viralngs_genome.bed \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/viralngs_genome.sorted.bed \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/bedtools/bin/bedtools genomecov -i quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/viralngs_genome.sorted.bed \
+-g quast_results/results_2024_01_24_04_23_35/quast_corrected_input/viralngs_genome.fasta.fai \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/viralngs_genome.genomecov \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/sambamba/sambamba_linux view -H HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.bam \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.bam.header \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+  Pre-processing reads...
+  Using existing SAM-file: /data/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.sam
+/quast-5.2.0/quast_libs/sambamba/sambamba_linux view -H -S HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.sam \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.sam.header \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+  Sorting SAM-file for reference...
+sort -k1,1 -k2,2n quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/vpipe_genome.bed \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/vpipe_genome.sorted.bed \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/bedtools/bin/bedtools genomecov -i quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/vpipe_genome.sorted.bed \
+-g quast_results/results_2024_01_24_04_23_35/quast_corrected_input/vpipe_genome.fasta.fai \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/vpipe_genome.genomecov \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+  Using existing BAM-file: /data/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.bam
+/quast-5.2.0/quast_libs/sambamba/sambamba_linux flagstat -t 1 HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.bam \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.stat \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/bedtools/bin/bedtools bamtobed -i HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.bam \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.bed \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+sort -k1,1 -k2,2n quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.bed \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.sorted.bed \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/bedtools/bin/bedtools genomecov -i quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.sorted.bed \
+-g quast_results/results_2024_01_24_04_23_35/quast_corrected_input/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.fasta.fai \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.genomecov \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+  Analysis for reference is finished.
+  3  BWA: nothing aligned for 'viralngs_genome'.
+  Creating total report...
+    saved to /data/quast_results/results_2024_01_24_04_23_35/reads_stats/reads_report.txt, reads_report.tsv, and reads_report.tex
+/quast-5.2.0/quast_libs/sambamba/sambamba_linux view -t 2 -h -f bam -F not unmapped \
+HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.bam \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.bam \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/sambamba/sambamba_linux sort -t 2 --tmpdir quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output \
+-m 2GB -o quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam \
+quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.bam \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/sambamba/sambamba_linux view -t 2 -h quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.sorted.sam \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+  Calculating reads coverage...
+/quast-5.2.0/quast_libs/bedtools/bin/bedtools genomecov -ibam quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam \
+-g quast_results/results_2024_01_24_04_23_35/quast_corrected_input/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.fasta.fai \
+-bga > quast_results/results_2024_01_24_04_23_35/reads_stats/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.cov_raw \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+  Calculating physical coverage...
+/quast-5.2.0/quast_libs/sambamba/sambamba_linux view -t 2 -h -f bam -F proper_pair and not supplementary and not duplicate and template_length > -1000 and template_length < 1000 \
+HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.bam \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.physical.bam \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/sambamba/sambamba_linux sort -t 2 --tmpdir quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output \
+-m 2GB -o quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.physical.sorted.bam \
+quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.physical.bam \
+-n 2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/bedtools/bin/bedtools bamtobed -i quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.physical.sorted.bam \
+-bedpe > quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.physical.bedpe \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+sort -k1,1 -k2,2n quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.physical.bed \
+> quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.physical.sorted.bed \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+/quast-5.2.0/quast_libs/bedtools/bin/bedtools genomecov -i quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.physical.sorted.bed \
+-g quast_results/results_2024_01_24_04_23_35/quast_corrected_input/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.fasta.fai \
+-bga > quast_results/results_2024_01_24_04_23_35/reads_stats/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.physical.raw.cov \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+  Looking for trivial deletions (long zero-covered fragments)...
+  Trivial deletions: 0 found
+    Saving to: /data/quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/trivial_deletions.bed
+  Searching structural variations with GRIDSS...
+/quast-5.2.0/quast_libs/bwa/bwa index -p quast_results/results_2024_01_24_04_23_35/quast_corrected_input/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.fasta \
+quast_results/results_2024_01_24_04_23_35/quast_corrected_input/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.fasta \
+>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err 2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+java -ea -Xmx2g -Dsamjdk.create_index=true -Dsamjdk.use_async_io_read_samtools=true \
+-Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=true \
+-cp /quast-5.2.0/quast_libs/gridss/gridss-1.4.1.jar gridss.CallVariants I=/data/quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_goldenmap_sorted_dedupreads_m.mapped.sorted.bam \
+O=/data/quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.vcf \
+ASSEMBLY=/data/quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.gridss.bam \
+R=/data/quast_results/results_2024_01_24_04_23_35/quast_corrected_input/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.fasta \
+WORKER_THREADS=2 WORKING_DIR=/data/quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_gridss \
+2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+java -cp /quast-5.2.0/quast_libs/gridss/gridss-1.4.1.jar au.edu.wehi.idsv.VcfBreakendToBedpe \
+I=/data/quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_gridss/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.vcf \
+O=/data/quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_structural_variations.raw.bed \
+OF=/data/quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_structural_variations.filtered.bed \
+R=/data/quast_results/results_2024_01_24_04_23_35/quast_corrected_input/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.fasta \
+INCLUDE_HEADER=TRUE 2>> quast_results/results_2024_01_24_04_23_35/reads_stats/reads_stats.err
+    Saving to: /data/quast_results/results_2024_01_24_04_23_35/reads_stats/temp_output/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed_structural_variations.bed
+  Structural variations are in /data/quast_results/results_2024_01_24_04_23_35/reads_stats/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.bed
+  Coverage distribution along the reference genome is in /data/quast_results/results_2024_01_24_04_23_35/reads_stats/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.cov
+Done.
+
+2024-01-24 04:24:35
+Running Basic statistics processor...
+  Reference genome:
+    HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.fasta, length = 8662, num fragments = 1, GC % = 40.39
+  Contig files: 
+    1  shiver_genome
+    2  smaltalign_genome
+    3  viralngs_genome
+    4  vpipe_genome
+  Calculating N50 and L50...
+    1  shiver_genome, N50 = 8615, L50 = 1, auN = 8615.0, Total length = 8615, GC % = 40.38, # N's per 100 kbp =  0.00
+    2  smaltalign_genome, N50 = 8605, L50 = 1, auN = 8605.0, Total length = 8605, GC % = 40.37, # N's per 100 kbp =  0.00
+    3  viralngs_genome, N50 = 8624, L50 = 1, auN = 8624.0, Total length = 8624, GC % = undefined, # N's per 100 kbp =  100000.00
+    4  vpipe_genome, N50 = 8638, L50 = 1, auN = 8638.0, Total length = 8638, GC % = 40.83, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /data/quast_results/results_2024_01_24_04_23_35/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /data/quast_results/results_2024_01_24_04_23_35/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /data/quast_results/results_2024_01_24_04_23_35/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /data/quast_results/results_2024_01_24_04_23_35/basic_stats/GC_content_plot.pdf
+  Drawing shiver_genome GC content plot...
+    saved to /data/quast_results/results_2024_01_24_04_23_35/basic_stats/shiver_genome_GC_content_plot.pdf
+  Drawing smaltalign_genome GC content plot...
+    saved to /data/quast_results/results_2024_01_24_04_23_35/basic_stats/smaltalign_genome_GC_content_plot.pdf
+  Drawing viralngs_genome GC content plot...
+    saved to /data/quast_results/results_2024_01_24_04_23_35/basic_stats/viralngs_genome_GC_content_plot.pdf
+  Drawing vpipe_genome GC content plot...
+    saved to /data/quast_results/results_2024_01_24_04_23_35/basic_stats/vpipe_genome_GC_content_plot.pdf
+Done.
+
+2024-01-24 04:24:36
+Running Contig analyzer...
+  1  shiver_genome
+  2  smaltalign_genome
+  1  Logging to files /data/quast_results/results_2024_01_24_04_23_35/contigs_reports/contigs_report_shiver_genome.stdout and contigs_report_shiver_genome.stderr...
+  2  Logging to files /data/quast_results/results_2024_01_24_04_23_35/contigs_reports/contigs_report_smaltalign_genome.stdout and contigs_report_smaltalign_genome.stderr...
+  1  Aligning contigs to the reference
+  2  Aligning contigs to the reference
+  2  /quast-5.2.0/quast_libs/minimap2/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join \
+     -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 \
+     --cs -t 1 quast_results/results_2024_01_24_04_23_35/quast_corrected_input/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.fasta \
+     quast_results/results_2024_01_24_04_23_35/quast_corrected_input/smaltalign_genome.fasta \
+     > quast_results/results_2024_01_24_04_23_35/contigs_reports/minimap_output/smaltalign_genome.coords_tmp \
+     2>> quast_results/results_2024_01_24_04_23_35/contigs_reports/contigs_report_smaltalign_genome.stderr
+  1  /quast-5.2.0/quast_libs/minimap2/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join \
+     -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 \
+     --cs -t 1 quast_results/results_2024_01_24_04_23_35/quast_corrected_input/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.fasta \
+     quast_results/results_2024_01_24_04_23_35/quast_corrected_input/shiver_genome.fasta \
+     > quast_results/results_2024_01_24_04_23_35/contigs_reports/minimap_output/shiver_genome.coords_tmp \
+     2>> quast_results/results_2024_01_24_04_23_35/contigs_reports/contigs_report_shiver_genome.stderr
+  1  Analysis is finished.
+
+  2  Analysis is finished.
+
+  3  viralngs_genome
+  3  Logging to files /data/quast_results/results_2024_01_24_04_23_35/contigs_reports/contigs_report_viralngs_genome.stdout and contigs_report_viralngs_genome.stderr...
+  3  Aligning contigs to the reference
+  4  vpipe_genome
+  4  Logging to files /data/quast_results/results_2024_01_24_04_23_35/contigs_reports/contigs_report_vpipe_genome.stdout and contigs_report_vpipe_genome.stderr...
+  4  Aligning contigs to the reference
+  3  /quast-5.2.0/quast_libs/minimap2/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join \
+     -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 \
+     --cs -t 1 quast_results/results_2024_01_24_04_23_35/quast_corrected_input/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.fasta \
+     quast_results/results_2024_01_24_04_23_35/quast_corrected_input/viralngs_genome.fasta \
+     > quast_results/results_2024_01_24_04_23_35/contigs_reports/minimap_output/viralngs_genome.coords_tmp \
+     2>> quast_results/results_2024_01_24_04_23_35/contigs_reports/contigs_report_viralngs_genome.stderr
+  4  /quast-5.2.0/quast_libs/minimap2/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join \
+     -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 \
+     --cs -t 1 quast_results/results_2024_01_24_04_23_35/quast_corrected_input/HIV1_CON_AE_simref_QSsim_aligned_consensus_fixed.fasta \
+     quast_results/results_2024_01_24_04_23_35/quast_corrected_input/vpipe_genome.fasta \
+     > quast_results/results_2024_01_24_04_23_35/contigs_reports/minimap_output/vpipe_genome.coords_tmp \
+     2>> quast_results/results_2024_01_24_04_23_35/contigs_reports/contigs_report_vpipe_genome.stderr
+  3  Nothing aligned for 'viralngs_genome'.
+  4  Analysis is finished.
+
+  Creating total report...
+    saved to /data/quast_results/results_2024_01_24_04_23_35/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /data/quast_results/results_2024_01_24_04_23_35/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /data/quast_results/results_2024_01_24_04_23_35/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /data/quast_results/results_2024_01_24_04_23_35/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /data/quast_results/results_2024_01_24_04_23_35/contigs_reports/misassemblies_frcurve_plot.pdf
+Done for 3 out of 4. For the rest, only basic stats are going to be evaluated.
+
+2024-01-24 04:24:37
+Running NA-NGA calculation...
+  1  shiver_genome, Largest alignment = 8615, NA50 = 8615, NGA50 = 8615, LA50 = 1, LGA50 = 1
+  2  smaltalign_genome, Largest alignment = 8513, NA50 = 8513, NGA50 = 8513, LA50 = 1, LGA50 = 1
+  3  vpipe_genome, Largest alignment = 8536, NA50 = 8536, NGA50 = 8536, LA50 = 1, LGA50 = 1
+  Drawing cumulative plot...
+    saved to /data/quast_results/results_2024_01_24_04_23_35/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /data/quast_results/results_2024_01_24_04_23_35/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /data/quast_results/results_2024_01_24_04_23_35/aligned_stats/NGAx_plot.pdf
+Done.
+
+2024-01-24 04:24:37
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  1  shiver_genome
+  2  smaltalign_genome
+  2  Analysis is finished.
+  1  Analysis is finished.
+  3  vpipe_genome
+  3  Analysis is finished.
+  Drawing Genome fraction, % histogram...
+    saved to /data/quast_results/results_2024_01_24_04_23_35/genome_stats/genome_fraction_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2024-01-24 04:24:37
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2024-01-24 04:24:39
+RESULTS:
+  Text versions of total report are saved to /data/quast_results/results_2024_01_24_04_23_35/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /data/quast_results/results_2024_01_24_04_23_35/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /data/quast_results/results_2024_01_24_04_23_35/report.html
+  PDF version (tables and plots) is saved to /data/quast_results/results_2024_01_24_04_23_35/report.pdf
+  Icarus (contig browser) is saved to /data/quast_results/results_2024_01_24_04_23_35/icarus.html
+  Log is saved to /data/quast_results/results_2024_01_24_04_23_35/quast.log
+
+Finished: 2024-01-24 04:24:39
+Elapsed time: 0:01:03.885677
+NOTICEs: 4; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

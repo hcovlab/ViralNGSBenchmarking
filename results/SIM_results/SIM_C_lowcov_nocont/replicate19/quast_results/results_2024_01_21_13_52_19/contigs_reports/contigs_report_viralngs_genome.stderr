@@ -1,0 +1,10 @@
+[M::mm_idx_gen::0.001*3.36] collected minimizers
+[M::mm_idx_gen::0.001*2.65] sorted minimizers
+[M::main::0.001*2.65] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.001*2.58] mid_occ = 200
+[M::mm_idx_stat] kmer size: 19; skip: 19; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.001*2.52] distinct minimizers: 832 (100.00% are singletons); average occurrences: 1.000; average spacing: 10.356; total length: 8616
+[M::worker_pipeline::0.003*1.65] mapped 1 sequences
+[M::main] Version: 2.24-r1122
+[M::main] CMD: /quast-5.2.0/quast_libs/minimap2/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 --cs -t 1 /data/quast_results/results_2024_01_21_13_52_19/quast_corrected_input/HIV1_CON_C_simref_QSsim_aligned_consensus_fixed.fasta /data/quast_results/results_2024_01_21_13_52_19/quast_corrected_input/viralngs_genome.fasta
+[M::main] Real time: 0.004 sec; CPU: 0.006 sec; Peak RSS: 0.070 GB

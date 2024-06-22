@@ -1,0 +1,15 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+1	5842	1	5814	EMBOSS_001	currsample_currdate	98.97		True
+local misassembly
+6032	6144	6007	6119	EMBOSS_001	currsample_currdate	98.23		True
+indel: indel (<= 5bp)
+6148	6376	6120	6348	EMBOSS_001	currsample_currdate	98.69		True
+local misassembly
+6657	7215	6641	7199	EMBOSS_001	currsample_currdate	99.11		True
+indel: indel (<= 5bp)
+7219	7804	7200	7785	EMBOSS_001	currsample_currdate	100.0		True
+indel: indel (> 5bp)
+7881	7963	7838	7920	EMBOSS_001	currsample_currdate	98.8		True
+local misassembly
+8279	8493	8233	8447	EMBOSS_001	currsample_currdate	97.67		True
+CONTIG	currsample_currdate	8614	correct

@@ -1,0 +1,5 @@
+Assembly	# misassemblies	  # contig misassemblies	    # c. relocations	    # c. translocations	    # c. inversions	  # scaffold misassemblies	    # s. relocations	    # s. translocations	    # s. inversions	# misassembled contigs	Misassembled contigs length	# local misassemblies	# scaffold gap ext. mis.	# scaffold gap loc. mis.	# structural variations	# unaligned mis. contigs	# mismatches	# indels	    # indels (<= 5 bp)	    # indels (> 5 bp)	Indels length
+shiver_genome	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+smaltalign_genome	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	40	5	5	0	15
+viralngs_genome	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	81	5	5	0	15
+vpipe_genome	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	269	56	51	5	168

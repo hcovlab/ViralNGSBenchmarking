@@ -1,0 +1,3 @@
+None	3002	0	1125	+	EMBOSS_001	8735	4149	5280	1125	1125	60	NM:i:6	ms:i:1103	AS:i:1103	nn:i:6	tp:A:P	cm:i:109	s1:i:1080	s2:i:0	dv:f:0.0012	zd:i:1	cg:Z:978M6D147M	cs:Z::978-nnnnnn:147
+None	3002	2599	3002	+	EMBOSS_001	8735	6754	7157	403	403	60	NM:i:0	ms:i:403	AS:i:403	nn:i:0	tp:A:P	cm:i:38	s1:i:376	s2:i:0	dv:f:0.0012	zd:i:2	cg:Z:403M	cs:Z::403
+None	3002	1405	1656	+	EMBOSS_001	8735	5557	5808	251	251	60	NM:i:0	ms:i:251	AS:i:251	nn:i:0	tp:A:P	cm:i:24	s1:i:238	s2:i:0	dv:f:0.0012	zd:i:3	cg:Z:251M	cs:Z::251

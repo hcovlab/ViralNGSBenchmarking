@@ -1,0 +1,28 @@
+Assembly	shiver_genome	smaltalign_genome	viralngs_genome	vpipe_genome
+# total reads	350000	350000	350000	350000
+# left	175000	175000	175000	175000
+# right	175000	175000	175000	175000
+# mapped	348577	348027	336281	338509
+Mapped (%)	99.59	99.44	96.08	96.72
+# properly paired	347154	346054	322658	327432
+Properly paired (%)	99.19	98.87	92.19	93.55
+# singletons	1423	1973	13623	11077
+Singletons (%)	0.41	0.56	3.89	3.16
+# misjoint mates	0	0	0	0
+Misjoint mates (%)	0.0	0.0	0.0	0.0
+Avg. coverage depth	10076	10063	9721	9689
+Coverage >= 1x (%)	100.0	99.98	98.76	100.0
+Coverage >= 5x (%)	100.0	99.93	98.76	99.94
+Coverage >= 10x (%)	100.0	99.93	98.76	99.87
+# reference mapped	348577	348577	348577	348577
+Reference mapped (%)	99.59	99.59	99.59	99.59
+# reference properly paired	347154	347154	347154	347154
+Reference properly paired (%)	99.19	99.19	99.19	99.19
+# reference singletons	1423	1423	1423	1423
+Reference singletons (%)	0.41	0.41	0.41	0.41
+# reference misjoint mates	0	0	0	0
+Reference misjoint mates (%)	0.0	0.0	0.0	0.0
+Reference avg. coverage depth	10061	10061	10061	10061
+Reference coverage >= 1x (%)	100.0	100.0	100.0	100.0
+Reference coverage >= 5x (%)	100.0	100.0	100.0	100.0
+Reference coverage >= 10x (%)	100.0	100.0	100.0	100.0

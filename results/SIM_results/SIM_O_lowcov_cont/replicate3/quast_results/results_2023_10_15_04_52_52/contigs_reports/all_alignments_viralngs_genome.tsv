@@ -1,0 +1,13 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+393	1029	1	637	EMBOSS_001	None	99.22		True
+fake: scaffold gap size wrong estimation (local)
+1709	2712	1311	2314	EMBOSS_001	None	99.38		True
+fake: scaffold gap size wrong estimation (local)
+2923	3276	2526	2879	EMBOSS_001	None	100.0		True
+fake: scaffold gap size wrong estimation (local)
+3578	4513	3178	4107	EMBOSS_001	None	98.82		True
+fake: scaffold gap size wrong estimation (local)
+4863	5232	4458	4827	EMBOSS_001	None	99.19		True
+fake: scaffold gap size wrong estimation (local)
+6796	7183	6376	6763	EMBOSS_001	None	99.74		True
+CONTIG	None	6763	correct

@@ -1,0 +1,62 @@
+Assembly	shiver_genome	smaltalign_genome	viralngs_genome	vpipe_genome
+# contigs (>= 0 bp)	1	1	1	1
+# contigs (>= 1000 bp)	1	1	1	1
+# contigs (>= 5000 bp)	1	1	1	1
+# contigs (>= 10000 bp)	0	0	0	0
+# contigs (>= 25000 bp)	0	0	0	0
+# contigs (>= 50000 bp)	0	0	0	0
+Total length (>= 0 bp)	8604	8579	8588	8635
+Total length (>= 1000 bp)	8604	8579	8588	8635
+Total length (>= 5000 bp)	8604	8579	8588	8635
+Total length (>= 10000 bp)	0	0	0	0
+Total length (>= 25000 bp)	0	0	0	0
+Total length (>= 50000 bp)	0	0	0	0
+# contigs	1	1	1	1
+Largest contig	8604	8579	8588	8635
+Total length	8604	8579	8588	8635
+Reference length	8634	8634	8634	8634
+GC (%)	40.28	40.28	40.11	40.63
+Reference GC (%)	40.33	40.33	40.33	40.33
+N50	8604	8579	8588	8635
+NG50	8604	8579	8588	8635
+N75	8604	8579	8588	8635
+NG75	8604	8579	8588	8635
+L50	1	1	1	1
+LG50	1	1	1	1
+L75	1	1	1	1
+LG75	1	1	1	1
+# total reads	350000	350000	350000	350000
+# left	175000	175000	175000	175000
+# right	175000	175000	175000	175000
+Mapped (%)	98.7	98.07	83.77	93.63
+Reference mapped (%)	98.69	98.69	98.69	98.69
+Properly paired (%)	97.4	96.15	68.98	88.47
+Reference properly paired (%)	97.39	97.39	97.39	97.39
+Avg. coverage depth	10013	9942	8408	9399
+Reference avg. coverage depth	10002	10002	10002	10002
+Coverage >= 1x (%)	100.0	100.0	89.57	100.0
+Reference coverage >= 1x (%)	100.0	100.0	100.0	100.0
+# misassemblies	0	0	0	0
+# misassembled contigs	0	0	0	0
+Misassembled contigs length	0	0	0	0
+# local misassemblies	0	0	0	0
+# scaffold gap ext. mis.	0	0	0	0
+# scaffold gap loc. mis.	0	0	3	0
+# unaligned mis. contigs	0	0	0	0
+# unaligned contigs	0 + 0 part	0 + 0 part	0 + 0 part	0 + 0 part
+Unaligned length	0	0	0	0
+Genome fraction (%)	100.000	99.302	89.405	98.000
+Duplication ratio	1.001	1.005	1.117	1.025
+# N's per 100 kbp	0.00	0.00	11737.31	0.00
+# mismatches per 100 kbp	46.52	374.80	1457.01	996.91
+# indels per 100 kbp	139.57	128.84	130.09	356.04
+Largest alignment	8603	8520	7690	8464
+Total aligned length	8603	8520	7690	8464
+NA50	8603	8520	7690	8464
+NGA50	8603	8520	7690	8464
+NA75	8603	8520	7690	8464
+NGA75	8603	8520	7690	8464
+LA50	1	1	1	1
+LGA50	1	1	1	1
+LA75	1	1	1	1
+LGA75	1	1	1	1

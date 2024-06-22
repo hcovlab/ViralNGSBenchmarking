@@ -1,0 +1,62 @@
+Assembly	shiver_genome	smaltalign_genome	viralngs_genome	vpipe_genome
+# contigs (>= 0 bp)	1	1	1	1
+# contigs (>= 1000 bp)	1	1	1	1
+# contigs (>= 5000 bp)	1	1	1	1
+# contigs (>= 10000 bp)	0	0	0	0
+# contigs (>= 25000 bp)	0	0	0	0
+# contigs (>= 50000 bp)	0	0	0	0
+Total length (>= 0 bp)	8593	8571	8593	8608
+Total length (>= 1000 bp)	8593	8571	8593	8608
+Total length (>= 5000 bp)	8593	8571	8593	8608
+Total length (>= 10000 bp)	0	0	0	0
+Total length (>= 25000 bp)	0	0	0	0
+Total length (>= 50000 bp)	0	0	0	0
+# contigs	1	1	1	1
+Largest contig	8593	8571	8593	8608
+Total length	8593	8571	8593	8608
+Reference length	8608	8608	8608	8608
+GC (%)	40.30	40.22	40.14	40.74
+Reference GC (%)	40.30	40.30	40.30	40.30
+N50	8593	8571	8593	8608
+NG50	8593	8571	8593	8608
+N75	8593	8571	8593	8608
+NG75	8593	8571	8593	8608
+L50	1	1	1	1
+LG50	1	1	1	1
+L75	1	1	1	1
+LG75	1	1	1	1
+# total reads	350000	350000	350000	350000
+# left	175000	175000	175000	175000
+# right	175000	175000	175000	175000
+Mapped (%)	98.75	98.25	92.45	88.41
+Reference mapped (%)	98.75	98.75	98.75	98.75
+Properly paired (%)	97.5	96.51	84.89	78.98
+Reference properly paired (%)	97.5	97.5	97.5	97.5
+Avg. coverage depth	10032	9971	9337	8859
+Reference avg. coverage depth	10028	10028	10028	10028
+Coverage >= 1x (%)	100.0	100.0	96.33	99.41
+Reference coverage >= 1x (%)	100.0	100.0	100.0	100.0
+# misassemblies	0	0	0	0
+# misassembled contigs	0	0	0	0
+Misassembled contigs length	0	0	0	0
+# local misassemblies	0	0	0	0
+# scaffold gap ext. mis.	0	0	0	0
+# scaffold gap loc. mis.	0	0	2	0
+# unaligned mis. contigs	0	0	0	0
+# unaligned contigs	0 + 0 part	0 + 0 part	0 + 0 part	0 + 0 part
+Unaligned length	0	0	0	0
+Genome fraction (%)	100.000	99.406	96.334	97.986
+Duplication ratio	1.000	1.004	1.038	1.022
+# N's per 100 kbp	0.00	0.00	3665.77	0.00
+# mismatches per 100 kbp	0.00	58.54	326.21	2066.75
+# indels per 100 kbp	46.55	58.54	48.33	427.60
+Largest alignment	8593	8521	8278	8438
+Total aligned length	8593	8521	8278	8438
+NA50	8593	8521	8278	8438
+NGA50	8593	8521	8278	8438
+NA75	8593	8521	8278	8438
+NGA75	8593	8521	8278	8438
+LA50	1	1	1	1
+LGA50	1	1	1	1
+LA75	1	1	1	1
+LGA75	1	1	1	1

@@ -1,0 +1,5 @@
+# ViralNGSBenchmarking
+This repository contains supplementary data and code for a study titled "Comparative Evaluation of Bioinformatic Pipelines for Full-Length Viral Genome Assembly," published on BioRxiv (https://doi.org/10.1101/2024.03.13.584779).
+
+## Project initialization folders
+To enable easier reproducibility of the analysis, we provide the data and configuration files for all three datasets (SIM, SS+NGS, SGS-FULL) used in our study. Here we preliminarily publish the Sanger and next-generation sequencing results of the 49 Hungarian HIV samples of the SS+NGS dataset. These results will be publicly available in INSDC data repositories (GenBank and SRA) within 1 year from the point of publication in a scientific journal. Until then, the sequencing results uploaded to this repository can only be used for the replication of our benchmarking analysis. Any other use requires the authors' permission.

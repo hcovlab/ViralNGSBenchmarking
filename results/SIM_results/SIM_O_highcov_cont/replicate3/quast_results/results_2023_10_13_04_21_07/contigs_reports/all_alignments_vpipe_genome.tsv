@@ -1,0 +1,8 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+859	1101	859	1101	EMBOSS_001	currsample_currdate	99.59		True
+unknown
+1794	2064	1782	2052	EMBOSS_001	currsample_currdate	100.0		True
+unknown
+3446	4310	3434	4295	EMBOSS_001	currsample_currdate	97.57		True
+unknown
+CONTIG	currsample_currdate	8625	mis_unaligned

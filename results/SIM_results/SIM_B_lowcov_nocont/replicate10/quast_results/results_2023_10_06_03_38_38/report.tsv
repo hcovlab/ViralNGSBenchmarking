@@ -1,0 +1,62 @@
+Assembly	shiver_genome	smaltalign_genome	viralngs_genome	vpipe_genome
+# contigs (>= 0 bp)	1	1	1	1
+# contigs (>= 1000 bp)	1	1	1	1
+# contigs (>= 5000 bp)	1	1	1	1
+# contigs (>= 10000 bp)	0	0	0	0
+# contigs (>= 25000 bp)	0	0	0	0
+# contigs (>= 50000 bp)	0	0	0	0
+Total length (>= 0 bp)	8606	8606	8606	8606
+Total length (>= 1000 bp)	8606	8606	8606	8606
+Total length (>= 5000 bp)	8606	8606	8606	8606
+Total length (>= 10000 bp)	0	0	0	0
+Total length (>= 25000 bp)	0	0	0	0
+Total length (>= 50000 bp)	0	0	0	0
+# contigs	1	1	1	1
+Largest contig	8606	8606	8606	8606
+Total length	8606	8606	8606	8606
+Reference length	8624	8624	8624	8624
+GC (%)	40.61	40.61	40.61	40.61
+Reference GC (%)	40.61	40.61	40.61	40.61
+N50	8606	8606	8606	8606
+NG50	8606	8606	8606	8606
+N75	8606	8606	8606	8606
+NG75	8606	8606	8606	8606
+L50	1	1	1	1
+LG50	1	1	1	1
+L75	1	1	1	1
+LG75	1	1	1	1
+# total reads	17600	17600	17600	17600
+# left	8800	8800	8800	8800
+# right	8800	8800	8800	8800
+Mapped (%)	99.55	99.55	99.55	99.53
+Reference mapped (%)	99.54	99.54	99.54	99.54
+Properly paired (%)	99.1	99.1	99.1	99.06
+Reference properly paired (%)	99.08	99.08	99.08	99.08
+Avg. coverage depth	508	508	508	508
+Reference avg. coverage depth	507	507	507	507
+Coverage >= 1x (%)	100.0	100.0	100.0	100.0
+Reference coverage >= 1x (%)	100.0	100.0	100.0	100.0
+# misassemblies	0	0	0	0
+# misassembled contigs	0	0	0	0
+Misassembled contigs length	0	0	0	0
+# local misassemblies	0	0	0	0
+# scaffold gap ext. mis.	0	0	0	0
+# scaffold gap loc. mis.	0	0	0	0
+# unaligned mis. contigs	0	0	0	0
+# unaligned contigs	0 + 0 part	0 + 0 part	0 + 0 part	0 + 0 part
+Unaligned length	0	0	0	0
+Genome fraction (%)	100.000	100.000	100.000	100.000
+Duplication ratio	1.000	1.000	1.000	1.000
+# N's per 100 kbp	0.00	0.00	0.00	0.00
+# mismatches per 100 kbp	0.00	0.00	0.00	0.00
+# indels per 100 kbp	46.48	46.48	46.48	69.72
+Largest alignment	8606	8606	8606	8606
+Total aligned length	8606	8606	8606	8606
+NA50	8606	8606	8606	8606
+NGA50	8606	8606	8606	8606
+NA75	8606	8606	8606	8606
+NGA75	8606	8606	8606	8606
+LA50	1	1	1	1
+LGA50	1	1	1	1
+LA75	1	1	1	1
+LGA75	1	1	1	1

@@ -1,0 +1,6 @@
+Assembly	shiver_genome	smaltalign_genome	viralngs_genome	vpipe_genome
+# fully unaligned contigs	1	0	0	0
+Fully unaligned length	8624	0	0	0
+# partially unaligned contigs	-	1	0	1
+Partially unaligned length	-	3036	0	7682
+# N's	8624	0	317	0

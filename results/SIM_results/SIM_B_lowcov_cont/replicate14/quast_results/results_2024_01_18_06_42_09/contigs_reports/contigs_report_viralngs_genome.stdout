@@ -1,0 +1,67 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [EMBOSS_001]
+	Total Regions: 1
+	Total Region Length: 8665
+Analyzing contigs...
+CONTIG: None (7879bp)
+Best alignment score: 1125.9 (LEN: 1139, IDY: 98.85), Total number of alignments: 9
+			Looking for the best set of alignments (out of 9 total alignments)
+			The best set is below. Score: 4567.5, number of alignments: 9, unaligned bases: 3206
+		This contig is misassembled.
+			Real Alignment 1: 727 1008 | 1 282 | 282 282 | 99.65 | EMBOSS_001 None
+			  Scaffold gap between these two alignments, gap lengths difference (reference vs assembly) = 0 (local)
+			Real Alignment 2: 1153 1487 | 427 761 | 335 335 | 97.61 | EMBOSS_001 None
+			  Scaffold gap between these two alignments, gap lengths difference (reference vs assembly) = 12 (local)
+			Real Alignment 3: 2060 2748 | 1322 2010 | 689 689 | 98.11 | EMBOSS_001 None
+			  Scaffold gap between these two alignments, gap lengths difference (reference vs assembly) = 0 (local)
+			Real Alignment 4: 3241 3670 | 2503 2932 | 430 430 | 98.83 | EMBOSS_001 None
+			  Scaffold gap between these two alignments, gap lengths difference (reference vs assembly) = 0 (local)
+			Real Alignment 5: 3871 5018 | 3133 4271 | 1148 1139 | 98.85 | EMBOSS_001 None
+			  Scaffold gap between these two alignments, gap lengths difference (reference vs assembly) = 0 (local)
+			Real Alignment 6: 5222 5532 | 4475 4785 | 311 311 | 99.04 | EMBOSS_001 None
+			  Scaffold gap between these two alignments, gap lengths difference (reference vs assembly) = 6 (local)
+			Real Alignment 7: 6728 7503 | 5975 6729 | 776 755 | 98.76 | EMBOSS_001 None
+			  Scaffold gap between these two alignments, gap lengths difference (reference vs assembly) = 0 (local)
+			Real Alignment 8: 7672 8190 | 6898 7413 | 519 516 | 97.87 | EMBOSS_001 None
+			  Scaffold gap between these two alignments, gap lengths difference (reference vs assembly) = 0 (local)
+			Real Alignment 9: 8441 8665 | 7664 7879 | 225 216 | 99.07 | EMBOSS_001 None
+
+Analyzing coverage...
+Writing SNPs into /data/quast_results/results_2024_01_18_06_42_09/contigs_reports/minimap_output/viralngs_genome.used_snps
+
+Analysis is finished!
+Founded SNPs were written into /data/quast_results/results_2024_01_18_06_42_09/contigs_reports/minimap_output/viralngs_genome.used_snps
+
+Results:
+	Local Misassemblies: 0
+	Misassemblies: 0
+		Relocations: 0
+		Translocations: 0
+		Inversions: 0
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 8
+	Fake misassemblies matched with structural variations: 0
+	Misassembled Contigs: 0
+	Misassembled Contig Bases: 0
+	Misassemblies Inter-Contig Overlap ("Extra" Aligned Bases): 0
+Unaligned Contigs: 0 + 0 part
+Half Unaligned Contigs with Misassemblies: 0
+Unaligned Bases in Fully and Partially Unaligned Contigs: 0
+
+Ambiguously Mapped Contigs: 0
+Total Bases in Ambiguously Mapped Contigs: 0
+"Extra" Aligned Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used (there is no "extra" aligned bases).
+
+	Covered Bases in Reference: 4679
+	Raw Aligned Bases in Assembly: 4673
+	Total Aligned Bases in Assembly (with "Extras"): 4673
+
+	SNPs: 59
+	Insertions: 0
+	Deletions: 42
+

@@ -1,0 +1,78 @@
+\documentclass[12pt,a4paper]{article}
+\begin{document}
+\begin{table}[ht]
+\begin{center}
+\caption{All statistics are based on contigs of size $\geq$ 100 bp, unless otherwise noted (e.g., "\# contigs ($\geq$ 0 bp)" and "Total length ($\geq$ 0 bp)" include all contigs).}
+\begin{tabular}{|l*{4}{|r}|}
+\hline
+Assembly & shiver\_genome & smaltalign\_genome & viralngs\_genome & vpipe\_genome \\ \hline
+\# contigs ($\geq$ 0 bp) & 1 & 1 & 1 & 1 \\ \hline
+\# contigs ($\geq$ 1000 bp) & 1 & 1 & 1 & 1 \\ \hline
+\# contigs ($\geq$ 5000 bp) & 1 & 1 & 0 & 1 \\ \hline
+\# contigs ($\geq$ 10000 bp) & 0 & 0 & 0 & 0 \\ \hline
+\# contigs ($\geq$ 25000 bp) & 0 & 0 & 0 & 0 \\ \hline
+\# contigs ($\geq$ 50000 bp) & 0 & 0 & 0 & 0 \\ \hline
+Total length ($\geq$ 0 bp) & 8721 & {\bf 8724} & 4516 & {\bf 8724} \\ \hline
+Total length ($\geq$ 1000 bp) & 8721 & {\bf 8724} & 4516 & {\bf 8724} \\ \hline
+Total length ($\geq$ 5000 bp) & 8721 & {\bf 8724} & 0 & {\bf 8724} \\ \hline
+Total length ($\geq$ 10000 bp) & 0 & 0 & 0 & 0 \\ \hline
+Total length ($\geq$ 25000 bp) & 0 & 0 & 0 & 0 \\ \hline
+Total length ($\geq$ 50000 bp) & 0 & 0 & 0 & 0 \\ \hline
+\# contigs & 1 & 1 & 1 & 1 \\ \hline
+Largest contig & 8721 & {\bf 8724} & 4516 & {\bf 8724} \\ \hline
+Total length & 8721 & {\bf 8724} & 4516 & {\bf 8724} \\ \hline
+Reference length & 8742 & 8742 & 8742 & 8742 \\ \hline
+GC (\%) & 40.73 & 40.75 & 40.36 & 40.75 \\ \hline
+Reference GC (\%) & 40.73 & 40.73 & 40.73 & 40.73 \\ \hline
+N50 & 8721 & {\bf 8724} & 4516 & {\bf 8724} \\ \hline
+NG50 & 8721 & {\bf 8724} & 4516 & {\bf 8724} \\ \hline
+N90 & 8721 & {\bf 8724} & 4516 & {\bf 8724} \\ \hline
+NG90 & 8721 & {\bf 8724} & - & {\bf 8724} \\ \hline
+auN & 8721.0 & {\bf 8724.0} & 4516.0 & {\bf 8724.0} \\ \hline
+auNG & 8700.1 & {\bf 8706.0} & 2332.9 & {\bf 8706.0} \\ \hline
+L50 & 1 & 1 & 1 & 1 \\ \hline
+LG50 & 1 & 1 & 1 & 1 \\ \hline
+L90 & 1 & 1 & 1 & 1 \\ \hline
+LG90 & {\bf 1} & {\bf 1} & - & {\bf 1} \\ \hline
+\# total reads & 112873 & 112889 & 251084 & 112930 \\ \hline
+\# left & 190000 & 190000 & 190000 & 190000 \\ \hline
+\# right & 190000 & 190000 & 190000 & 190000 \\ \hline
+Mapped (\%) & {\bf 317.92} & 317.88 & 66.41 & 317.76 \\ \hline
+Reference mapped (\%) & 317.08 & 317.08 & 317.08 & 317.08 \\ \hline
+Properly paired (\%) & {\bf 304.65} & 304.62 & 53.53 & 304.48 \\ \hline
+Reference properly paired (\%) & 303.82 & 303.82 & 303.82 & 303.82 \\ \hline
+Avg. coverage depth & 10249 & 10247 & 9082 & {\bf 10251} \\ \hline
+Reference avg. coverage depth & 10242 & 10242 & 10242 & 10242 \\ \hline
+Coverage $\geq$ 1x (\%) & 100.0 & 100.0 & 96.12 & 100.0 \\ \hline
+Reference coverage $\geq$ 1x (\%) & 100.0 & 100.0 & 100.0 & 100.0 \\ \hline
+\# misassemblies & 0 & 0 & 0 & 0 \\ \hline
+\# misassembled contigs & 0 & 0 & 0 & 0 \\ \hline
+Misassembled contigs length & 0 & 0 & 0 & 0 \\ \hline
+\# local misassemblies & 0 & 0 & 0 & 0 \\ \hline
+\# scaffold gap ext. mis. & 0 & 0 & 0 & 0 \\ \hline
+\# scaffold gap loc. mis. & 0 & 0 & 0 & 0 \\ \hline
+\# structural variations & 0 & 0 & 0 & 0 \\ \hline
+\# unaligned mis. contigs & 0 & 0 & 0 & 0 \\ \hline
+\# unaligned contigs & 0 + 0 part & 0 + 0 part & 0 + 0 part & 0 + 0 part \\ \hline
+Unaligned length & 0 & 0 & 0 & 0 \\ \hline
+Genome fraction (\%) & {\bf 100.000} & 99.966 & 51.767 & {\bf 100.000} \\ \hline
+Duplication ratio & {\bf 1.000} & 1.001 & 1.001 & 1.001 \\ \hline
+\# N's per 100 kbp & {\bf 0.00} & {\bf 0.00} & 4096.55 & {\bf 0.00} \\ \hline
+\# mismatches per 100 kbp & {\bf 0.00} & 137.65 & 1372.90 & {\bf 0.00} \\ \hline
+\# indels per 100 kbp & 91.79 & 57.35 & {\bf 44.29} & 45.85 \\ \hline
+Largest alignment & 8716 & 8718 & 4516 & {\bf 8724} \\ \hline
+Total aligned length & 8716 & 8718 & 4516 & {\bf 8724} \\ \hline
+NA50 & 8716 & 8718 & 4516 & {\bf 8724} \\ \hline
+NGA50 & 8716 & 8718 & 4516 & {\bf 8724} \\ \hline
+NA90 & 8716 & 8718 & 4516 & {\bf 8724} \\ \hline
+NGA90 & 8716 & 8718 & - & {\bf 8724} \\ \hline
+auNA & 8711.0 & 8712.0 & 4516.0 & {\bf 8724.0} \\ \hline
+auNGA & 8690.1 & 8694.1 & 2332.9 & {\bf 8706.0} \\ \hline
+LA50 & 1 & 1 & 1 & 1 \\ \hline
+LGA50 & 1 & 1 & 1 & 1 \\ \hline
+LA90 & 1 & 1 & 1 & 1 \\ \hline
+LGA90 & {\bf 1} & {\bf 1} & - & {\bf 1} \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{document}

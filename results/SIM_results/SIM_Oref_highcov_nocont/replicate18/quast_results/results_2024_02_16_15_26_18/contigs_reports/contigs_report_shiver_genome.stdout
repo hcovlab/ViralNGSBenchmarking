@@ -1,0 +1,48 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [EMBOSS_001]
+	Total Regions: 1
+	Total Region Length: 8731
+Analyzing contigs...
+CONTIG: shiver_result_ConsensusRound1_GapsFilled (8692bp)
+Best alignment score: 8692.0 (LEN: 8692, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 1 8731 | 1 8692 | 8731 8692 | 100.0 | EMBOSS_001 shiver_result_ConsensusRound1_GapsFilled
+
+Analyzing coverage...
+Writing SNPs into /data/quast_results/results_2024_02_16_15_26_18/contigs_reports/minimap_output/shiver_genome.used_snps
+
+Analysis is finished!
+Founded SNPs were written into /data/quast_results/results_2024_02_16_15_26_18/contigs_reports/minimap_output/shiver_genome.used_snps
+
+Results:
+	Local Misassemblies: 0
+	Misassemblies: 0
+		Relocations: 0
+		Translocations: 0
+		Inversions: 0
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 0
+	Fake misassemblies matched with structural variations: 0
+	Misassembled Contigs: 0
+	Misassembled Contig Bases: 0
+	Misassemblies Inter-Contig Overlap ("Extra" Aligned Bases): 0
+Unaligned Contigs: 0 + 0 part
+Half Unaligned Contigs with Misassemblies: 0
+Unaligned Bases in Fully and Partially Unaligned Contigs: 0
+
+Ambiguously Mapped Contigs: 0
+Total Bases in Ambiguously Mapped Contigs: 0
+"Extra" Aligned Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used (there is no "extra" aligned bases).
+
+	Covered Bases in Reference: 8692
+	Raw Aligned Bases in Assembly: 8692
+	Total Aligned Bases in Assembly (with "Extras"): 8692
+
+	SNPs: 0
+	Insertions: 0
+	Deletions: 39
+

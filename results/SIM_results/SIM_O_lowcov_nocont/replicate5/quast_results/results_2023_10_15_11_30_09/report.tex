@@ -1,0 +1,73 @@
+\documentclass[12pt,a4paper]{article}
+\begin{document}
+\begin{table}[ht]
+\begin{center}
+\caption{All statistics are based on contigs of size $\geq$ 500 bp, unless otherwise noted (e.g., "\# contigs ($\geq$ 0 bp)" and "Total length ($\geq$ 0 bp)" include all contigs).}
+\begin{tabular}{|l*{4}{|r}|}
+\hline
+Assembly & shiver\_genome & smaltalign\_genome & viralngs\_genome & vpipe\_genome \\ \hline
+\# contigs ($\geq$ 0 bp) & 1 & 1 & 1 & 1 \\ \hline
+\# contigs ($\geq$ 1000 bp) & 1 & 1 & 1 & 1 \\ \hline
+\# contigs ($\geq$ 5000 bp) & 1 & 1 & 0 & 1 \\ \hline
+\# contigs ($\geq$ 10000 bp) & 0 & 0 & 0 & 0 \\ \hline
+\# contigs ($\geq$ 25000 bp) & 0 & 0 & 0 & 0 \\ \hline
+\# contigs ($\geq$ 50000 bp) & 0 & 0 & 0 & 0 \\ \hline
+Total length ($\geq$ 0 bp) & {\bf 8723} & 8640 & 1943 & 8625 \\ \hline
+Total length ($\geq$ 1000 bp) & {\bf 8723} & 8640 & 1943 & 8625 \\ \hline
+Total length ($\geq$ 5000 bp) & {\bf 8723} & 8640 & 0 & 8625 \\ \hline
+Total length ($\geq$ 10000 bp) & 0 & 0 & 0 & 0 \\ \hline
+Total length ($\geq$ 25000 bp) & 0 & 0 & 0 & 0 \\ \hline
+Total length ($\geq$ 50000 bp) & 0 & 0 & 0 & 0 \\ \hline
+\# contigs & 1 & 1 & 1 & 1 \\ \hline
+Largest contig & {\bf 8723} & 8640 & 1943 & 8625 \\ \hline
+Total length & {\bf 8723} & 8640 & 1943 & 8625 \\ \hline
+Reference length & 8757 & 8757 & 8757 & 8757 \\ \hline
+GC (\%) & 40.50 & 41.18 & 38.41 & 41.28 \\ \hline
+Reference GC (\%) & 40.52 & 40.52 & 40.52 & 40.52 \\ \hline
+N50 & {\bf 8723} & 8640 & 1943 & 8625 \\ \hline
+NG50 & {\bf 8723} & 8640 & - & 8625 \\ \hline
+N75 & {\bf 8723} & 8640 & 1943 & 8625 \\ \hline
+NG75 & {\bf 8723} & 8640 & - & 8625 \\ \hline
+L50 & 1 & 1 & 1 & 1 \\ \hline
+LG50 & {\bf 1} & {\bf 1} & - & {\bf 1} \\ \hline
+L75 & 1 & 1 & 1 & 1 \\ \hline
+LG75 & {\bf 1} & {\bf 1} & - & {\bf 1} \\ \hline
+\# total reads & 19000 & 19000 & 19000 & 19000 \\ \hline
+\# left & 9500 & 9500 & 9500 & 9500 \\ \hline
+\# right & 9500 & 9500 & 9500 & 9500 \\ \hline
+Mapped (\%) & {\bf 94.29} & 49.56 & 14.32 & 15.18 \\ \hline
+Reference mapped (\%) & 94.33 & 94.33 & 94.33 & 94.33 \\ \hline
+Properly paired (\%) & {\bf 90.13} & 37.0 & 8.09 & 6.33 \\ \hline
+Reference properly paired (\%) & 90.16 & 90.16 & 90.16 & 90.16 \\ \hline
+Avg. coverage depth & {\bf 511} & 267 & 334 & 79 \\ \hline
+Reference avg. coverage depth & 511 & 511 & 511 & 511 \\ \hline
+Coverage $\geq$ 1x (\%) & 100.0 & 57.63 & 86.31 & 54.27 \\ \hline
+Reference coverage $\geq$ 1x (\%) & 100.0 & 100.0 & 100.0 & 100.0 \\ \hline
+\# misassemblies & 0 & 0 & 0 & 0 \\ \hline
+\# misassembled contigs & 0 & 0 & 0 & 0 \\ \hline
+Misassembled contigs length & 0 & 0 & 0 & 0 \\ \hline
+\# local misassemblies & {\bf 0} & 5 & {\bf 0} & {\bf 0} \\ \hline
+\# scaffold gap ext. mis. & 0 & 0 & 0 & 0 \\ \hline
+\# scaffold gap loc. mis. & {\bf 0} & {\bf 0} & 1 & {\bf 0} \\ \hline
+\# unaligned mis. contigs & 0 & 0 & 0 & 0 \\ \hline
+\# unaligned contigs & {\bf 0 + 0 part} & 0 + 1 part & {\bf 0 + 0 part} & 0 + 1 part \\ \hline
+Unaligned length & {\bf 0} & 3335 & {\bf 0} & 7893 \\ \hline
+Genome fraction (\%) & {\bf 99.954} & 60.780 & 20.149 & 8.383 \\ \hline
+Duplication ratio & {\bf 1.001} & {\bf 1.001} & 1.106 & {\bf 1.001} \\ \hline
+\# N's per 100 kbp & {\bf 0.00} & {\bf 0.00} & 13844.57 & {\bf 0.00} \\ \hline
+\# mismatches per 100 kbp & {\bf 114.73} & 339.62 & 1992.03 & 3009.58 \\ \hline
+\# indels per 100 kbp & 103.26 & {\bf 75.47} & 113.83 & 683.99 \\ \hline
+Largest alignment & {\bf 8723} & 5305 & 1759 & 732 \\ \hline
+Total aligned length & {\bf 8723} & 5305 & 1759 & 732 \\ \hline
+NA50 & {\bf 8723} & 5305 & 1759 & - \\ \hline
+NGA50 & {\bf 8723} & 5305 & - & - \\ \hline
+NA75 & {\bf 8723} & - & 1759 & - \\ \hline
+NGA75 & {\bf 8723} & - & - & - \\ \hline
+LA50 & {\bf 1} & {\bf 1} & {\bf 1} & - \\ \hline
+LGA50 & {\bf 1} & {\bf 1} & - & - \\ \hline
+LA75 & {\bf 1} & - & {\bf 1} & - \\ \hline
+LGA75 & {\bf 1} & - & - & - \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{document}

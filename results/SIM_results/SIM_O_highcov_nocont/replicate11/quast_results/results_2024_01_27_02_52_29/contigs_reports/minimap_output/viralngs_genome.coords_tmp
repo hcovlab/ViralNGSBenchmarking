@@ -1,0 +1,5 @@
+None	7163	1550	5286	+	EMBOSS_001	8695	1538	5280	3736	3736	60	NM:i:6	ms:i:3720	AS:i:3716	nn:i:6	tp:A:P	cm:i:355	s1:i:3594	s2:i:0	de:f:0.0005	zd:i:3	rl:i:0	cg:Z:3060M3D103M3D573M	cs:Z::3060-nnn:103-nnn:573
+None	7163	387	1392	+	EMBOSS_001	8695	381	1392	1005	1011	60	NM:i:6	ms:i:989	AS:i:985	nn:i:0	tp:A:P	cm:i:97	s1:i:982	s2:i:0	de:f:0.0020	zd:i:3	rl:i:0	cg:Z:737M2D2M4D266M	cs:Z::737-ga:2-ggag:266
+None	7163	6760	7163	+	EMBOSS_001	8695	6754	7157	403	403	60	NM:i:0	ms:i:403	AS:i:403	nn:i:0	tp:A:P	cm:i:38	s1:i:385	s2:i:0	de:f:0	zd:i:2	rl:i:0	cg:Z:403M	cs:Z::403
+None	7163	5566	5817	+	EMBOSS_001	8695	5557	5808	251	251	60	NM:i:0	ms:i:251	AS:i:251	nn:i:0	tp:A:P	cm:i:24	s1:i:243	s2:i:0	de:f:0	zd:i:3	rl:i:0	cg:Z:251M	cs:Z::251
+None	7163	0	145	+	EMBOSS_001	8695	0	145	145	145	60	NM:i:0	ms:i:145	AS:i:145	nn:i:0	tp:A:P	cm:i:11	s1:i:111	s2:i:0	de:f:0	zd:i:1	rl:i:0	cg:Z:145M	cs:Z::145

@@ -1,0 +1,5 @@
+None	4644	2688	4109	+	EMBOSS_001	8704	3079	4503	1417	1421	60	NM:i:7	ms:i:1389	AS:i:1387	nn:i:3	tp:A:P	cm:i:117	s1:i:1260	s2:i:0	de:f:0.0035	zd:i:3	rl:i:0	cg:Z:813M3D608M	cs:Z::131*ta:514*ga:166-nnn:393*tc:100*ta:113
+None	4644	1150	2332	+	EMBOSS_001	8704	1541	2723	1179	1181	60	NM:i:3	ms:i:1167	AS:i:1167	nn:i:1	tp:A:P	cm:i:105	s1:i:1131	s2:i:0	de:f:0.0025	zd:i:3	rl:i:0	cg:Z:1182M	cs:Z::126*ga:238*na:748*ag:67
+None	4644	4262	4644	+	EMBOSS_001	8704	4656	5041	377	382	60	NM:i:8	ms:i:344	AS:i:342	nn:i:3	tp:A:P	cm:i:29	s1:i:312	s2:i:0	de:f:0.0157	zd:i:2	rl:i:0	cg:Z:348M3D34M	cs:Z::271*ct:3*ga:16*ta*ac:2*gt:51-nnn:34
+None	4644	380	716	+	EMBOSS_001	8704	768	1107	323	336	60	NM:i:16	ms:i:250	AS:i:248	nn:i:3	tp:A:P	cm:i:5	s1:i:54	s2:i:0	de:f:0.0415	zd:i:3	rl:i:0	cg:Z:131M3D205M	cs:Z::24*ag:18*ta:31*ga*ga:21*ac:25*ct:6-nnn:16*ag:32*tc:28*ta:14*ct:18*tg:15*ct:37*ga:38
+None	4644	0	263	+	EMBOSS_001	8704	387	650	255	263	60	NM:i:8	ms:i:215	AS:i:215	nn:i:0	tp:A:P	cm:i:14	s1:i:151	s2:i:0	de:f:0.0304	zd:i:1	rl:i:0	cg:Z:263M	cs:Z::58*tc:67*at*tc:17*ga:39*ag:25*ct:26*ct:7*tg:16

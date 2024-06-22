@@ -1,0 +1,62 @@
+Assembly	shiver_genome	smaltalign_genome	viralngs_genome	vpipe_genome
+# contigs (>= 0 bp)	1	1	1	1
+# contigs (>= 1000 bp)	1	1	1	1
+# contigs (>= 5000 bp)	1	1	1	1
+# contigs (>= 10000 bp)	0	0	0	0
+# contigs (>= 25000 bp)	0	0	0	0
+# contigs (>= 50000 bp)	0	0	0	0
+Total length (>= 0 bp)	8606	8606	8569	8615
+Total length (>= 1000 bp)	8606	8606	8569	8615
+Total length (>= 5000 bp)	8606	8606	8569	8615
+Total length (>= 10000 bp)	0	0	0	0
+Total length (>= 25000 bp)	0	0	0	0
+Total length (>= 50000 bp)	0	0	0	0
+# contigs	1	1	1	1
+Largest contig	8606	8606	8569	8615
+Total length	8606	8606	8569	8615
+Reference length	8624	8624	8624	8624
+GC (%)	40.58	40.56	40.05	40.57
+Reference GC (%)	40.58	40.58	40.58	40.58
+N50	8606	8606	8569	8615
+NG50	8606	8606	8569	8615
+N75	8606	8606	8569	8615
+NG75	8606	8606	8569	8615
+L50	1	1	1	1
+LG50	1	1	1	1
+L75	1	1	1	1
+LG75	1	1	1	1
+# total reads	350000	350000	350000	350000
+# left	175000	175000	175000	175000
+# right	175000	175000	175000	175000
+Mapped (%)	99.51	99.51	90.59	99.51
+Reference mapped (%)	99.51	99.51	99.51	99.51
+Properly paired (%)	99.02	99.02	81.18	99.02
+Reference properly paired (%)	99.02	99.02	99.02	99.02
+Avg. coverage depth	10094	10094	9154	10093
+Reference avg. coverage depth	10091	10091	10091	10091
+Coverage >= 1x (%)	100.0	100.0	94.46	100.0
+Reference coverage >= 1x (%)	100.0	100.0	100.0	100.0
+# misassemblies	0	0	0	0
+# misassembled contigs	0	0	0	0
+Misassembled contigs length	0	0	0	0
+# local misassemblies	0	0	0	0
+# scaffold gap ext. mis.	0	0	0	0
+# scaffold gap loc. mis.	0	0	2	0
+# unaligned mis. contigs	0	0	0	0
+# unaligned contigs	0 + 0 part	0 + 0 part	0 + 0 part	0 + 0 part
+Unaligned length	0	0	0	0
+Genome fraction (%)	100.000	100.000	95.015	99.977
+Duplication ratio	1.000	1.000	1.048	1.001
+# N's per 100 kbp	0.00	0.00	5951.69	0.00
+# mismatches per 100 kbp	0.00	34.86	587.01	0.00
+# indels per 100 kbp	69.72	69.72	85.61	34.87
+Largest alignment	8606	8606	8174	8613
+Total aligned length	8606	8606	8174	8613
+NA50	8606	8606	8174	8613
+NGA50	8606	8606	8174	8613
+NA75	8606	8606	8174	8613
+NGA75	8606	8606	8174	8613
+LA50	1	1	1	1
+LGA50	1	1	1	1
+LA75	1	1	1	1
+LGA75	1	1	1	1

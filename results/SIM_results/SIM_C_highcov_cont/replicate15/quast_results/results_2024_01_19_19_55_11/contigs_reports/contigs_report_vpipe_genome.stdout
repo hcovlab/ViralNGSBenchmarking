@@ -1,0 +1,48 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [EMBOSS_001]
+	Total Regions: 1
+	Total Region Length: 8619
+Analyzing contigs...
+CONTIG: currsample-currdate (8607bp)
+Best alignment score: 8385.8 (LEN: 8607, IDY: 97.43), Total number of alignments: 1
+		One align captures most of this contig: 1 8619 | 1 8607 | 8619 8607 | 97.43 | EMBOSS_001 currsample-currdate
+
+Analyzing coverage...
+Writing SNPs into /data/quast_results/results_2024_01_19_19_55_11/contigs_reports/minimap_output/vpipe_genome.used_snps
+
+Analysis is finished!
+Founded SNPs were written into /data/quast_results/results_2024_01_19_19_55_11/contigs_reports/minimap_output/vpipe_genome.used_snps
+
+Results:
+	Local Misassemblies: 0
+	Misassemblies: 0
+		Relocations: 0
+		Translocations: 0
+		Inversions: 0
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 0
+	Fake misassemblies matched with structural variations: 0
+	Misassembled Contigs: 0
+	Misassembled Contig Bases: 0
+	Misassemblies Inter-Contig Overlap ("Extra" Aligned Bases): 0
+Unaligned Contigs: 0 + 0 part
+Half Unaligned Contigs with Misassemblies: 0
+Unaligned Bases in Fully and Partially Unaligned Contigs: 0
+
+Ambiguously Mapped Contigs: 0
+Total Bases in Ambiguously Mapped Contigs: 0
+"Extra" Aligned Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used (there is no "extra" aligned bases).
+
+	Covered Bases in Reference: 8595
+	Raw Aligned Bases in Assembly: 8607
+	Total Aligned Bases in Assembly (with "Extras"): 8607
+
+	SNPs: 83
+	Insertions: 73
+	Deletions: 85
+

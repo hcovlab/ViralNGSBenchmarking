@@ -1,0 +1,30 @@
+All statistics are based on contigs of size >= 100 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                       shiver_genome  smaltalign_genome  viralngs_genome  vpipe_genome
+# total reads                  16862          16865              16766            16867       
+# left                         9500           9500               9500             9500        
+# right                        9500           9500               9500             9500        
+# mapped                       17829          17848              15289            17846       
+Mapped (%)                     105.73         105.83             91.19            105.8       
+# properly paired              16994          17032              13068            17032       
+Properly paired (%)            100.78         100.99             77.94            100.98      
+# singletons                   835            816                2221             814         
+Singletons (%)                 4.95           4.84               13.25            4.83        
+# misjoint mates               0              0                  0                0           
+Misjoint mates (%)             0.0            0.0                0.0              0.0         
+Avg. coverage depth            510            511                435              511         
+Coverage >= 1x (%)             100.0          100.0              88.82            100.0       
+Coverage >= 5x (%)             100.0          100.0              88.82            100.0       
+Coverage >= 10x (%)            100.0          100.0              88.82            100.0       
+# reference mapped             17848          17848              17848            17848       
+Reference mapped (%)           105.78         105.78             105.78           105.78      
+# reference properly paired    17032          17032              17032            17032       
+Reference properly paired (%)  100.94         100.94             100.94           100.94      
+# reference singletons         816            816                816              816         
+Reference singletons (%)       4.84           4.84               4.84             4.84        
+# reference misjoint mates     0              0                  0                0           
+Reference misjoint mates (%)   0.0            0.0                0.0              0.0         
+Reference avg. coverage depth  511            511                511              511         
+Reference coverage >= 1x (%)   100.0          100.0              100.0            100.0       
+Reference coverage >= 5x (%)   100.0          100.0              100.0            100.0       
+Reference coverage >= 10x (%)  100.0          100.0              100.0            100.0       
