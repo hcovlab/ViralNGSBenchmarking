@@ -1,0 +1,40 @@
+# Note that initial de novo assembly with VICUNA is deprecated
+
+general:
+    virus_base_config: ""
+    aligner: "ngshmmalign"
+    primers_trimmer: "samtools"
+    threads: 2
+    tsvbased: 1
+
+input:
+    datadir: samples/ # do not rename
+    paired: true
+    fastq_suffix: "" # files have to end with _R1.fastq(.gz) and _R2.fastq(.gz)
+    samples_file: samples.tsv # do not rename the file
+    paired: true
+    reference: "{VPIPE_BASEDIR}/../resources/hiv/HXB2.fasta"
+    metainfo_file: "{VPIPE_BASEDIR}/../resources/hiv/metainfo.yaml"
+    gff_directory: "{VPIPE_BASEDIR}/../resources/hiv/gffs/"
+
+output:
+    datadir: results # do not rename the folder
+    QA: false
+    snv: false
+    local: false
+    global: false
+    visualization: false
+    diversity: false
+    frameshift_deletions_checks: false
+
+applications:
+    vicuna: /home/hazaihiv/Software/vicuna/llama.cpp
+
+preprocessing:
+    extra: "-ns_max_n 4 -min_qual_mean 30 -trim_qual_left 30 -trim_qual_right 30 -trim_qual_window 10"
+hmm_align:
+    threads: 4
+    leave_msa_temp: true
+    extra: ""
+frameshift_deletions_checks:
+    genes_gff: "{VPIPE_BASEDIR}/../resources/hiv/gffs/GCF_000864765.1_ViralProj15476_genomic.gff"
