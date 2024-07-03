@@ -1,0 +1,5 @@
+                                                   Accuracy Precision Sensitivity Specificity  F1-score
+>shiver_result_ConsensusRound1_GapsFilled          0.997952  0.964706         1.0     0.99783  0.982036
+>unknown_unknown_unknown_unknown_K03455.1_0_0_0_0  0.968138  0.930894    0.465447    0.997951  0.620596
+>None                                              0.969959  0.938462    0.495935    0.998071  0.648936
+>currsample-currdate                               0.943446  0.486188    0.178862     0.98879  0.261516

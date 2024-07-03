@@ -1,0 +1,5 @@
+                                                   Accuracy Precision Sensitivity Specificity  F1-score
+>shiver_error                                      0.939874       0.0         0.0         1.0       0.0
+>unknown_unknown_unknown_unknown_K03455.1_0_0_0_0  0.996088  0.947318     0.98999    0.996478  0.968184
+>None                                              0.990009  0.955191    0.874875    0.997374  0.913271
+>currsample-currdate                               0.987902  0.888132    0.913914    0.992636  0.900839

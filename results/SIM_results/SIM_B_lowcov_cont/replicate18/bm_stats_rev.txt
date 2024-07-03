@@ -1,0 +1,5 @@
+Generations: 1303
+Length of benchmarking reference: 8632
+Distance from HXB2: 343.0
+Average pairwise diversity of quasispecies: 345.38666666666666
+ENV diversity: 21.058585858585857

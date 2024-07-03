@@ -1,0 +1,6 @@
+            pos_correct  poserr_major  poserr_ltr  poserr_unmapped  poserr_extramapped
+golden           358504             0           0            21496                   0
+shiver           358478             0           0            21517                   5
+smaltalign       358478             0           0            21517                   5
+viralngs         358478             0           0            21517                   5
+vpipe            358478             0           0            21517                   5

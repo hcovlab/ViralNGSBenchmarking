@@ -1,0 +1,60 @@
+##fileformat=VCFv4.0
+##fileDate=20231029
+##source=lofreq call --call-indels -f ./0400_vpipe/results/vpipe_consensus.fasta -o ./0400_vpipe/results/vpipe_final_mapping.vcf ./0400_vpipe/results/vpipe_final_mapping_dedupreads.bam 
+##reference=./0400_vpipe/results/vpipe_consensus.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_47,Description="Minimum SNV Quality (Phred) 47">
+##FILTER=<ID=min_indelqual_33,Description="Minimum Indel Quality (Phred) 33">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+currsample-currdate	411	.	C	T	2193	PASS	DP=70;AF=0.985714;SB=0;DP4=1,0,69,0
+currsample-currdate	412	.	A	G	2197	PASS	DP=70;AF=0.985714;SB=0;DP4=1,0,69,0
+currsample-currdate	413	.	T	C	1850	PASS	DP=70;AF=0.900000;SB=0;DP4=7,0,63,0
+currsample-currdate	422	.	A	G	488	PASS	DP=157;AF=0.191083;SB=0;DP4=127,0,30,0
+currsample-currdate	426	.	G	A	497	PASS	DP=157;AF=0.191083;SB=0;DP4=127,0,30,0
+currsample-currdate	435	.	G	A	124	PASS	DP=157;AF=0.070064;SB=0;DP4=146,0,11,0
+currsample-currdate	444	.	A	C	1289	PASS	DP=157;AF=0.592357;SB=0;DP4=64,0,93,0
+currsample-currdate	447	.	T	C	2710	PASS	DP=157;AF=0.585987;SB=0;DP4=1,0,92,0
+currsample-currdate	450	.	A	G	4184	PASS	DP=157;AF=0.942675;SB=0;DP4=9,0,148,0
+currsample-currdate	483	.	G	A	5827	PASS	DP=218;AF=0.862385;SB=0;DP4=30,0,188,0
+currsample-currdate	484	.	A	C	102	PASS	DP=218;AF=0.041284;SB=0;DP4=209,0,9,0
+currsample-currdate	489	.	T	C	2379	PASS	DP=218;AF=0.619266;SB=0;DP4=83,0,135,0
+currsample-currdate	497	.	C	T	212	PASS	DP=218;AF=0.073394;SB=0;DP4=201,0,16,0
+currsample-currdate	510	.	C	T	7595	PASS	DP=218;AF=0.995413;SB=0;DP4=1,0,217,0
+currsample-currdate	517	.	T	A	7521	PASS	DP=218;AF=0.995413;SB=0;DP4=1,0,217,0
+currsample-currdate	518	.	C	T	7582	PASS	DP=218;AF=0.995413;SB=0;DP4=1,0,217,0
+currsample-currdate	532	.	G	A	94	PASS	DP=218;AF=0.032110;SB=0;DP4=211,0,7,0
+currsample-currdate	543	.	A	C	7361	PASS	DP=218;AF=0.958716;SB=0;DP4=1,0,209,0
+currsample-currdate	544	.	C	T	7024	PASS	DP=218;AF=0.963303;SB=0;DP4=8,0,210,0
+currsample-currdate	546	.	A	G	49314	PASS	DP=218;AF=0.114679;SB=0;DP4=8,0,25,0
+currsample-currdate	546	.	A	T	5931	PASS	DP=218;AF=0.848624;SB=0;DP4=8,0,185,0
+currsample-currdate	570	.	A	C	5385	PASS	DP=218;AF=0.866973;SB=0;DP4=29,0,189,0
+currsample-currdate	600	.	G	A	128	PASS	DP=218;AF=0.041284;SB=0;DP4=209,0,9,0
+currsample-currdate	612	.	C	A	7419	PASS	DP=218;AF=0.958716;SB=0;DP4=1,0,209,0
+currsample-currdate	625	.	G	A	79	PASS	DP=209;AF=0.033493;SB=0;DP4=202,0,7,0
+currsample-currdate	626	.	C	A	104	PASS	DP=205;AF=0.039024;SB=0;DP4=197,0,8,0
+currsample-currdate	637	.	G	A	1256	PASS	DP=153;AF=0.320261;SB=0;DP4=104,0,49,0
+currsample-currdate	644	.	T	C	2044	PASS	DP=61;AF=0.983607;SB=0;DP4=1,0,60,0
+currsample-currdate	667	.	A	T	2081	PASS	DP=61;AF=0.967213;SB=0;DP4=2,0,59,0
+currsample-currdate	669	.	T	A	1999	PASS	DP=61;AF=0.967213;SB=0;DP4=2,0,59,0
+currsample-currdate	681	.	G	A	54	PASS	DP=61;AF=0.049180;SB=0;DP4=58,0,3,0
+currsample-currdate	695	.	G	C	1110	PASS	DP=35;AF=0.971429;SB=0;DP4=1,0,34,0
+currsample-currdate	874	.	C	A	118	PASS	DP=157;AF=0.044586;SB=0;DP4=0,149,0,7
+currsample-currdate	907	.	A	G	1415	PASS	DP=218;AF=0.252294;SB=0;DP4=0,163,0,55
+currsample-currdate	909	.	A	G	1597	PASS	DP=218;AF=0.284404;SB=0;DP4=0,156,0,62
+currsample-currdate	911	.	T	C	378	PASS	DP=218;AF=0.091743;SB=0;DP4=0,198,0,20
+currsample-currdate	923	.	A	G	365	PASS	DP=218;AF=0.091743;SB=0;DP4=0,198,0,20
+currsample-currdate	1001	.	T	C	56	PASS	DP=218;AF=0.022936;SB=0;DP4=0,213,0,5
+currsample-currdate	1019	.	G	A	1434	PASS	DP=218;AF=0.288991;SB=0;DP4=0,154,0,63
+currsample-currdate	1038	.	G	C	1083	PASS	DP=218;AF=0.252294;SB=0;DP4=0,163,0,55
+currsample-currdate	1051	.	C	A	341	PASS	DP=218;AF=0.114679;SB=0;DP4=0,193,0,25
+currsample-currdate	1054	.	G	A	86	PASS	DP=218;AF=0.041284;SB=0;DP4=0,208,0,9
+currsample-currdate	1068	.	C	A	4275	PASS	DP=137;AF=0.992701;SB=0;DP4=0,1,0,136
+currsample-currdate	1071	.	C	T	4279	PASS	DP=137;AF=0.985401;SB=0;DP4=0,1,0,135

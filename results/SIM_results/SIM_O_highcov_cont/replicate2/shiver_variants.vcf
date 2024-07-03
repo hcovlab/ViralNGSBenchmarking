@@ -1,0 +1,126 @@
+##fileformat=VCFv4.0
+##fileDate=20231029
+##source=lofreq call --call-indels -f ./0100_shiver/shiver_result_remap_consensus_MinCov_15_30_fixed.fasta -o ./0100_shiver/HIV1_CON_O_simref_QSsim_aligned_consensus_fixed_shiver.vcf 0100_shiver/shiver_result_remap_dedupreads.bam 
+##reference=./0100_shiver/shiver_result_remap_consensus_MinCov_15_30_fixed.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_54,Description="Minimum SNV Quality (Phred) 54">
+##FILTER=<ID=min_indelqual_32,Description="Minimum Indel Quality (Phred) 32">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+shiver_result_ConsensusRound1_GapsFilled	221	.	G	A	516	PASS	DP=1453;AF=0.112870;SB=0;DP4=1289,0,164,0
+shiver_result_ConsensusRound1_GapsFilled	239	.	A	C	60	PASS	DP=1474;AF=0.022388;SB=0;DP4=1440,0,33,0
+shiver_result_ConsensusRound1_GapsFilled	247	.	G	A	684	PASS	DP=1476;AF=0.042005;SB=0;DP4=1395,0,62,0
+shiver_result_ConsensusRound1_GapsFilled	247	.	G	T	107	PASS	DP=1476;AF=0.012873;SB=0;DP4=1395,0,19,0
+shiver_result_ConsensusRound1_GapsFilled	265	.	C	T	835	PASS	DP=1482;AF=0.047908;SB=0;DP4=1410,0,71,0
+shiver_result_ConsensusRound1_GapsFilled	267	.	C	A	125	PASS	DP=1486;AF=0.014805;SB=0;DP4=1464,0,22,0
+shiver_result_ConsensusRound1_GapsFilled	271	.	A	G	230	PASS	DP=1487;AF=0.020847;SB=0;DP4=1454,0,31,0
+shiver_result_ConsensusRound1_GapsFilled	274	.	T	G	5628	PASS	DP=1484;AF=0.192049;SB=0;DP4=1198,0,285,0
+shiver_result_ConsensusRound1_GapsFilled	280	.	G	A	58	PASS	DP=1494;AF=0.009371;SB=0;DP4=1478,0,14,0
+shiver_result_ConsensusRound1_GapsFilled	283	.	G	C	2869	PASS	DP=1495;AF=0.117057;SB=0;DP4=1319,0,175,0
+shiver_result_ConsensusRound1_GapsFilled	292	.	C	T	73	PASS	DP=1501;AF=0.010660;SB=0;DP4=1482,0,16,0
+shiver_result_ConsensusRound1_GapsFilled	294	.	G	A	454	PASS	DP=1499;AF=0.031354;SB=0;DP4=1451,0,47,0
+shiver_result_ConsensusRound1_GapsFilled	308	.	A	G	1358	PASS	DP=1496;AF=0.068182;SB=0;DP4=1393,0,102,0
+shiver_result_ConsensusRound1_GapsFilled	319	.	G	A	5204	PASS	DP=1497;AF=0.178357;SB=0;DP4=1230,0,267,0
+shiver_result_ConsensusRound1_GapsFilled	322	.	A	G	3010	PASS	DP=1497;AF=0.119572;SB=0;DP4=1317,0,179,0
+shiver_result_ConsensusRound1_GapsFilled	326	.	G	A	1404	PASS	DP=1498;AF=0.068758;SB=0;DP4=1395,0,103,0
+shiver_result_ConsensusRound1_GapsFilled	332	.	G	A	1200	PASS	DP=1501;AF=0.062625;SB=0;DP4=1405,0,94,0
+shiver_result_ConsensusRound1_GapsFilled	333	.	G	C	1556	PASS	DP=1504;AF=0.074468;SB=0;DP4=1390,0,112,0
+shiver_result_ConsensusRound1_GapsFilled	338	.	C	A	72	PASS	DP=1514;AF=0.010568;SB=0;DP4=1497,0,16,0
+shiver_result_ConsensusRound1_GapsFilled	359	.	A	G	5945	PASS	DP=1496;AF=0.199866;SB=0;DP4=1194,0,299,0
+shiver_result_ConsensusRound1_GapsFilled	375	.	G	T	1947	PASS	DP=1517;AF=0.087673;SB=0;DP4=1369,2,133,0
+shiver_result_ConsensusRound1_GapsFilled	387	.	T	G	1110	PASS	DP=1578;AF=0.056401;SB=4;DP4=1434,55,84,5
+shiver_result_ConsensusRound1_GapsFilled	390	.	C	A	3040	PASS	DP=1584;AF=0.114268;SB=1;DP4=1338,63,172,9
+shiver_result_ConsensusRound1_GapsFilled	397	.	G	A	14823	PASS	DP=1600;AF=0.374375;SB=5;DP4=936,60,555,44
+shiver_result_ConsensusRound1_GapsFilled	404	.	A	G	1240	PASS	DP=1670;AF=0.057485;SB=13;DP4=1427,147,93,3
+shiver_result_ConsensusRound1_GapsFilled	407	.	C	T	384	PASS	DP=1694;AF=0.025974;SB=0;DP4=1483,165,40,4
+shiver_result_ConsensusRound1_GapsFilled	416	.	A	G	5832	PASS	DP=1731;AF=0.173310;SB=4;DP4=1251,180,269,31
+shiver_result_ConsensusRound1_GapsFilled	420	.	G	A	5890	PASS	DP=1744;AF=0.173165;SB=3;DP4=1245,196,266,36
+shiver_result_ConsensusRound1_GapsFilled	429	.	G	A	1199	PASS	DP=1775;AF=0.052958;SB=12;DP4=1428,251,73,21
+shiver_result_ConsensusRound1_GapsFilled	431	.	C	T	3611	PASS	DP=1773;AF=0.117879;SB=6;DP4=1324,239,170,39
+shiver_result_ConsensusRound1_GapsFilled	432	.	C	T	201	PASS	DP=1781;AF=0.016283;SB=0;DP4=1468,282,25,4
+shiver_result_ConsensusRound1_GapsFilled	439	.	C	A	7355	PASS	DP=1788;AF=0.202461;SB=3;DP4=1178,246,294,68
+shiver_result_ConsensusRound1_GapsFilled	442	.	A	G	639	PASS	DP=1782;AF=0.030864;SB=0;DP4=1193,283,44,11
+shiver_result_ConsensusRound1_GapsFilled	469	.	G	A	234	PASS	DP=1932;AF=0.016046;SB=16;DP4=1404,494,17,14
+shiver_result_ConsensusRound1_GapsFilled	477	.	A	G	7270	PASS	DP=1932;AF=0.179089;SB=2;DP4=1130,456,253,93
+shiver_result_ConsensusRound1_GapsFilled	478	.	A	C	388	PASS	DP=1938;AF=0.022188;SB=7;DP4=1342,552,35,8
+shiver_result_ConsensusRound1_GapsFilled	482	.	C	T	18978	PASS	DP=1926;AF=0.378505;SB=12;DP4=857,338,492,237
+shiver_result_ConsensusRound1_GapsFilled	484	.	T	A	131	PASS	DP=1934;AF=0.010858;SB=3;DP4=1330,583,13,8
+shiver_result_ConsensusRound1_GapsFilled	491	.	C	T	2223	PASS	DP=1921;AF=0.071838;SB=57;DP4=1175,606,117,21
+shiver_result_ConsensusRound1_GapsFilled	492	.	T	C	3170	PASS	DP=1919;AF=0.093278;SB=0;DP4=1166,573,119,60
+shiver_result_ConsensusRound1_GapsFilled	516	.	A	C	264	PASS	DP=1905;AF=0.015223;SB=0;DP4=1115,760,18,11
+shiver_result_ConsensusRound1_GapsFilled	526	.	G	A	301	PASS	DP=1898;AF=0.016333;SB=0;DP4=1050,817,18,13
+shiver_result_ConsensusRound1_GapsFilled	527	.	G	A	80	PASS	DP=1895;AF=0.006860;SB=0;DP4=1053,827,7,6
+shiver_result_ConsensusRound1_GapsFilled	531	.	T	G	19219	PASS	DP=1879;AF=0.377328;SB=12;DP4=660,505,370,339
+shiver_result_ConsensusRound1_GapsFilled	538	.	T	A	384	PASS	DP=1890;AF=0.019048;SB=6;DP4=979,875,15,21
+shiver_result_ConsensusRound1_GapsFilled	540	.	T	G	2841	PASS	DP=1888;AF=0.086335;SB=86;DP4=861,864,121,42
+shiver_result_ConsensusRound1_GapsFilled	541	.	G	A	3465	PASS	DP=1887;AF=0.098569;SB=0;DP4=876,821,96,90
+shiver_result_ConsensusRound1_GapsFilled	560	.	A	G	332	PASS	DP=1895;AF=0.017414;SB=0;DP4=854,1006,15,18
+shiver_result_ConsensusRound1_GapsFilled	563	.	C	T	3328	PASS	DP=1890;AF=0.098942;SB=4;DP4=771,932,78,109
+shiver_result_ConsensusRound1_GapsFilled	594	.	G	A	667	PASS	DP=1894;AF=0.030095;SB=42;DP4=632,1205,35,22
+shiver_result_ConsensusRound1_GapsFilled	606	.	A	G	296	PASS	DP=1895;AF=0.017414;SB=2;DP4=584,1277,12,21
+shiver_result_ConsensusRound1_GapsFilled	616	.	G	A	83	PASS	DP=1890;AF=0.007937;SB=0;DP4=530,1344,4,11
+shiver_result_ConsensusRound1_GapsFilled	619	.	G	A	281	PASS	DP=1889;AF=0.016940;SB=1;DP4=507,1348,10,22
+shiver_result_ConsensusRound1_GapsFilled	620	.	C	A	6581	PASS	DP=1885;AF=0.170822;SB=24;DP4=443,1119,66,256
+shiver_result_ConsensusRound1_GapsFilled	624	.	A	G	242	PASS	DP=1887;AF=0.015898;SB=5;DP4=481,1375,5,25
+shiver_result_ConsensusRound1_GapsFilled	629	.	G	A	485	PASS	DP=1863;AF=0.026302;SB=27;DP4=429,1384,22,27
+shiver_result_ConsensusRound1_GapsFilled	630	.	G	A	49314	PASS	DP=1854;AF=0.014024;SB=1;DP4=356,1137,7,19
+shiver_result_ConsensusRound1_GapsFilled	630	.	G	T	6900	PASS	DP=1854;AF=0.180690;SB=0;DP4=356,1137,81,254
+shiver_result_ConsensusRound1_GapsFilled	631	.	G	A	7891	PASS	DP=1847;AF=0.204115;SB=9;DP4=359,1108,77,300
+shiver_result_ConsensusRound1_GapsFilled	636	.	A	G	188	PASS	DP=1836;AF=0.013617;SB=3;DP4=401,1410,7,18
+shiver_result_ConsensusRound1_GapsFilled	644	.	C	A	156	PASS	DP=1801;AF=0.012215;SB=0;DP4=362,1417,4,18
+shiver_result_ConsensusRound1_GapsFilled	645	.	A	G	91	PASS	DP=1791;AF=0.008934;SB=0;DP4=353,1422,3,13
+shiver_result_ConsensusRound1_GapsFilled	655	.	G	T	6505	PASS	DP=1734;AF=0.182814;SB=1;DP4=236,1181,56,261
+shiver_result_ConsensusRound1_GapsFilled	660	.	G	A	1763	PASS	DP=1702;AF=0.069330;SB=2;DP4=243,1339,20,98
+shiver_result_ConsensusRound1_GapsFilled	667	.	C	A	280	PASS	DP=1666;AF=0.019808;SB=5;DP4=218,1414,2,31
+shiver_result_ConsensusRound1_GapsFilled	673	.	C	T	75	PASS	DP=1644;AF=0.008516;SB=1;DP4=189,1440,2,12
+shiver_result_ConsensusRound1_GapsFilled	675	.	G	A	3068	PASS	DP=1626;AF=0.111316;SB=0;DP4=160,1285,20,161
+shiver_result_ConsensusRound1_GapsFilled	676	.	A	C	6162	PASS	DP=1620;AF=0.184568;SB=12;DP4=131,1189,41,258
+shiver_result_ConsensusRound1_GapsFilled	681	.	G	A	67	PASS	DP=1613;AF=0.008060;SB=0;DP4=149,1450,1,12
+shiver_result_ConsensusRound1_GapsFilled	690	.	A	C	5859	PASS	DP=1569;AF=0.184831;SB=8;DP4=79,1198,25,265
+shiver_result_ConsensusRound1_GapsFilled	704	.	C	A	5328	PASS	DP=1510;AF=0.182119;SB=3;DP4=23,1211,7,268
+shiver_result_ConsensusRound1_GapsFilled	708	.	A	C	118	PASS	DP=1496;AF=0.012032;SB=0;DP4=13,1464,0,18
+shiver_result_ConsensusRound1_GapsFilled	712	.	A	G	14171	PASS	DP=1468;AF=0.380109;SB=0;DP4=0,909,0,558
+shiver_result_ConsensusRound1_GapsFilled	718	.	A	G	1162	PASS	DP=1483;AF=0.058665;SB=0;DP4=0,1395,0,87
+shiver_result_ConsensusRound1_GapsFilled	721	.	C	T	161	PASS	DP=1488;AF=0.014785;SB=0;DP4=0,1465,0,22
+shiver_result_ConsensusRound1_GapsFilled	743	.	T	C	83	PASS	DP=1501;AF=0.009993;SB=0;DP4=0,1486,0,15
+shiver_result_ConsensusRound1_GapsFilled	746	.	C	T	1346	PASS	DP=1490;AF=0.066443;SB=0;DP4=0,1387,0,99
+shiver_result_ConsensusRound1_GapsFilled	749	.	G	A	5790	PASS	DP=1488;AF=0.189516;SB=0;DP4=0,1203,0,282
+shiver_result_ConsensusRound1_GapsFilled	751	.	G	A	3000	PASS	DP=1487;AF=0.117687;SB=0;DP4=0,1309,0,175
+shiver_result_ConsensusRound1_GapsFilled	756	.	C	T	1283	PASS	DP=1498;AF=0.062750;SB=0;DP4=0,1402,0,94
+shiver_result_ConsensusRound1_GapsFilled	765	.	C	T	60	PASS	DP=1503;AF=0.007984;SB=0;DP4=0,1490,0,12
+shiver_result_ConsensusRound1_GapsFilled	773	.	G	A	5709	PASS	DP=1495;AF=0.192642;SB=0;DP4=0,1206,0,288
+shiver_result_ConsensusRound1_GapsFilled	796	.	G	A	2542	PASS	DP=1507;AF=0.102853;SB=0;DP4=0,1352,0,155
+shiver_result_ConsensusRound1_GapsFilled	798	.	G	A	68	PASS	DP=1516;AF=0.008575;SB=0;DP4=0,1501,0,13
+shiver_result_ConsensusRound1_GapsFilled	805	.	C	T	171	PASS	DP=1508;AF=0.015252;SB=0;DP4=0,1484,0,23
+shiver_result_ConsensusRound1_GapsFilled	808	.	A	G	570	PASS	DP=1503;AF=0.035928;SB=0;DP4=0,1449,0,54
+shiver_result_ConsensusRound1_GapsFilled	811	.	A	G	10501	PASS	DP=1493;AF=0.301407;SB=0;DP4=0,1042,0,450
+shiver_result_ConsensusRound1_GapsFilled	825	.	G	A	204	PASS	DP=1516;AF=0.017810;SB=0;DP4=0,1487,0,27
+shiver_result_ConsensusRound1_GapsFilled	835	.	G	T	13669	PASS	DP=1506;AF=0.364542;SB=0;DP4=0,956,0,549
+shiver_result_ConsensusRound1_GapsFilled	837	.	G	A	2072	PASS	DP=1516;AF=0.087731;SB=0;DP4=0,1381,0,133
+shiver_result_ConsensusRound1_GapsFilled	839	.	G	A	1245	PASS	DP=1519;AF=0.061224;SB=0;DP4=0,1424,0,93
+shiver_result_ConsensusRound1_GapsFilled	844	.	T	A	95	PASS	DP=1519;AF=0.010533;SB=0;DP4=0,1503,0,16
+shiver_result_ConsensusRound1_GapsFilled	871	.	C	A	1989	PASS	DP=1519;AF=0.086241;SB=0;DP4=0,1384,0,131
+shiver_result_ConsensusRound1_GapsFilled	874	.	T	C	184	PASS	DP=1521;AF=0.016437;SB=0;DP4=0,1491,0,25
+shiver_result_ConsensusRound1_GapsFilled	877	.	A	G	2958	PASS	DP=1517;AF=0.114700;SB=0;DP4=0,1342,0,174
+shiver_result_ConsensusRound1_GapsFilled	904	.	A	G	9820	PASS	DP=1473;AF=0.291242;SB=0;DP4=0,1042,0,429
+shiver_result_ConsensusRound1_GapsFilled	906	.	A	G	9927	PASS	DP=1475;AF=0.296949;SB=0;DP4=0,1037,0,438
+shiver_result_ConsensusRound1_GapsFilled	908	.	T	C	1263	PASS	DP=1481;AF=0.064146;SB=0;DP4=0,1386,0,95
+shiver_result_ConsensusRound1_GapsFilled	913	.	G	A	197	PASS	DP=1465;AF=0.017747;SB=0;DP4=0,1437,0,26
+shiver_result_ConsensusRound1_GapsFilled	920	.	A	G	1108	PASS	DP=1422;AF=0.060478;SB=0;DP4=0,1334,0,86
+shiver_result_ConsensusRound1_GapsFilled	941	.	A	T	2485	PASS	DP=1284;AF=0.118380;SB=0;DP4=0,1131,0,152
+shiver_result_ConsensusRound1_GapsFilled	968	.	A	G	125	PASS	DP=1116;AF=0.016129;SB=0;DP4=0,1097,0,18
+shiver_result_ConsensusRound1_GapsFilled	972	.	T	C	103	PASS	DP=1090;AF=0.014679;SB=0;DP4=0,1074,0,16
+shiver_result_ConsensusRound1_GapsFilled	998	.	T	C	58	PASS	DP=938;AF=0.011727;SB=0;DP4=0,927,0,11
+shiver_result_ConsensusRound1_GapsFilled	1015	.	G	A	93	PASS	DP=836;AF=0.016746;SB=0;DP4=0,817,0,14
+shiver_result_ConsensusRound1_GapsFilled	1016	.	G	A	2263	PASS	DP=830;AF=0.162651;SB=0;DP4=0,692,0,135
+shiver_result_ConsensusRound1_GapsFilled	1035	.	G	C	4265	PASS	DP=719;AF=0.287900;SB=0;DP4=0,512,0,207
+shiver_result_ConsensusRound1_GapsFilled	1048	.	C	A	987	PASS	DP=628;AF=0.113057;SB=0;DP4=0,556,0,71
+shiver_result_ConsensusRound1_GapsFilled	1051	.	G	A	106	PASS	DP=616;AF=0.024351;SB=0;DP4=0,600,0,15
+shiver_result_ConsensusRound1_GapsFilled	1072	.	A	G	514	PASS	DP=491;AF=0.085540;SB=0;DP4=0,448,0,42
