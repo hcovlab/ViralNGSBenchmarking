@@ -19,7 +19,7 @@ To enable easier reproducibility of the analysis, we provide the data and config
 * **Vibholm.xlsx**: Diversity statistics of the Vibholm et al. dataset
 
 ### QUAST reports and genome assemblies of the SIM dataset
-We uploaded all benchmark sequences, genome assemblies and QUAST reports for our in silico analyses. 
+We uploaded all benchmark sequences, genome assemblies and QUAST reports and a subset of simulated sequencing reads (1 replicate/scenario) for our in silico analyses. 
 
 ## Scripts
 The scripts in this repository have been developed to benchmark four bioinformatic pipelines (shiver, SmaltAlign, viralngs, V-Pipe) for full-length viral genome assembly.
